@@ -24,12 +24,12 @@
 
  #div1{
      text-align: center;
-     border: 10px solid #168fa5;
-     padding: 5px;
+     padding: 25px;
      font-size: 80px;
-     color: #d90cc2;
+     color: green;
      background-color: mistyrose;
      border-radius: 20px;
+     
      
 
 
@@ -45,8 +45,8 @@
 
      list-style-type: none;
      text-align:center;
-     margin-top: 4px;
-     margin-bottom: 4px;
+     margin-top: 20px;
+     margin-bottom: 20px;
      margin-left: -40px;
      
 
@@ -58,15 +58,16 @@
     width: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 3px;
 
 
 }
     #li1:hover  {
         background-color: #f13131;
-        transition: 0.6s;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        transition: 1s;
+        color: white;
+
+       
     }
 a {
     text-decoration: none;
@@ -75,9 +76,7 @@ a {
     font-size: 20px;
 
 }
-    a:hover {
-        color: white;
-    }
+    
     
 hr{
     background-color: forestgreen;
@@ -119,7 +118,6 @@ video {
     width: 259px;
     height: auto;
     border: 2px solid #0d9214;
-    opacity: 0.6;
 }
     video:hover {
         opacity: 1;
