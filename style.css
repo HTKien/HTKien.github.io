@@ -1,0 +1,106 @@
+body{
+    margin: 0; 
+    padding: 0;
+    font-family: sans-serif; 
+    
+
+}
+.form{
+    width: 100%;
+
+}
+.form .container{
+    width: 300px; 
+    margin: auto; 
+    background-color: rgb(229, 234, 238); 
+    height: fit-content; 
+    padding-bottom: 25px;
+    margin-top: 65px; 
+    border-radius: 5px;
+    position: relative;
+
+}
+.form .container h1{
+    text-align: center; 
+    padding-top: 15px; 
+}
+.form .container .label{
+    margin-left: 10px;
+}
+.form .container input{
+    display: block; 
+    width: 80%;
+    margin: auto; 
+    height: 25px;
+    border: 1px solid  rgb(160, 154, 154);
+    border-radius: 3px;
+
+}
+.form .container .btn-submit{
+    display: block; 
+    margin: auto; 
+    padding: 10px 25px; 
+    background-color: rgb(133, 174, 207); 
+    border: none; 
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 27px; 
+
+}
+.form .container .btn-submit:hover{
+    background-color: rgb(76, 127, 168);
+    color: white; 
+    transition: 0.4s;
+}
+.form .container .verify{
+    width: 150px; 
+    height: 30px;
+    background-color: rgb(133, 174, 207); 
+    margin-left: 27px;
+    text-align: center;     
+    color: white; 
+    line-height:30px ;
+    font-size: 30px;
+    float: left; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+}
+.form .container #verify{
+    width: 150px; 
+    margin-left: 25px;
+    
+}
+.form .container .fa-sync-alt{
+    margin-left: 10px;
+    color: rgb(133, 174, 207); 
+    margin-top: 38px; 
+}
+.form .container .fa-sync-alt:hover{
+    color: rgb(76, 127, 168);
+ 
+}
+.pointer{
+    cursor: pointer;
+}
+#username-error{
+    position: absolute;
+    
+}
+.error{
+    color: red; 
+    font-size: 15px;
+    margin-top: 5px; 
+    margin-left: 30px; 
+}
+#show-capt{
+    margin-top: 25px; 
+}
+#password-error{
+    position: absolute;
+}
+#capt-error{
+    position: absolute;
+}
