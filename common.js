@@ -11,9 +11,9 @@ loadCapt();
 document.getElementById('reload-captcha').onclick = loadCapt; 
 
 document.querySelector('.btn-submit').onclick = function(){
-    let count_username =0; 
-    let count_password = 0;
-    let count_capt = 0; 
+    let count_username =1; 
+    let count_password = 1;
+    let count_capt = 1; 
     let username = document.getElementById('username').value; 
     let password = document.getElementById('password').value; 
     let capt = document.getElementById('verify').value; 
@@ -86,10 +86,12 @@ document.querySelector('.btn-submit').onclick = function(){
 
         }
     }
+
+
     if(capt===''){
         document.getElementById('capt-error').innerHTML = 'Mã xác thực không được để trống!';
         document.getElementById('verify').style.border = '1px solid red';
-        count = 1; 
+        count_capt = 1; 
 
 
 
@@ -114,7 +116,7 @@ document.querySelector('.btn-submit').onclick = function(){
 
 
     }
-    if(count_username===0&&count_password===0&&count_capt===0){
+    if(count_username===0 && count_password===0 && count_capt===0){
         window.location= "./login-success.html";
     }
 
