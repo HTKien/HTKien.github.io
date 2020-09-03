@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="form">
+        <div class="container">
+            <h1>Đăng nhập</h1>
+            <p class="label">Tên đăng nhập</p>
+            <input id="username" type="text">
+            <p id="username-error" class="error"></p>
+
+            <br>
+            <p class="label">Mật khẩu</p>
+            <input id="password" type="password">
+            <p id="password-error" class="error"></p>
+
+            <br>
+            <div id="show-capt" class="verify"></div> <i title="Tải lại mã khác" id="reload-captcha" class="fas fa-sync-alt pointer"></i>
+            <br>
+            <br>
+            <p class="label">Điền mã xác thực</p>
+            <input id="verify" type="text">
+            <p id="capt-error" class="error"></p>
+            <br>
+            <button id="btn" class="btn-submit pointer">Đăng nhập</button>
+
+
+        </div>
+    </div>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>
