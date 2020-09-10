@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validate Using Bootstrap 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="title">Welcome to my Website!</p>
+    <div class="container">
+        <form  action="" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label class="email-label" for="">Email:</label>
+                <input class="form-control" placeholder="Enter email..." type="text" required>
+                <div class="invalid-feedback"> Please fill out this field!</div>
+
+            </div>
+            <div class="form-group">
+                <label for="">Password: </label>
+                <input class="form-control" placeholder="Enter password..." type="text" required>
+                <div class="invalid-feedback"> Please fill out this field!</div>
+
+
+            </div>
+            <div class="form-group">
+                <label for="">
+                    <input type="checkbox"  required> Remember me!
+                    <div class="invalid-feedback"> Check this checkbox to continue</div>
+
+                </label>
+
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+
+        </form>
+    </div>
+    
+    <script src="common.js"></script>
+</body>
+</html>
