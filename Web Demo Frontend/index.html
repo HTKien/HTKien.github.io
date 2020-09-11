@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Demo Web Using Bootstrap</title>
+
+      <!-- Nhúng file css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Nhúng thư viện Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div >
+        <div class="header">
+            <div class="header-container">
+                <h2 class="title">Welcome to my Website!</h2>
+                <p class="title">Wish you a good day...</p>
+            
+
+            </div>
+        </div>
+         <div class="position-sticky  bg-info" style="top:0px;">
+            
+            <nav class="menu navbar navbar-expand-sm justify-content-center">
+                <!-- Logo -->
+                <a href="" class="navbar-brand">
+                    <img class="logo" src="images/logo.png" alt="">
+                </a>
+                <!-- <Link></Link> -->
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="nav-link">Khách hàng</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="nav-link">Sản phẩm</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="nav-link">Danh mục</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="nav-link">Quan tâm</a>
+                    </li>
+                    <li class="navbar-item">
+                        <div class="dropdown">
+                            <a style="cursor: pointer;" class="nav-link dropdown-toggle"  data-toggle="dropdown">Liên hệ</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Qua gmail</a>
+                              <a class="dropdown-item" href="#">Qua Facebook</a>
+                              <a class="dropdown-item" href="#">Qua địa chỉ công ty</a>
+              
+                            </div>
+                    </li>
+                </ul>
+                <!-- Search -->
+                <form action="" class="form-inline">
+                    <input class="form-control" placeholder="Từ khóa..." type="text">
+                    <button class="btn btn-success">Tìm kiếm</button>
+                </form>
+                
+            </nav>
+         </div>
+         <div class="slidershow middle">
+        
+            <div class="slides">
+                <input type="radio" name="r" id="r1"  >
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4" checked>
+                <input type="radio" name="r" id="r5">
+                <div class="slide s1">
+                    <img src="./Images/1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./Images/2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./Images/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./Images/4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./Images/5.jpg" alt="">
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+            </div>
+        </div>
+ 
+        <div class="body-primary"  >
+            <div class="col-person">
+                <form id="form-info" style="width: fit-content; margin: auto; " action="">
+                    <h3 style="margin-top: 20px; text-align: center; ">THÊM THÔNG TIN</h3>
+                    <div class="form-group">
+                        <label  for="">Họ và tên:</label>
+                        <input placeholder="Nhập họ tên..." class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label  for="">Email:</label>
+                        <input placeholder="Nhập email..." class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label  for="">Điện thoại:</label>
+                        <input placeholder="Nhập số điện thoại..." class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label  for="">Giới tính:</label>
+                        <select  class="form-control" name="" id="">
+                            <option value="">Nam</option>
+                            <option value="">Nữ</option>
+                        </select>
+                    </div>
+                   <button class="btn btn-success">Đăng ký</button>
+                </form>
+
+            </div>
+            <div class="col-table">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead class="thead-dark">
+                        <tr >
+                            <th>Họ và tên</th>
+                            <th>Địa chỉ email</th>
+                            <th>Số điện thoại</th>
+                            <th>Giới tính</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hàn Trung Kiên</td>
+                            <td>hantrungkien98@gmail.com</td>
+                            <td>0337896154</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Nguyễn Văn Anh</td>
+                            <td>nguyenvananh@gmail.com</td>
+                            <td>0312466876</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Đào Thị Hà</td>
+                            <td>daothiha@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>Nữ</td>
+                        </tr>
+                        <tr>
+                            <td>Hàn Trung Kiên</td>
+                            <td>hantrungkien98@gmail.com</td>
+                            <td>0337896154</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Nguyễn Văn Anh</td>
+                            <td>nguyenvananh@gmail.com</td>
+                            <td>0312466876</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Đào Thị Hà</td>
+                            <td>daothiha@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>Nữ</td>
+                        </tr>
+                        <tr>
+                            <td>Hàn Trung Kiên</td>
+                            <td>hantrungkien98@gmail.com</td>
+                            <td>0337896154</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Nguyễn Văn Anh</td>
+                            <td>nguyenvananh@gmail.com</td>
+                            <td>0312466876</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Đào Thị Hà</td>
+                            <td>daothiha@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>Nữ</td>
+                        </tr>
+                        <tr>
+                            <td>Hàn Trung Kiên</td>
+                            <td>hantrungkien98@gmail.com</td>
+                            <td>0337896154</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Nguyễn Văn Anh</td>
+                            <td>nguyenvananh@gmail.com</td>
+                            <td>0312466876</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Đào Thị Hà</td>
+                            <td>daothiha@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>Nữ</td>
+                        </tr>
+                        <tr>
+                            <td>Hàn Trung Kiên</td>
+                            <td>hantrungkien98@gmail.com</td>
+                            <td>0337896154</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Nguyễn Văn Anh</td>
+                            <td>nguyenvananh@gmail.com</td>
+                            <td>0312466876</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Đào Thị Hà</td>
+                            <td>daothiha@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>Nữ</td>
+                        </tr>
+                        <tr>
+                            <td>Hàn Trung Kiên</td>
+                            <td>hantrungkien98@gmail.com</td>
+                            <td>0337896154</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Nguyễn Văn Anh</td>
+                            <td>nguyenvananh@gmail.com</td>
+                            <td>0312466876</td>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Đào Thị Hà</td>
+                            <td>daothiha@gmail.com</td>
+                            <td>0123456789</td>
+                            <td>Nữ</td>
+                        </tr>
+
+                    
+
+                    </tbody>
+                    
+                    
+                </table>
+                <ul  class="pagination">
+                    <li class="page-item"> <a class="page-link" href="">Trang trước</a></li>
+                    <li class="page-item"> <a class="page-link" href="">2</a></li>
+                    <li class="page-item"> <a class="page-link" href="">3</a></li>
+                    <li class="page-item"> <a class="page-link" href="">4</a></li>
+                    <li class="page-item"> <a class="page-link" href="">5</a></li>
+                    <li class="page-item"> <a class="page-link" href="">6</a></li>
+                    <li class="page-item"> <a class="page-link" href="">7</a></li>
+                    <li class="page-item"> <a class="page-link" href="">8</a></li>
+                    <li class="page-item"> <a class="page-link" href="">9</a></li>
+                    <li class="page-item"> <a class="page-link" href="">Trang tiếp</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="adver">
+            <h3>Tạo một quảng cáo tại đây</h3>
+            <button  type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                Đăng quảng cáo
+              </button>
+            
+              <!-- The Modal -->
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  
+                    <div class="modal-header">
+                        <h4 class="modal-title">Đăng nhập tài khoản</h4>
+                        <button class="close" data-dismiss="modal">&times; </button>
+                    </div>
+                    <div class="modal-body">
+                        <form  action="" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label class="email-label" for="">Email:</label>
+                                <input class="form-control" placeholder="Enter email..." type="text" required>
+                                <div class="invalid-feedback"> Please fill out this field!</div>
+                
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password: </label>
+                                <input class="form-control" placeholder="Enter password..." type="text" required>
+                                <div class="invalid-feedback"> Please fill out this field!</div>
+                
+                
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    <input type="checkbox"  required> Remember me!
+                                    <div class="invalid-feedback"> Check this checkbox to continue</div>
+                
+                                </label>
+                
+                            </div>
+                            <!-- <button type="submit" class="btn btn-success">Submit</button> -->
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                
+                        </form>
+                    </div>
+                   
+                    
+                  </div>
+
+        </div>
+
+        
+
+      </div>
+      <p class="cham-ngon">Khi bạn đang mệt mỏi vì đam mê nghĩa là bạn gần chạm tới thành công...</p>
+
+      
+    </div>
+    <div class="footer">
+        <div class="footer-col1">
+            <div class="col1-container">
+                <h4 style="padding-top: 20px; ">THÔNG TIN LIÊN HỆ</h4>
+            <ul>
+                <li>Facebook: <a href="https://www.facebook.com/kientrunghan040998/">Hàn Trung Kiên</a> </li>
+                <li>Địa chỉ: Minh Khai, Hai Bà Trưng, Hà Nội </li>
+                <li>Điện thoại: 0337896154 </li>
+                <li>Channel: <a href="https://www.youtube.com/channel/UCvOrp4iD2XR02Z6ujQMnGKg?view_as=subscriber">Hàn Trung Kiên</a> </li>
+                <li>Email: hantrungkien98@gmail.com </li>
+                <li>Fax: 031545698 </li>
+            </ul>
+
+            </div>
+            
+            
+        </div>
+        <div class="footer-col2">
+            <div class="col2-container">
+                <h4 style="padding-top: 20px; ">TOP TUTORIAL</h4>
+                <ul>
+                    <li>HTML Tutorial</li>
+                    <li>CSS Tutorial</li>
+                    <li>JS Tutorial</li>
+                    <li>SQL Tutorial</li>
+                    <li>JAVA Tutorial</li>
+                    <li>C++ Tutorial</li>
+                    
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="footer-col3">
+            <div class="col3-container">
+                <h4 style="padding-top: 80px; ">ĐỂ LẠI THÔNG TIN</h4>
+                <form action="">
+                    <div>
+                        <label for=""> Email:
+                            <input class="form-control" type="text">
+                        </label>
+                    </div>
+                    <button class="btn btn-success">Submit</button>
+                </form>
+            </div>
+
+        </div>
+        <button  onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fas fa-chevron-up"></i>
+
+        </button>
+
+      <script src="common.js"></script>
+      
+   </body>
+</html>
