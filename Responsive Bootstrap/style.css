@@ -1,0 +1,25 @@
+img{
+    margin-bottom: 5px ;
+}
+.box{
+    border: 1px solid gray; 
+    border-radius: 5px;
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    box-shadow: 5px 5px 1px 1px gray;
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 20px; 
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+.box button{
+    font-weight: 350;
+}
+.cotainer{
+    width: 90%; 
+    margin: auto; 
+}
+.product{
+    padding-right: 14px !important; 
+}

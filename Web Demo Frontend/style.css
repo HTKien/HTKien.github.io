@@ -197,4 +197,21 @@ th{
 
  }
  
+ @media only screen and (max-width:800px) {
+    .body-primary{
+        display: block; 
+    }
+    /* For mobile phones: */
+    .col-person, .col-table {
+      width:100% !important;
+    }
+    
+  }
+  
+
+
+
+
+  
+
 
