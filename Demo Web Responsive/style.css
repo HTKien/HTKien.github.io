@@ -1,0 +1,38 @@
+.navbar{
+    background-color: rgb(95, 204, 255); 
+}
+.input-search{
+    width: 300px !important;
+    height: 41px !important;
+}
+img{
+    margin-bottom: 5px ;
+}
+.box{
+    border: 1px solid gray; 
+    border-radius: 5px;
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 20px; 
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    
+}
+.box button{
+    font-weight: 350;
+}
+.head{
+    background-color: rgb(202, 202, 202) !important;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+tr,td{
+    border: 1px solid gray !important;
+}
+
+
+
