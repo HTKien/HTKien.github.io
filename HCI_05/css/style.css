@@ -71,3 +71,7 @@
     border: none;
     background-color: #0084f3;
 }
+
+.cart-text {
+    font-size: 30px !important;
+}
