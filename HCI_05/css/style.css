@@ -1,0 +1,73 @@
+.item-menu-child {
+    margin-left: 25px;
+}
+
+.link-item-child {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+
+#accordionSidebar {
+    background-image: none;
+    background-color: #0084f3 !important;
+}
+
+.menu-item {
+    font-size: 15px !important;
+    color: white;
+}
+
+.active {
+    background-color: #0031E2;
+}
+
+.bg-login-image {
+    background-image: url(https://images.unsplash.com/photo-1497171156029-51dfc973e5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.bg-register-image {
+    background-image: url(https://images.unsplash.com/photo-1584722065553-3ca71026f32c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.bg-password-image {
+    background-image: url(https://images.unsplash.com/photo-1599249300675-c39f1dd2d6be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.fa-laugh-wink:before {
+    content: "\f59c";
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 14rem!important;
+        position: fixed;
+        height: 100vh;
+        overflow-y: scroll;
+        overflow-x: hidden
+    }
+    #wrapper #content-wrapper {
+        background-color: #f8f9fc;
+        width: 100%;
+        overflow-x: hidden;
+        margin-left: 14rem;
+    }
+    .topbar {
+        margin-left: 14rem;
+    }
+    .sidebar::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.main-content {
+    margin-top: 5.375rem;
+}
+
+.btn-primary {
+    border: none;
+}
+
+.topbar .dropdown-list .dropdown-header {
+    border: none;
+    background-color: #0084f3;
+}
