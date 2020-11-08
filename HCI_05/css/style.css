@@ -59,6 +59,12 @@
     }
 }
 
+@media (max-width: 767px) {
+    #accordionSidebar {
+        margin-top: 4.375rem;
+    }
+}
+
 .main-content {
     margin-top: 5.375rem;
 }
@@ -74,4 +80,24 @@
 
 .cart-text {
     font-size: 30px !important;
+}
+
+.text-xs {
+    font-size: 17px;
+}
+
+.card-chi-tiet {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.descript {
+    margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+    .card-body-list {
+        height: 400px;
+        overflow-y: scroll;
+    }
 }
