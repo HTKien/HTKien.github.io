@@ -57,6 +57,10 @@
     .sidebar::-webkit-scrollbar {
         display: none;
     }
+    .gioithieu-amdau {
+        height: 443px !important;
+        overflow-y: scroll;
+    }
 }
 
 @media (max-width: 767px) {
@@ -97,7 +101,39 @@
 
 @media (min-width: 768px) {
     .card-body-list {
-        height: 400px;
+        max-height: 400px;
         overflow-y: scroll;
     }
+}
+
+.border-top-primary {
+    border-top: .25rem solid #4e73df!important;
+}
+
+.btn-go {
+    width: 90px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.card-next {
+    border: 1px solid #4e73df;
+    background-color: #ffff !important;
+}
+
+.active-item {
+    color: #4e73df !important;
+    font-weight: 700;
+    background-color: rgb(209, 211, 226);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#xemCachGoText:hover {
+    cursor: pointer;
+    color: #4e73df;
 }
