@@ -1,0 +1,33 @@
+#btn-add {
+    padding-top: 5px !important;
+    padding-bottom: 5px;
+    margin-top: -10px !important;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#btn-add-intable {
+    padding-top: 1px !important;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+#status {
+    width: 100px;
+    color: #878b96;
+    border-radius: 5px;
+    outline: none;
+    border-color: #878b96;
+    font-size: 13px;
+}
+
+#input-name {
+    width: 100px;
+    height: 20px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #d1d3da;
+}
