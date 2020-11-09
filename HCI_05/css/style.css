@@ -137,3 +137,25 @@ a:hover {
     cursor: pointer;
     color: #4e73df;
 }
+
+.navi {
+    font-size: 40px !important;
+    color: red !important;
+}
+
+#table-tailieu th,
+tr,
+td,
+thead {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.baidanhgia:hover {
+    background-color: #f1f6fa;
+    cursor: pointer;
+}
+
+.ocheck {
+    margin-right: 10px;
+}
