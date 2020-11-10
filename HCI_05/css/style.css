@@ -106,6 +106,19 @@
     }
 }
 
+@media (max-width: 634px) {
+    #btn-tracuu {
+        margin-top: 10px !important;
+        display: block;
+    }
+}
+
+@media (min-width: 635px) {
+    #btn-tracuu {
+        margin-top: -2px !important;
+    }
+}
+
 .border-top-primary {
     border-top: .25rem solid #4e73df!important;
 }
