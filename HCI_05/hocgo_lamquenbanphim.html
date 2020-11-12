@@ -47,9 +47,9 @@
             <!-- Divider -->
 
             <!-- Nav Item - Dashboard -->
-            <li id="trangchu" class="nav-item ">
+            <li id="trangchu" class="nav-item">
                 <a class="nav-link" href="index_learn.html">
-                    <i style="color: #fff" class="fas fa-home"></i>
+                    <i style="color: #ffff" class="fas fa-home"></i>
                     <span style="font-weight: 700;" class="menu-item">Trang chủ</span></a>
             </li>
 
@@ -58,7 +58,7 @@
             <!-- Nav Item - Dashboard -->
             <div id="parentContainer">
                 <div class="cardd">
-                    <li id="hocgo" class="nav-item">
+                    <li id="hocgo" class="nav-item active">
                         <a class="nav-link collapsed" data-toggle="collapse" href="#collapseLearn">
                             <i style="color: white;" class="fab fa-leanpub"></i>
                             <span class="menu-item" style="font-weight: 700;">Học gõ</span></a>
@@ -66,11 +66,11 @@
 
                     <!-- Divider -->
                     <!-- <hr class="sidebar-divider"> -->
-                    <div id="collapseLearn" class="collapse" data-parent="#parentContainer">
+                    <div id="collapseLearn" class="collapse show" data-parent="#parentContainer">
                         <!-- Nav Item - Pages Collapse Menu -->
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link collapsed link-item-child" href="#" aria-expanded="true" aria-controls="collapseTwo">
-                                <span class="item-menu-child">Làm quen bàn phím</span>
+                                <span style="color: #fff; font-weight: 700; " class="item-menu-child">Làm quen bàn phím</span>
                             </a>
 
                         </li>
@@ -82,7 +82,7 @@
                             </a>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                                 <div class="bg-white py-2 collapse-inner rounded">
-                                    <a class="collapse-item" href="hocgo_amdau.html">Âm đầu</a>
+                                    <a class="collapse-item " href="hocgo_amdau.html">Âm đầu</a>
                                     <a class="collapse-item" href="cards.html">Âm chính</a>
                                     <a class="collapse-item" href="cards.html">Âm cuối</a>
                                 </div>
@@ -255,7 +255,7 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item active ">
+            <li class="nav-item ">
                 <a class="nav-link" href="soanthao.html">
                     <i style="color: white" class="fas fa-diagnoses"></i>
                     <span class="menu-item" style="font-weight: 700;">Soạn thảo</span></a>
@@ -467,146 +467,222 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid main-content">
-                    <div class="">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary"> <a href="luyentap_amdau_bai1.html">Soạn thảo văn bản</a> </h6>
-                                <div class=" no-arrow">
-                                    <div class="container-fluid">
-                                        <div style="justify-content: space-around;" class="row">
-                                            <button id="bat-ho-tro" onclick="batHoTro()" style="width: fit-content" type="button" class="btn btn-primary btn-go">Bật hỗ trợ</button>
-                                        </div>
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-12 col-md-12 mb-4 ">
 
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4 border-top-primary ">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Giới thiệu</h6>
+                                </div>
+                                <div class="card-body gioithieu-amdau">
+                                    <p style="font-size: 20px; text-align: center; font-weight: 700;">Quy định bàn phím</p>
+
+
+                                    <p>Bàn phím gõ tốc ký tiếng Việt gồm 22 phím + 1 phím dài <br> • 4 phím đặc biệt (S, T, H, N), nhãn trùng nhau nhưng vai trò khác nhau <br> • 1 phím dài để chuyển chế độ gõ số </p>
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 400px;" src="img/lamquenbp1-removebg-preview.png" alt="">
                                     </div>
+                                    <p>• Bàn phím gõ tốc ký tiếng Việt được ánh xạ lên bàn phím Qwerty gồm 24 phím. <br> • Dải số từ 1-0 tương ứng với thanh số trên bàn phím gõ tốc ký tiếng Việt</p>
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 600px;" src="img/lamquenbp2-removebg-preview.png" alt="">
+                                    </div>
+
+
+
+
+                                    <p style="font-size: 20px; text-align: center; font-weight: 700;">Cách đặt ngón tay</p>
+                                    <p style="font-size: 15px; font-weight: 700;">1. Cách đặt ngón tay trong trường hợp gõ từ</p>
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 600px;" src="img/lamquenbp3-removebg-preview.png" alt="">
+                                    </div>
+                                    <p style="font-size: 15px; font-weight: 700;">2. Cách đặt ngón tay trong trường hợp gõ số</p>
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 600px;" src="img/lamquenbp4-removebg-preview.png" alt="">
+                                    </div>
+                                    <p style="font-size: 15px; font-weight: 700;">3. Trật tự của bàn phím gõ tốc ký</p>
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 500px;" src="img/lamquenbp5-removebg-preview.png" alt="">
+                                    </div>
+                                    <p>• Trật tự của bàn phím theo chiều mũi tên (S T K P R H N H S * I U O E A W Y J N G T K), từ trái qua phải, từ trên xuống dưới. <br>• Bất cứ tổ hợp phím nào phù hợp với trật tự này thì đều có thể gõ trong một lượt nhấn.
+                                        <br> • Việc ghi nhớ trật tự các phím là rất quan trọng vì bàn phím gõ tốc ký tiếng Việt gồm nhiều phím trùng nhau, tuy nhiên mỗi vị trí lại có chức năng khác nhau.</p>
+
+
+
+
+
+
+
+
+
                                 </div>
                             </div>
-                            <!-- Card Body -->
-                            <div class="container">
-                                <div style="margin-top: 10px; margin-bottom: 0px;">
 
-                                    <div style="margin-top: 9px;" class="row">
-                                        <div style="margin-bottom: 0rem !important;" class="col-xl-8 col-lg-8 col-md-12 col-sm-12 mb-4">
+
+
+                        </div>
+                        <div class="col-xl-4 col-lg-12 col-md-12 mb-4 ">
+
+                            <!-- Project Card Example -->
+                            <div class="card shadow mb-4 border-top-primary">
+                                <div style="display: flex; justify-content: space-between;" class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Làm quen bàn phím</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">3 bài học</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <div>
                                             <div class="card border-left-primary shadow h-100 py-2">
-                                                <div style="padding-top: 3px;" class="card-body">
+                                                <div class="card-body card-chi-tiet">
                                                     <div class="row no-gutters align-items-center">
                                                         <div class="col mr-2">
-                                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Văn bản</div>
-                                                            <textarea style="width: 100%; height: 300px;" class="form-control soan-thao"></textarea>
-
-
+                                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Bài 1 <i style="color: #F8FF02;" class="fas fa-star"></i><i style="color: #F8FF02;" class="fas fa-star"></i><i style="color: #F8FF02;" class="fas fa-star"></i> </div>
                                                         </div>
-
-
+                                                        <div class="col-auto font-weight-bold">
+                                                            <!-- <i class="fas fa-calendar fa-2x text-gray-300"></i> -->
+                                                            <span>Đã học</span>
+                                                        </div>
                                                     </div>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div style="margin-bottom: 0rem !important" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4">
-                                            <div class="card border-left-success shadow h-100 py-2">
-                                                <div style="padding-top: 3px;" class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Log note</div>
-                                                            <textarea disabled style="width: 100%; height: 300px;" class="form-control soan-thao">14:01:43.497        N S</textarea>
-
-
-
+                                                    <p class="small descript">Làm quen bàn phím (1)</p>
+                                                    <div class="container">
+                                                        <div style="justify-content: space-around;" class="row">
+                                                            <button onclick="window.location.href='hocgo_amdau_bai1.html'" type="button " class="btn btn-primary btn-go ">Học</button>
+                                                            <button onclick="window.location.href='luyentap_amdau_bai1.html'" type="button " class="btn btn-success btn-go ">Luyện tập</button>
                                                         </div>
 
                                                     </div>
-
                                                 </div>
-
                                             </div>
-
                                         </div>
-                                        <img id="imgSoanThao" style="display: block; margin: auto; width: 80% ; display: none;" src="img/banphim-removebg-preview.png" alt="">
+                                        <div style="margin-top: 2px; ">
+                                            <div class="card border-left-primary shadow h-100 py-2 ">
+                                                <div class="card-body card-chi-tiet ">
+                                                    <div class="row no-gutters align-items-center ">
+                                                        <div class="col mr-2 ">
+                                                            <div class="h5 mb-0 font-weight-bold text-gray-800 ">Bài 2 <i style="color: #F8FF02; " class="fas fa-star "></i><i style="color: #F8FF02; " class="fas fa-star "></i><i style="color: #F8FF02;
+                                                                " class="fas fa-star "></i> </div>
+                                                        </div>
+                                                        <div class="col-auto font-weight-bold ">
+                                                            <!-- <i class="fas fa-calendar fa-2x text-gray-300 "></i> -->
+                                                            <span>Đã học</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="small descript ">Làm quen bàn phím (2)</p>
+                                                    <div class="container ">
+                                                        <div style="justify-content: space-around;" class="row">
+                                                            <button onclick="window.location.href='hocgo_amdau_bai1.html'" type="button " class="btn btn-primary btn-go ">Học</button>
+                                                            <button onclick="window.location.href='luyentap_amdau_bai1.html'" type="button " class="btn btn-success btn-go ">Luyện tập</button>
+                                                        </div>
 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="margin-top: 2px; ">
+                                            <div class="card border-left-primary shadow h-100 py-2 ">
+                                                <div class="card-body card-chi-tiet ">
+                                                    <div class="row no-gutters align-items-center ">
+                                                        <div class="col mr-2 ">
+                                                            <div class="h5 mb-0 font-weight-bold text-gray-800 ">Bài 3 <i style="color: #F8FF02; " class="fas fa-star "></i><i style="color: #F8FF02; " class="fas fa-star "></i><i style="color: #F8FF02;
+                                                                " class="fas fa-star "></i> </div>
+                                                        </div>
+                                                        <div class="col-auto font-weight-bold ">
+                                                            <!-- <i class="fas fa-calendar fa-2x text-gray-300 "></i> -->
+                                                            <span>Đã học</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="small descript ">Làm quen bàn phím (3)</p>
+                                                    <div class="container ">
+                                                        <div style="justify-content: space-around;" class="row">
+                                                            <button onclick="window.location.href='hocgo_amdau_bai1.html'" type="button " class="btn btn-primary btn-go ">Học</button>
+                                                            <button onclick="window.location.href='luyentap_amdau_bai1.html'" type="button " class="btn btn-success btn-go ">Luyện tập</button>
+                                                        </div>
 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                     </div>
+
+
 
                                 </div>
-                                <hr style="margin-top: 5px; margin-bottom: 0px;">
-                                <div class="container" style="display: flex;justify-content: space-between; padding-bottom: 10px; padding-top: 4px; background-color: #f8f9fc; border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;">
-                                    <div>
-                                        <button style="width: fit-content; padding: 7px" type="button" class="btn btn-primary btn-go ">Lưu văn bản</button>
-                                    </div>
-                                    <div>
-                                        <button style="width: fit-content; background-color: #f6c23e;padding: 7px 20px" type="button" class="btn btn-primary btn-go ">Tạo mới</button>
-                                    </div>
-                                    <div>
-                                        <button style="width: fit-content;background-color: #1cc88a;padding: 7px 8px" type="button" class="btn btn-primary btn-go " data-toggle="modal" data-target="#modalFinishLearn">Tải văn bản</button>
-                                    </div>
-
-                                </div>
-
-
                             </div>
+
+                            <!-- Color System -->
+
                         </div>
 
-
-
                     </div>
-                    <!-- /.container-fluid -->
+
+
+
+
+
+
+
+
+
+
 
                 </div>
-                <!-- End of Main Content -->
-
-                <!-- Footer -->
-
-                <!-- End of Footer -->
+                <!-- /.container-fluid -->
 
             </div>
-            <!-- End of Content Wrapper -->
+            <!-- End of Main Content -->
+
+
 
         </div>
-        <!-- End of Page Wrapper -->
+        <!-- End of Content Wrapper -->
 
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
+    </div>
+    <!-- End of Page Wrapper -->
 
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex_learn="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thông báo?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded " href="#page-top ">
+        <i class="fas fa-angle-up "></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade " id="logoutModal " tabindex_learn="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Thông báo?</h5>
+                    <button class="close " type="button " data-dismiss="modal " aria-label="Close ">
+            <span aria-hidden="true ">×</span>
           </button>
-                    </div>
-                    <div class="modal-body">Bạn có chắc chắn muốn đăng xuất không?</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
-                        <a class="btn btn-primary" href="index.html">Đăng xuất</a>
-                    </div>
+                </div>
+                <div class="modal-body ">Bạn có chắc chắn muốn đăng xuất không?</div>
+                <div class="modal-footer ">
+                    <button class="btn btn-secondary " type="button " data-dismiss="modal ">Hủy</button>
+                    <a class="btn btn-primary " href="index.html ">Đăng xuất</a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
-        <!-- Page level plugins -->
-        <script src="vendor/chart.js/Chart.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
 
-        <!-- Page level custom scripts -->
-        <script src="js/demo/chart-area-demo.js"></script>
-        <script src="js/demo/chart-pie-demo.js"></script>
-        <script src="js/common.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js "></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js "></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js "></script>
+    <script src="js/demo/chart-pie-demo.js "></script>
+    <script src="js/common.js "></script>
 
 </body>
 

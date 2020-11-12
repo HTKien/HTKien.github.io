@@ -24,6 +24,7 @@
     <link rel="shortcut icon" type="png" href="img/favi.png" />
 
 
+
 </head>
 
 <body id="page-top">
@@ -47,7 +48,7 @@
             <!-- Divider -->
 
             <!-- Nav Item - Dashboard -->
-            <li id="trangchu" class="nav-item ">
+            <li id="trangchu" class="nav-item  ">
                 <a class="nav-link" href="index_learn.html">
                     <i style="color: #fff" class="fas fa-home"></i>
                     <span style="font-weight: 700;" class="menu-item">Trang chủ</span></a>
@@ -247,7 +248,7 @@
             </div>
 
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="danhgia.html">
                     <i style="color: white;" class="fab fa-hackerrank"></i>
                     <span class="menu-item" style="font-weight: 700;">Đánh giá</span></a>
@@ -255,7 +256,7 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item active ">
+            <li class="nav-item ">
                 <a class="nav-link" href="soanthao.html">
                     <i style="color: white" class="fas fa-diagnoses"></i>
                     <span class="menu-item" style="font-weight: 700;">Soạn thảo</span></a>
@@ -471,28 +472,34 @@
                         <div class="card shadow mb-4">
                             <!-- Card Header - Dropdown -->
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary"> <a href="luyentap_amdau_bai1.html">Soạn thảo văn bản</a> </h6>
-                                <div class=" no-arrow">
-                                    <div class="container-fluid">
-                                        <div style="justify-content: space-around;" class="row">
-                                            <button id="bat-ho-tro" onclick="batHoTro()" style="width: fit-content" type="button" class="btn btn-primary btn-go">Bật hỗ trợ</button>
-                                        </div>
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Bài đánh giá gõ đoạn văn</div>
 
-                                    </div>
-                                </div>
+                                <h6 class="m-0 font-weight-bold text-warning    "> Thời gian còn lại: 2 phút 14 giây 63 </h6>
+
+
+
                             </div>
                             <!-- Card Body -->
                             <div class="container">
                                 <div style="margin-top: 10px; margin-bottom: 0px;">
 
                                     <div style="margin-top: 9px;" class="row">
-                                        <div style="margin-bottom: 0rem !important;" class="col-xl-8 col-lg-8 col-md-12 col-sm-12 mb-4">
+                                        <div style="margin-bottom: 0rem !important;" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-4">
                                             <div class="card border-left-primary shadow h-100 py-2">
                                                 <div style="padding-top: 3px;" class="card-body">
                                                     <div class="row no-gutters align-items-center">
                                                         <div class="col mr-2">
-                                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Văn bản</div>
-                                                            <textarea style="width: 100%; height: 300px;" class="form-control soan-thao"></textarea>
+                                                            <div class="text-xs font-weight-bold text-success  mb-1">
+                                                                <h6 class="m-0 font-weight-bold text-primary"> Gõ lại đoạn văn sau theo cơ chế Tốc ký </h6>
+
+                                                            </div>
+                                                            <p style="font-size: 14px;">
+                                                                "Chúng ta không sợ sai lầm, chỉ sợ phạm sai lầm mà không quyết tâm sửa chữa. Muốn sửa chữa cho tốt thì phải sẵn sàng nghe quần chúng phê bình và thật thà tự phê bình."
+                                                            </p>
+
+
+
+                                                            <textarea style="width: 100%; height: 260px;" class="form-control soan-thao"></textarea>
 
 
                                                         </div>
@@ -504,25 +511,7 @@
 
                                             </div>
                                         </div>
-                                        <div style="margin-bottom: 0rem !important" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4">
-                                            <div class="card border-left-success shadow h-100 py-2">
-                                                <div style="padding-top: 3px;" class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Log note</div>
-                                                            <textarea disabled style="width: 100%; height: 300px;" class="form-control soan-thao">14:01:43.497        N S</textarea>
 
-
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
                                         <img id="imgSoanThao" style="display: block; margin: auto; width: 80% ; display: none;" src="img/banphim-removebg-preview.png" alt="">
 
 
@@ -533,13 +522,11 @@
                                 <hr style="margin-top: 5px; margin-bottom: 0px;">
                                 <div class="container" style="display: flex;justify-content: space-between; padding-bottom: 10px; padding-top: 4px; background-color: #f8f9fc; border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;">
                                     <div>
-                                        <button style="width: fit-content; padding: 7px" type="button" class="btn btn-primary btn-go ">Lưu văn bản</button>
+                                        <button style="width: fit-content; padding: 7px" type="button" class="btn btn-primary btn-go ">Bắt đầu lại</button>
                                     </div>
+
                                     <div>
-                                        <button style="width: fit-content; background-color: #f6c23e;padding: 7px 20px" type="button" class="btn btn-primary btn-go ">Tạo mới</button>
-                                    </div>
-                                    <div>
-                                        <button style="width: fit-content;background-color: #1cc88a;padding: 7px 8px" type="button" class="btn btn-primary btn-go " data-toggle="modal" data-target="#modalFinishLearn">Tải văn bản</button>
+                                        <button style="width: fit-content;background-color: #1cc88a;padding: 7px 15px" type="button" class="btn btn-primary btn-go " data-toggle="modal" data-target="#modalFinishLearn">Nộp bài</button>
                                     </div>
 
                                 </div>
@@ -551,62 +538,147 @@
 
 
                     </div>
-                    <!-- /.container-fluid -->
+                    <!-- Page Heading -->
+
+
+
+
+
+
+
+
 
                 </div>
-                <!-- End of Main Content -->
-
-                <!-- Footer -->
-
-                <!-- End of Footer -->
+                <!-- /.container-fluid -->
 
             </div>
-            <!-- End of Content Wrapper -->
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+
+            <!-- End of Footer -->
 
         </div>
-        <!-- End of Page Wrapper -->
+        <!-- End of Content Wrapper -->
 
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
+    </div>
+    <!-- End of Page Wrapper -->
 
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex_learn="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thông báo?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded " href="#page-top ">
+        <i class="fas fa-angle-up "></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade " id="logoutModal " tabindex_learn="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Thông báo?</h5>
+                    <button class="close " type="button " data-dismiss="modal " aria-label="Close ">
+            <span aria-hidden="true ">×</span>
           </button>
-                    </div>
-                    <div class="modal-body">Bạn có chắc chắn muốn đăng xuất không?</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
-                        <a class="btn btn-primary" href="index.html">Đăng xuất</a>
-                    </div>
+                </div>
+                <div class="modal-body ">Bạn có chắc chắn muốn đăng xuất không?</div>
+                <div class="modal-footer ">
+                    <button class="btn btn-secondary " type="button " data-dismiss="modal ">Hủy</button>
+                    <a class="btn btn-primary " href="index.html ">Đăng xuất</a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div class="modal fade" id="modalFinishLearn">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
 
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <div style="margin-bottom: -0.5rem!important;" class="card shadow mb-4 border-top-primary">
+                    <div style="display: flex; justify-content:center" class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Bài đánh giá: Gõ đoạn văn</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="">
+                            <div>
 
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js"></script>
+                                <table style="width: 80%; margin: auto;" id="table-tailieu" class="table table-bordered table-striped">
+                                    <thead style="text-align: center; background-color: #1cc88a;" class="badge-info">
+                                        <tr>
+                                            <th>Tiêu chí</th>
+                                            <th>Kết quả</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="text-align: center;">
+                                        <tr>
+                                            <td>Tổng số từ</td>
+                                            <td>11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gõ đúng</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bỏ qua</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gõ sai</td>
+                                            <td>1</td>
+                                        </tr>
 
-        <!-- Page level plugins -->
-        <script src="vendor/chart.js/Chart.min.js"></script>
 
-        <!-- Page level custom scripts -->
-        <script src="js/demo/chart-area-demo.js"></script>
-        <script src="js/demo/chart-pie-demo.js"></script>
-        <script src="js/common.js"></script>
+                                    </tbody>
+                                </table>
+
+
+                                <h4 style="margin-top: 20px;" class="small font-weight-bold">Gõ thành thạo <span class="float-right">70%</span></h4>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h4 class="small font-weight-bold">Tốc độ gõ trung bình <span class="float-right">15 từ/phút</span></h4>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Bắt đầu lại</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js "></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js "></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js "></script>
+    <script src="js/demo/chart-pie-demo.js "></script>
+    <script src="js/common.js "></script>
 
 </body>
 
