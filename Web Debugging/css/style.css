@@ -22,6 +22,8 @@ body {
       display: flex; }
       body .welcome .content .left {
         width: 60%; }
+        body .welcome .content .left .title-main {
+          font-size: 60px; }
         body .welcome .content .left button {
           border: none;
           outline: none;
@@ -225,6 +227,8 @@ body {
   body .welcome .content .left {
     width: 100%;
     text-align: center; }
+    body .welcome .content .left .title-main {
+      font-size: 40px; }
   body .welcome .content .right {
     width: 100%; } }
 
@@ -266,3 +270,7 @@ body {
       width: 100%; }
     body .feedback .box .right {
       width: calc(100% - 20px); } }
+
+@media screen and (max-width: 799px) {
+  body .buy .box {
+    width: calc(100% - 60px); } }
