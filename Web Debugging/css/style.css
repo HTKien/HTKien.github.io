@@ -148,71 +148,75 @@ body {
           background-color: white;
           padding: 10px;
           border-radius: 10px;
-          margin-top: 0px; }
-  body .buy {
-    background-color: #202D4E;
-    width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px; }
-    body .buy .title {
-      font-size: 40px;
-      font-weight: 800;
-      color: white;
-      text-align: center; }
-    body .buy .box {
-      width: 350px;
-      background-color: #E1EFEC;
+          margin-top: 0px;
+          box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.06); }
+
+.buy {
+  background-color: #202D4E;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .buy .title {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    text-align: center; }
+  .buy .box {
+    width: 350px;
+    background-color: #E1EFEC;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px; }
+    .buy .box img {
+      width: 100px;
+      display: block;
       margin: auto;
-      padding: 20px;
       border-radius: 5px; }
-      body .buy .box img {
-        width: 100px;
-        display: block;
-        margin: auto;
-        border-radius: 5px; }
-      body .buy .box button {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        background-color: #4166D2;
-        color: white;
-        font-size: 15px;
-        font-weight: 700;
-        border-radius: 5px;
-        width: 100%; }
-  body .feedback {
-    width: 100%;
-    background-color: #E6F4F1;
-    padding-top: 60px;
-    padding-bottom: 60px; }
-    body .feedback .title {
-      font-size: 40px;
-      font-weight: 800;
-      color: #4166D2;
-      text-align: center; }
-    body .feedback .box {
-      width: 1000px;
-      background-color: white;
-      margin: auto;
-      display: flex;
-      padding: 20px;
-      border-radius: 10px; }
-      body .feedback .box .left {
-        width: 75%;
-        display: flex; }
-        body .feedback .box .left img {
-          min-width: 120px;
-          height: 120px;
-          border-radius: 120px; }
-      body .feedback .box .right {
-        width: 25%;
-        padding: 10px;
-        background-color: #E1EFEC;
-        border-radius: 5px; }
-        body .feedback .box .right ul {
-          line-height: 25px; }
+    .buy .box button {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: #4166D2;
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 5px;
+      width: 100%; }
+
+.feedback {
+  width: 100%;
+  background-color: #E6F4F1;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .feedback .title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #4166D2;
+    text-align: center; }
+  .feedback .box {
+    width: 1000px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05); }
+    .feedback .box .left {
+      width: 75%;
+      display: flex; }
+      .feedback .box .left img {
+        min-width: 120px;
+        height: 120px;
+        border-radius: 120px; }
+    .feedback .box .right {
+      width: 25%;
+      padding: 10px;
+      background-color: #E1EFEC;
+      border-radius: 5px; }
+      .feedback .box .right ul {
+        line-height: 25px; }
 
 @media screen and (min-width: 1000px) {
   body .welcome .content {
@@ -276,7 +280,11 @@ body {
     width: calc(100% - 80px);
     flex-direction: column; }
     body .feedback .box .left {
-      width: 100%; }
+      width: 100%;
+      flex-direction: column; }
+      body .feedback .box .left img {
+        width: 100px;
+        margin-bottom: 20px; }
     body .feedback .box .right {
       width: calc(100% - 20px); } }
 
