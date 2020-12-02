@@ -27,7 +27,7 @@
 
 </head>
 
-<body id="page-top">
+<body onload="setFocus()" id="page-top">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -469,15 +469,15 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid main-content">
                     <div class="">
-                        <div class="card shadow mb-4">
+                        <div style="margin-bottom: 0rem !important;" class="card shadow mb-4">
                             <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <div style="padding-top: 0.3rem !important;padding-bottom: 0.5rem !important;" class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 <h6 class="m-0 font-weight-bold text-primary"> <a href="hocgo_amdau_bai1.html">Học gõ / Học gõ âm / Học gõ âm đầu / Bài 1: Nhóm âm đầu cùng dạng chữ, cùng phát âm</a> </h6>
                                 <div class=" no-arrow">
-                                    <div class="container-fluid">
+                                    <div style="padding-right: 16px;" class="container-fluid">
                                         <div style="justify-content: space-around;" class="row">
                                             <button style="width: fit-content" type="button" class="btn btn-primary btn-go">Bắt đầu lại</button>
-                                            <button onclick="window.location.href='luyentap_amdau_bai1.html';" style="width: fit-content; margin-left: 3px;" type="button" class="btn btn-success btn-go">Luyện tập ngay</button>
+                                            <button onclick="window.location.href='luyentap_amdau_bai1.html';" style="width: fit-content; margin-left: 3px;" type="button" class="btn btn-success btn-go">Luyện tập</button>
                                         </div>
 
                                     </div>
@@ -486,15 +486,16 @@
                             <!-- Card Body -->
                             <div class="container">
                                 <div style="margin-top: 10px; margin-bottom: 10px;">
-                                    <div class="card border-left-success shadow h-100 py-2">
+                                    <div class="card     shadow h-100 py-2">
                                         <div class="card-body card-chi-tiet">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col mr-2">
-                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Hãy gõ âm đầu: "K"</div>
+                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Hãy gõ âm đầu: "k" - Phím tốc ký: "W" <input id="fname" style="width: 500px; margin-left: 20px; outline: none; background-color: #F8F9FC; border: 1px solid rgb(168, 168, 168); border-radius: 4px;" type="text">                                                        </div>
+
                                                 </div>
                                                 <div class="col-auto font-weight-bold">
                                                     <!-- <i class="fas fa-calendar fa-2x text-gray-300"></i> -->
-                                                    <span> <a href="">Bỏ qua </a> </span>
+                                                    <span><button id="btn_bo_qua" onclick="window.location.href='hocgo_amdau_bai1_amS.html';" style="padding-top: 0px; padding-bottom: 0px;" type="button" class="btn btn-warning ">Bỏ qua</button> </span>
                                                 </div>
                                             </div>
 
@@ -505,7 +506,7 @@
 
                                     </div>
                                     <div>
-                                        <img style="display: block; margin: auto; width: 80%" src="img/tocky-removebg-preview.png" alt="">
+                                        <img style="display: block; margin: auto; width: 70%" src="img/tocky-removebg-preview.png" alt="">
                                     </div>
 
 
@@ -669,6 +670,17 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        $("#fname").keyup(function(event) {
+            if (event.keyCode === 87) {
+                $("#btn_bo_qua").click();
+            }
+        });
+
+        function setFocus() {
+            document.getElementById("fname").focus();
+        }
+    </script>
 
 </body>
 
