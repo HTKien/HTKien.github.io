@@ -26,13 +26,13 @@ function batHoTro() {
     if (document.getElementById('bat-ho-tro').textContent === "Bật hỗ trợ") {
         document.getElementById('bat-ho-tro').innerHTML = "Tắt hỗ trợ";
         document.getElementById("imgSoanThao").style.display = 'block';
-        document.getElementsByClassName('soan-thao')[0].style.height = "150px";
-        document.getElementsByClassName('soan-thao')[1].style.height = "150px";
+        document.getElementsByClassName('soan-thao')[0].style.height = "152px";
+        document.getElementsByClassName('soan-thao')[1].style.height = "152px";
     } else {
         document.getElementById('bat-ho-tro').innerHTML = "Bật hỗ trợ";
         document.getElementById("imgSoanThao").style.display = 'none';
-        document.getElementsByClassName('soan-thao')[0].style.height = "300px";
-        document.getElementsByClassName('soan-thao')[1].style.height = "300px";
+        document.getElementsByClassName('soan-thao')[0].style.height = "330px";
+        document.getElementsByClassName('soan-thao')[1].style.height = "330px";
     }
 }
 
