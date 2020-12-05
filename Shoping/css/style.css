@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+:root {
+  --familyColor: #3cb878; }
+
+li {
+  cursor: pointer; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+  body .container {
+    padding-left: 30px;
+    padding-right: 30px; }
+  body header .container {
+    width: 100%;
+    display: flex;
+    height: 100px; }
+    body header .container .logo {
+      width: 20%;
+      color: var(--familyColor);
+      font-size: 24px;
+      line-height: 100px;
+      font-weight: 700;
+      cursor: pointer; }
+    body header .container .menu {
+      width: 60%; }
+      body header .container .menu ul {
+        list-style-type: none;
+        text-transform: uppercase;
+        line-height: 100px;
+        font-size: 16px;
+        text-align: center; }
+        body header .container .menu ul .active {
+          color: var(--familyColor); }
+        body header .container .menu ul li {
+          display: inline;
+          padding-left: 15px;
+          padding-right: 15px;
+          font-weight: 500;
+          cursor: pointer; }
+    body header .container .bar {
+      width: 20%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      body header .container .bar i {
+        margin-left: 30px;
+        cursor: pointer; }
+      body header .container .bar .cart {
+        position: relative; }
+        body header .container .bar .cart .child {
+          font-family: 'Roboto', sans-serif;
+          position: absolute;
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px;
+          top: -17px;
+          left: 10px;
+          background-color: var(--familyColor);
+          padding: 5px 7px;
+          border-radius: 50%; }
+  body slider {
+    position: relative; }
+    body slider img {
+      width: 100%; }
+    body slider p {
+      position: absolute;
+      top: -350px;
+      left: 100px;
+      font-size: 60px;
+      text-transform: uppercase;
+      font-weight: 800; }
+      body slider p span {
+        color: var(--familyColor); }
+  body best-seller ul,
+  body feature ul {
+    margin-top: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    body best-seller ul .first,
+    body feature ul .first {
+      display: flex;
+      align-items: center; }
+      body best-seller ul .first .title,
+      body feature ul .first .title {
+        font-size: 26px;
+        font-weight: 800;
+        text-transform: uppercase; }
+      body best-seller ul .first .des,
+      body feature ul .first .des {
+        color: var(--familyColor);
+        font-family: 'Dancing Script', cursive;
+        font-size: 20px;
+        margin-bottom: 20px; }
+      body best-seller ul .first .more,
+      body feature ul .first .more {
+        font-size: 15px; }
+    body best-seller ul li,
+    body feature ul li {
+      height: 383px;
+      width: 18%; }
+      body best-seller ul li img,
+      body feature ul li img {
+        width: 100%; }
+      body best-seller ul li .name,
+      body feature ul li .name {
+        font-size: 18px;
+        margin-top: 10px; }
+      body best-seller ul li .cost,
+      body feature ul li .cost {
+        margin-top: 5px;
+        font-size: 18px;
+        color: var(--familyColor); }
+    body best-seller ul .card,
+    body feature ul .card {
+      position: relative; }
+      body best-seller ul .card .shop,
+      body feature ul .card .shop {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 8px;
+        width: 0px;
+        overflow: hidden; }
+        body best-seller ul .card .shop i,
+        body feature ul .card .shop i {
+          background-color: var(--familyColor);
+          color: #fff;
+          margin-top: 8px;
+          padding: 7px 5px 7px 5px; }
+    body best-seller ul .card:hover .shop,
+    body feature ul .card:hover .shop {
+      width: fit-content; }
+  body offer ul {
+    margin-top: 100px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; }
+    body offer ul li {
+      background-color: #f5f6f9;
+      width: 25%;
+      height: 200px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column; }
+      body offer ul li img {
+        margin-bottom: 20px; }
+      body offer ul li .title {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 23px; }
+      body offer ul li .child {
+        color: gray;
+        margin-top: 10px; }
+  body summer ul {
+    list-style-type: none;
+    display: flex; }
+    body summer ul li {
+      width: 33.33%; }
+      body summer ul li img {
+        width: 100%; }
+  body feature .container {
+    margin-top: 100px; }
+    body feature .container .title {
+      font-size: 40px;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center; }
+    body feature .container .child {
+      color: var(--familyColor);
+      font-family: 'Dancing Script', cursive;
+      font-size: 20px;
+      margin-bottom: 50px;
+      text-align: center; }
+    body feature .container .row2 {
+      margin-top: 50px; }
+  body about {
+    display: flex;
+    margin-top: 100px; }
+    body about .form {
+      width: 50%;
+      height: 300px;
+      background-color: #323446;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column; }
+      body about .form .title {
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 20px; }
+      body about .form .more {
+        color: #fff;
+        text-align: center;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-bottom: 20px; }
+      body about .form input {
+        width: 400px;
+        height: 50px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        padding-left: 20px; }
+      body about .form button {
+        background-color: var(--familyColor);
+        border: none;
+        outline: none;
+        color: #fff;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        margin-left: 5px; }
+    body about .brand {
+      width: 50%;
+      height: 300px;
+      background-color: #f5f6f9; }
+      body about .brand ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px; }
+        body about .brand ul li img {
+          width: 100px; }
+  body footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    font-size: 13px;
+    height: 50px; }
