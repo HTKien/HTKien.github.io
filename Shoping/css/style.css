@@ -62,18 +62,21 @@ body {
           background-color: var(--familyColor);
           padding: 5px 7px;
           border-radius: 50%; }
-  body slider {
-    position: relative; }
-    body slider img {
+  body slider .banner {
+    position: relative;
+    height: fit-content; }
+    body slider .banner img {
       width: 100%; }
-    body slider p {
+    body slider .banner p {
       position: absolute;
-      top: -350px;
-      left: 100px;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 50px;
       font-size: 60px;
       text-transform: uppercase;
       font-weight: 800; }
-      body slider p span {
+      body slider .banner p span {
         color: var(--familyColor); }
   body best-seller ul,
   body feature ul {
