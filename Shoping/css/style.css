@@ -1,3 +1,127 @@
+@media screen and (min-width: 1200px) {
+  feature ul li {
+    height: 380px !important; } }
+
+@media screen and (max-width: 1119px) {
+  body slider .banner p {
+    font-size: 50px !important; }
+  body best-seller ul .first .title {
+    font-size: 20px !important; }
+  body best-seller ul .first .more {
+    font-size: 14px !important; }
+  body best-seller ul li {
+    height: 300px !important;
+    width: 19% !important; }
+    body best-seller ul li .name,
+    body best-seller ul li .cost {
+      font-size: 15px !important; } }
+
+@media screen and (max-width: 991px) {
+  body header .container .menu {
+    width: calc(100% - 130px) !important;
+    justify-content: center; }
+  body header .container .logo {
+    display: none !important; }
+  body slider .banner p {
+    font-size: 30px !important; }
+  body best-seller ul {
+    margin-top: 0px !important; }
+    body best-seller ul .first {
+      width: 100% !important;
+      text-align: center;
+      height: 200px !important; }
+    body best-seller ul li {
+      width: 23% !important;
+      height: 350px !important; }
+  body offer ul {
+    margin-top: 30px !important; }
+    body offer ul li {
+      height: 150px !important; }
+      body offer ul li img {
+        width: 30px !important;
+        height: 30px !important; }
+      body offer ul li .title {
+        font-size: 15px !important; }
+      body offer ul li .child {
+        font-size: 13px !important; }
+  body about .form .title {
+    font-size: 20px !important; }
+  body about .form .more {
+    font-size: 13px !important; }
+  body about .form input,
+  body about .form button {
+    width: 300px !important;
+    display: block !important;
+    margin: auto !important;
+    margin-bottom: 5px !important; }
+  body about .brand ul li img {
+    width: 70px !important; }
+  body feature .container {
+    margin-top: 50px !important; }
+  body feature .title {
+    font-size: 30px !important; }
+  body feature ul li {
+    width: 24% !important;
+    height: 380px !important; }
+  body feature ul li:first-child {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  about .form {
+    width: 100% !important; }
+    about .form .title {
+      font-size: 20px !important; }
+    about .form .more {
+      font-size: 13px !important; }
+    about .form input,
+    about .form button {
+      width: 300px !important;
+      display: block !important;
+      margin: auto !important;
+      margin-bottom: 5px !important; }
+  about .brand {
+    width: 100% !important; }
+    about .brand ul li img {
+      width: 70px !important; }
+  footer {
+    height: auto !important; }
+    footer p {
+      width: 100% !important;
+      text-align: center !important;
+      padding: 20px !important; }
+    footer img {
+      padding-bottom: 20px !important; } }
+
+@media screen and (max-width: 575px) {
+  body header .container .logo {
+    display: block !important;
+    font-size: 20px !important;
+    width: 80% !important; }
+  body header .container .menu {
+    display: none !important; }
+  body header .container .bar {
+    width: 20% !important; }
+    body header .container .bar .cart,
+    body header .container .bar .search {
+      display: none !important; }
+  body slider .banner p {
+    font-size: 20px !important;
+    left: 20px !important; }
+  body best-seller ul li {
+    width: 48% !important; }
+  body offer ul li {
+    width: 50% !important; }
+  body summer ul li {
+    width: 100% !important;
+    margin-bottom: -5px !important; }
+  body feature .container ul li {
+    width: 48% !important; }
+  body feature .container ul li:first-child {
+    display: block !important; }
+  body about .form input,
+  body about .form button {
+    width: 200px !important; } }
+
 * {
   padding: 0;
   margin: 0;
@@ -19,14 +143,14 @@ body {
     display: flex;
     height: 100px; }
     body header .container .logo {
-      width: 20%;
+      width: 225px;
       color: var(--familyColor);
       font-size: 24px;
       line-height: 100px;
       font-weight: 700;
       cursor: pointer; }
     body header .container .menu {
-      width: 60%; }
+      width: calc(100% - 355px); }
       body header .container .menu ul {
         list-style-type: none;
         text-transform: uppercase;
@@ -42,7 +166,7 @@ body {
           font-weight: 500;
           cursor: pointer; }
     body header .container .bar {
-      width: 20%;
+      width: 130px;
       display: flex;
       justify-content: flex-end;
       align-items: center; }
@@ -80,10 +204,12 @@ body {
         color: var(--familyColor); }
   body best-seller ul,
   body feature ul {
+    width: 100%;
     margin-top: 100px;
     list-style: none;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     body best-seller ul .first,
     body feature ul .first {
       display: flex;
@@ -104,7 +230,7 @@ body {
         font-size: 15px; }
     body best-seller ul li,
     body feature ul li {
-      height: 383px;
+      height: 380px;
       width: 18%; }
       body best-seller ul li img,
       body feature ul li img {
@@ -143,7 +269,8 @@ body {
     margin-top: 100px;
     list-style-type: none;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     body offer ul li {
       background-color: #f5f6f9;
       width: 25%;
@@ -154,7 +281,9 @@ body {
       display: flex;
       flex-direction: column; }
       body offer ul li img {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        height: 40px;
+        width: 40px; }
       body offer ul li .title {
         text-transform: uppercase;
         font-weight: 800;
@@ -164,7 +293,8 @@ body {
         margin-top: 10px; }
   body summer ul {
     list-style-type: none;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     body summer ul li {
       width: 33.33%; }
       body summer ul li img {
@@ -182,14 +312,13 @@ body {
       font-size: 20px;
       margin-bottom: 50px;
       text-align: center; }
-    body feature .container .row2 {
-      margin-top: 50px; }
   body about {
     display: flex;
-    margin-top: 100px; }
+    margin-top: 100px;
+    flex-wrap: wrap; }
     body about .form {
       width: 50%;
-      height: 300px;
+      height: 200px;
       background-color: #323446;
       align-items: center;
       justify-content: center;
@@ -206,8 +335,8 @@ body {
         padding-right: 60px;
         margin-bottom: 20px; }
       body about .form input {
-        width: 400px;
-        height: 50px;
+        width: 300px;
+        height: 30px;
         border: none;
         outline: none;
         font-size: 15px;
@@ -217,24 +346,28 @@ body {
         border: none;
         outline: none;
         color: #fff;
-        width: 200px;
-        height: 50px;
+        width: 150px;
+        height: 30px;
         cursor: pointer;
         margin-left: 5px; }
     body about .brand {
       width: 50%;
-      height: 300px;
+      height: 200px;
       background-color: #f5f6f9; }
       body about .brand ul {
+        position: relative;
         display: flex;
         list-style-type: none;
         justify-content: space-around;
         align-items: center;
-        margin-top: 100px; }
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
         body about .brand ul li img {
           width: 100px; }
   body footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: #000000;
