@@ -25,14 +25,16 @@ function playGame() {
 function batHoTro() {
     if (document.getElementById('bat-ho-tro').textContent === "Bật hỗ trợ") {
         document.getElementById('bat-ho-tro').innerHTML = "Tắt hỗ trợ";
-        document.getElementById("imgSoanThao").style.display = 'block';
-        document.getElementsByClassName('soan-thao')[0].style.height = "152px";
-        document.getElementsByClassName('soan-thao')[1].style.height = "152px";
+        document.getElementsByClassName("keyboard-tocky")[0].style.display = 'block';
+        document.getElementsByClassName("keyboad-right")[0].style.display = 'block';
+        document.getElementsByClassName('soan-thao')[0].style.height = "185px";
+        document.getElementsByClassName('soan-thao')[1].style.height = "185px";
     } else {
         document.getElementById('bat-ho-tro').innerHTML = "Bật hỗ trợ";
-        document.getElementById("imgSoanThao").style.display = 'none';
-        document.getElementsByClassName('soan-thao')[0].style.height = "330px";
-        document.getElementsByClassName('soan-thao')[1].style.height = "330px";
+        document.getElementsByClassName("keyboard-tocky")[0].style.display = 'none';
+        document.getElementsByClassName("keyboad-right")[0].style.display = 'none';
+        document.getElementsByClassName('soan-thao')[0].style.height = "410px";
+        document.getElementsByClassName('soan-thao')[1].style.height = "410px";
     }
 }
 

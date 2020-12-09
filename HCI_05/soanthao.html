@@ -19,6 +19,7 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyboard.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="png" href="img/favi.png" />
@@ -455,91 +456,222 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid main-content">
-                    <div class="">
-                        <div style="margin-bottom: 0.5rem!important;" class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary"> <a href="luyentap_amdau_bai1.html">Soạn thảo văn bản</a> </h6>
-                                <div class=" no-arrow">
-                                    <div class="container-fluid">
-                                        <div style="justify-content: space-around;" class="row">
-                                            <button id="bat-ho-tro" onclick="batHoTro()" style="width: fit-content" type="button" class="btn btn-primary btn-go">Bật hỗ trợ</button>
+
+                    <!-- Card Header - Dropdown -->
+
+                    <!-- Card Body -->
+                    <div>
+                        <div style="margin-top: 10px; margin-bottom: 0px;">
+
+                            <div style="margin-top: 9px;" class="row">
+                                <div style="margin-bottom: 0rem !important;" class="col-xl-8 col-lg-8 col-md-12 col-sm-12 mb-4">
+                                    <div class="card  shadow h-100 py-2">
+                                        <div style="padding-top: 3px;" class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div style="margin-right: 0rem!important;" class="col mr-2">
+                                                    <div style="display: flex; align-items: center; justify-content: space-between;" class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                        <div>Văn bản</div>
+                                                        <div>
+                                                            <button id="bat-ho-tro" onclick="batHoTro()" style="width: fit-content;margin-top: -8px;" type="button" class="btn btn-primary btn-go">Bật hỗ trợ</button>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <textarea style="width: 100%; height: 410px; " class="form-control soan-thao"></textarea>
+
+
+                                                </div>
+
+
+                                            </div>
+
                                         </div>
 
                                     </div>
                                 </div>
+                                <div style="margin-bottom: 0rem !important" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4">
+                                    <div class="card  shadow h-100 py-2">
+                                        <div style="padding-top: 3px;" class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div style="margin-right: 0rem!important;" class="col mr-2">
+                                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Lịch sử gõ</div>
+                                                    <textarea disabled style="width: 100%; height: 410px;" class="form-control soan-thao">14:01:43.497        N S</textarea>
+
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+
+
+
+                                </div>
+
+
+
                             </div>
-                            <!-- Card Body -->
-                            <div class="container">
-                                <div style="margin-top: 10px; margin-bottom: 0px;">
 
-                                    <div style="margin-top: 9px;" class="row">
-                                        <div style="margin-bottom: 0rem !important;" class="col-xl-8 col-lg-8 col-md-12 col-sm-12 mb-4">
-                                            <div class="card  shadow h-100 py-2">
-                                                <div style="padding-top: 3px;" class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Văn bản</div>
-                                                            <textarea style="width: 100%; height: 330px;" class="form-control soan-thao"></textarea>
-
-
-                                                        </div>
-
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
+                        </div>
+                        <!-- Bản phím tốc ký -->
+                        <div style="display: flex; justify-content: space-between;">
+                            <div style="display: none;" class="keyboard-tocky">
+                                <div class="row">
+                                    <div class="keyboard">
+                                        <div class="key-tilda" data-key="Backquote">~<br>`</div>
+                                        <div class="key-1" data-key="Digit1">!<br>1</div>
+                                        <div class="key-2" data-key="Digit2">@<br>2</div>
+                                        <div class="key-3" data-key="Digit3">#<br>3</div>
+                                        <div class="key-4" data-key="Digit4">$<br>4</div>
+                                        <div class="key-5" data-key="Digit5">%<br>5</div>
+                                        <div class="key-6" data-key="Digit6">^<br>6</div>
+                                        <div class="key-7" data-key="Digit7">&<br>7</div>
+                                        <div class="key-8" data-key="Digit8">*<br>8</div>
+                                        <div class="key-9" data-key="Digit9">(<br>9</div>
+                                        <div class="key-0" data-key="Digit0">)<br>0</div>
+                                        <div class="key-minus" data-key="Minus">-<br>_</div>
+                                        <div class="key-plus" data-key="Equal">+<br>=</div>
+                                        <div class="key-backspace" data-key="Backspace">
+                                            <ion-icon name="ios-arrow-round-back"></ion-icon>
                                         </div>
-                                        <div style="margin-bottom: 0rem !important" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4">
-                                            <div class="card  shadow h-100 py-2">
-                                                <div style="padding-top: 3px;" class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Lịch sử gõ</div>
-                                                            <textarea disabled style="width: 100%; height: 330px;" class="form-control soan-thao">14:01:43.497        N S</textarea>
 
-
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
+                                        <div class="key-tab" data-key="Tab">
+                                            <ion-icon name="ios-swap"></ion-icon>
                                         </div>
-                                        <img id="imgSoanThao" style="display: block; margin: auto; width: 80% ; display: none;" src="img/banphim-removebg-preview.png" alt="">
+                                        <div class="key-q" data-key="KeyQ">Q</div>
+                                        <div class="key-w" data-key="KeyW">W</div>
+                                        <div class="key-e" data-key="KeyE">E</div>
+                                        <div class="key-r" data-key="KeyR">R</div>
+                                        <div class="key-t" data-key="KeyT">T</div>
+                                        <div class="key-y" data-key="KeyY">Y</div>
+                                        <div class="key-u" data-key="KeyU">U</div>
+                                        <div class="key-i" data-key="KeyI">I</div>
+                                        <div class="key-o" data-key="KeyO">O</div>
+                                        <div class="key-p" data-key="KeyP">P</div>
+                                        <div class="key-bracket-open" data-key="BracketLeft">{<br>[</div>
+                                        <div class="key-bracket-close" data-key="BracketRight">}<br>]</div>
+                                        <div class="key-left-slash" data-key="Backslash">|<br>\</div>
 
+                                        <div class="key-caps-lock" data-key="CapsLock">Caps Lock</div>
+                                        <div class="key-a" data-key="KeyA">A</div>
+                                        <div class="key-s" data-key="KeyS">S</div>
+                                        <div class="key-d" data-key="KeyD">D</div>
+                                        <div class="key-f" data-key="KeyF">F</div>
+                                        <div class="key-g" data-key="KeyG">G</div>
+                                        <div class="key-h" data-key="KeyH">H</div>
+                                        <div class="key-j" data-key="KeyJ">J</div>
+                                        <div class="key-k" data-key="KeyK">K</div>
+                                        <div class="key-l" data-key="KeyL">L</div>
+                                        <div class="key-punctuation" data-key="Semicolon">:<br>;</div>
+                                        <div class="key-quote" data-key="Quote">"<br>'</div>
+                                        <div class="key-enter" data-key="Enter">
+                                            Enter
+                                            <ion-icon name="ios-return-left"></ion-icon>
+                                        </div>
 
+                                        <div class="key-left-shift" data-key="ShiftLeft">Shift</div>
+                                        <div class="key-z" data-key="KeyZ">Z</div>
+                                        <div class="key-x" data-key="KeyX">X</div>
+                                        <div class="key-c" data-key="KeyC">C</div>
+                                        <div class="key-v" data-key="KeyV">V</div>
+                                        <div class="key-b" data-key="KeyB">B</div>
+                                        <div class="key-n" data-key="KeyN">N</div>
+                                        <div class="key-m" data-key="KeyM">M</div>
+                                        <div class="key-comma" data-key="Comma">
+                                            <br>,</div>
+                                        <div class="key-dot" data-key="Period">><br>.</div>
+                                        <div class="key-right-slash" data-key="Slash">?<br>/</div>
+                                        <div class="key-right-shift" data-key="ShiftRight">Shift</div>
 
+                                        <div class="key-left-ctrl" data-key="ControlLeft">Ctrl</div>
+                                        <div class="key-left-windows" data-key="MetaLeft">
+                                            <ion-icon name="logo-windows"></ion-icon>
+                                        </div>
+                                        <div class="key-left-alt" data-key="AltLeft">Alt</div>
+                                        <div class="key-space" data-key="Space"></div>
+                                        <div class="key-right-alt" data-key="AltRight">Alt</div>
+                                        <div class="key-right-windows" data-key="MetaRight">
+                                            <ion-icon name="logo-windows"></ion-icon>
+                                        </div>
+                                        <div class="key-context-menu" data-key="ContextMenu">
+                                            <ion-icon name="ios-paper"></ion-icon>
+                                        </div>
+                                        <div class="key-right-ctrl" data-key="ControlRight">Ctrl</div>
                                     </div>
+                                </div>
+
+
+                            </div>
+                            <div style="display: none;" class="keyboad-right">
+                                <div class="row1">
+                                    <div class="key-first-R"></div>
 
                                 </div>
-                                <hr style="margin-top: 5px; margin-bottom: 0px;">
-                                <div class="container" style="display: flex;justify-content: space-between; padding-bottom: 10px; padding-top: 4px; background-color: #f8f9fc; border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;">
-                                    <div>
-                                        <button style="width: fit-content; padding: 7px" type="button" class="btn btn-primary btn-go ">Lưu văn bản</button>
-                                    </div>
-                                    <div>
-                                        <button style="width: fit-content; background-color: #f6c23e;padding: 7px 20px" type="button" class="btn btn-primary btn-go ">Tạo mới</button>
-                                    </div>
-                                    <div>
-                                        <button style="width: fit-content;background-color: #1cc88a;padding: 7px 8px" type="button" class="btn btn-primary btn-go " data-toggle="modal" data-target="#modalFinishLearn">Tải văn bản</button>
-                                    </div>
+                                <div class="row2">
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
 
                                 </div>
-
+                                <div class="row3">
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                </div>
+                                <div class="row4">
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                    <div class="key-s-R">S</div>
+                                </div>
 
                             </div>
                         </div>
 
+                        <hr style="margin-top: 5px; margin-bottom: 0px;">
+                        <div class="" style="display: flex;justify-content: space-between; padding-bottom: 10px; padding-top: 4px; background-color: #f8f9fc; border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;">
+                            <div>
+                                <button style="width: fit-content; padding: 7px" type="button" class="btn btn-primary btn-go ">Lưu văn bản</button>
+                            </div>
+                            <div>
+                                <button style="width: fit-content; background-color: #f6c23e;padding: 7px 20px" type="button" class="btn btn-primary btn-go ">Tạo mới</button>
+                            </div>
+                            <div>
+                                <button style="width: fit-content;background-color: #1cc88a;padding: 7px 8px" type="button" class="btn btn-primary btn-go " data-toggle="modal" data-target="#modalFinishLearn">Tải văn bản</button>
+                            </div>
+
+                        </div>
 
 
                     </div>
-                    <!-- /.container-fluid -->
+
+
+
+
+
 
                 </div>
                 <!-- End of Main Content -->
@@ -594,7 +726,10 @@
         <!-- Page level custom scripts -->
         <script src="js/demo/chart-area-demo.js"></script>
         <script src="js/demo/chart-pie-demo.js"></script>
+        <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+        <script src="resources/scripts/script.js"></script>
         <script src="js/common.js"></script>
+        <script src="js/keyboard.js"></script>
 
 </body>
 

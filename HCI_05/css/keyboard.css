@@ -1,0 +1,235 @@
+@import "https://fonts.googleapis.com/css?family=Questrial:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Merriweather:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700";
+.keyboard-tocky .row,
+.keyboard-tocky .row-first,
+.keyboard-tocky .row-last {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.keyboard-tocky .row {
+    padding: 0px;
+}
+
+.keyboard-tocky .row-first {
+    padding: 1em 1em 0.5em 1em;
+}
+
+.keyboard-tocky .row-last {
+    padding: 0.5em 1em 1em 1em;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.keyboard-tocky h1,
+.keyboard-tocky h2,
+.keyboard-tocky h3,
+.keyboard-tocky h4,
+.keyboard-tocky h5,
+.keyboard-tocky h6 {
+    line-height: 1.1;
+}
+
+.keyboard-tocky h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.keyboard-tocky h2 {
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+.keyboard-tocky h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.keyboard-tocky h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.keyboard-tocky h5 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.keyboard-tocky h6 {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.keyboard {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0rem;
+    background-color: none;
+    padding-top: 1rem;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(5, 40px);
+}
+
+.keyboard>div {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #333;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 0.4rem 0 0 0.9rem;
+    font-size: 0.7rem;
+    transition: background-color 100ms, transform 100ms;
+}
+
+.keyboard>div ion-icon {
+    color: #fff;
+}
+
+.keyboard>div:hover,
+.keyboard>div.active,
+.row1>div:hover,
+.row1>div.active,
+.row2>div:hover,
+.row2>div.active,
+.row3>div:hover,
+.row3>div.active,
+.row4>div:hover,
+.row4>div.active {
+    background-color: red;
+    transform: scale(0.97);
+}
+
+.keyboard .key-enter {
+    flex-direction: column;
+}
+
+.keyboard .key-backspace ion-icon,
+.keyboard .key-tab ion-icon {
+    font-size: 1.25rem;
+}
+
+.keyboard .key-left-windows,
+.keyboard .key-right-windows {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.keyboard .key-backspace {
+    grid-column: 14 / 17;
+}
+
+.keyboard .key-tab {
+    grid-column: 1 / 3;
+}
+
+.keyboard .key-left-slash {
+    grid-column: 15 / 17;
+}
+
+.keyboard .key-caps-lock {
+    grid-column: 1 / 3;
+}
+
+.keyboard .key-enter {
+    grid-column: 14 / 17;
+}
+
+.keyboard .key-left-shift {
+    grid-column: 1 / 4;
+}
+
+.keyboard .key-right-shift {
+    grid-column: 14 / 17;
+}
+
+.keyboard .key-space {
+    grid-column: 5 / 12;
+}
+
+.keyboard .key-left-ctrl {
+    grid-column: 1 / 3;
+}
+
+.keyboard .key-right-ctrl {
+    grid-column: 15 / 17;
+}
+
+.keyboard-tocky h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-family: "Merriweather", "Rubik", sans-serif;
+    color: #555;
+}
+
+.keyboard-tocky span {
+    text-align: center;
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.keyboard-tocky {
+    width: 66%;
+}
+
+
+/* keyboad-right */
+
+.keyboad-right {
+    width: 32%;
+    height: auto;
+    padding-top: 1rem;
+}
+
+.key-first-R {
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    border-radius: 5px;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.row2,
+.row3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.row4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.row2>div,
+.row3>div,
+.row4>div {
+    width: 9%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.row4>div {
+    margin-left: 5px;
+}

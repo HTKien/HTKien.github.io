@@ -2300,3 +2300,18 @@ a.back-to-top:hover {
 .border-left-secondary {
     border-left: .25rem solid #858796!important;
 }
+
+.game-thumb {
+    border: 20px solid #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 95%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.game-thumb:hover {
+    cursor: pointer;
+    width: 97%;
+    transition: 0.4s;
+}
