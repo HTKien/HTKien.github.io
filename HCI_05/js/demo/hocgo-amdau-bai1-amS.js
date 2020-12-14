@@ -779,6 +779,7 @@ if (s === false) {
             $("#81").css("background-color", "#333333");
             $("#81_").css("background-color", "#333333");
             $("#request").text("Âm đầu: t");
+
             document.getElementsByClassName("am-dau")[0].style.backgroundColor = "#1CC88A";
             s = true;
 
@@ -851,6 +852,7 @@ if (s === false) {
                 if (event.keyCode === 65) {
                     //
                     $("#request").text("Âm đầu: k");
+                    document.getElementById("ban-tay").src = "img/amK.png";
                     document.getElementsByClassName("am-dau")[1].style.backgroundColor = "#1CC88A";
                     $("#87").css("background-color", "#ffb700");
                     $("#87_").css("background-color", "#ffb700");
@@ -956,6 +958,8 @@ if (s === false) {
                                     $("#87").css("background-color", "#333333");
                                     $("#87_").css("background-color", "#333333");
                                     $("#request").text("Âm đầu: h");
+                                    document.getElementById("ban-tay").src = "img/amH.png";
+
                                     document.getElementsByClassName("am-dau")[3].style.backgroundColor = "#1CC88A";
                                     $("#84").css("background-color", "#ffb700");
                                     $("#84_").css("background-color", "#ffb700");
@@ -973,6 +977,8 @@ if (s === false) {
                                             $("#84").css("background-color", "#333333");
                                             $("#84_").css("background-color", "#333333");
                                             $("#request").text("Âm đầu: r");
+                                            document.getElementById("ban-tay").src = "img/amR.png";
+
                                             document.getElementsByClassName("am-dau")[4].style.backgroundColor = "#1CC88A";
                                             $("#69").css("background-color", "#ffb700");
                                             $("#69_").css("background-color", "#ffb700");
@@ -989,6 +995,8 @@ if (s === false) {
                                                 if (event.keyCode === 69) {
 
                                                     $("#request").text("Âm đầu: b");
+                                                    document.getElementById("ban-tay").src = "img/amK.png";
+
                                                     document.getElementsByClassName("am-dau")[5].style.backgroundColor = "#1CC88A";
                                                     $("#83").css("background-color", "#ffb700");
                                                     $("#83_").css("background-color", "#ffb700");
@@ -1003,7 +1011,7 @@ if (s === false) {
                                                         if (event.keyCode === 83) {
                                                             document.getElementsByClassName("am-dau")[6].style.backgroundColor = "#1CC88A";
                                                             $("#request").text("Bạn đã hoàn thành bài học!");
-                                                            $("#request").css("color", "#1CC88A");
+                                                            $("#request").css("color", "#fff");
 
                                                             $("#baiHocTiep").click();
 

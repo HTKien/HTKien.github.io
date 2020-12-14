@@ -71,7 +71,7 @@
     margin: 0 auto;
     margin-top: 0rem;
     background-color: none;
-    padding-top: 1rem;
+    padding-top: 0rem;
     border-radius: 10px;
     display: grid;
     grid-gap: 4px;
@@ -202,7 +202,7 @@
 .keyboad-right {
     width: 32%;
     height: auto;
-    padding-top: 1rem;
+    padding-top: 0rem;
 }
 
 .key-first-R {
