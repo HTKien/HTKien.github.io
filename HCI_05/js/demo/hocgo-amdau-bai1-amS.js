@@ -23,73 +23,145 @@ function captureKeys() {
 }
 
 // hàng 1
+//Phim ngã:
+
+
+document.getElementById("192").onmouseenter = function() {
+    document.getElementById("192").style.backgroundColor = "red";
+}
+document.getElementById("192").onmouseleave = function() {
+    document.getElementById("192").style.backgroundColor = "rgb(155,155,155)";
+}
+
+
+//Phim so 1:
 document.getElementsByClassName("key-1")[0].onmouseenter = function() {
+    document.getElementsByClassName("key-1")[0].style.backgroundColor = "red";
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "red";
 }
 document.getElementsByClassName("key-1")[0].onmouseleave = function() {
+    document.getElementsByClassName("key-1")[0].style.backgroundColor = "#333333";
+
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "#333333";
 }
+
+
+
+
+
+
 document.getElementsByClassName("key-2")[0].onmouseenter = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("key-2")[0].style.backgroundColor = "red";
 }
 document.getElementsByClassName("key-2")[0].onmouseleave = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "#333333";
+    document.getElementsByClassName("key-2")[0].style.backgroundColor = "#333333";
 }
+
+
+
 document.getElementsByClassName("key-3")[0].onmouseenter = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("key-3")[0].style.backgroundColor = "red";
 }
 document.getElementsByClassName("key-3")[0].onmouseleave = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "#333333";
+    document.getElementsByClassName("key-3")[0].style.backgroundColor = "#333333";
 }
+
+
+
+
+
 document.getElementsByClassName("key-4")[0].onmouseenter = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("key-4")[0].style.backgroundColor = "red";
 }
 document.getElementsByClassName("key-4")[0].onmouseleave = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "#333333";
+    document.getElementsByClassName("key-4")[0].style.backgroundColor = "#333333";
 }
+
+
+
 document.getElementsByClassName("key-5")[0].onmouseenter = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("key-5")[0].style.backgroundColor = "red";
 }
 document.getElementsByClassName("key-5")[0].onmouseleave = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "#333333";
+    document.getElementsByClassName("key-5")[0].style.backgroundColor = "#333333";
 }
+
+
+
 document.getElementsByClassName("key-6")[0].onmouseenter = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("key-6")[0].style.backgroundColor = "red";
 }
 document.getElementsByClassName("key-6")[0].onmouseleave = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "#333333";
+    document.getElementsByClassName("key-6")[0].style.backgroundColor = "#333333";
 }
+
+
+
 document.getElementsByClassName("key-7")[0].onmouseenter = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("key-7")[0].style.backgroundColor = "red";
 }
 document.getElementsByClassName("key-7")[0].onmouseleave = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "#333333";
+    document.getElementsByClassName("key-7")[0].style.backgroundColor = "#333333";
 }
+
+
+
+
 document.getElementsByClassName("key-8")[0].onmouseenter = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("key-8")[0].style.backgroundColor = "red";
 }
 document.getElementsByClassName("key-8")[0].onmouseleave = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "#333333";
+    document.getElementsByClassName("key-8")[0].style.backgroundColor = "#333333";
 }
+
+
+
 document.getElementsByClassName("key-9")[0].onmouseenter = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("key-9")[0].style.backgroundColor = "red";
 }
 document.getElementsByClassName("key-9")[0].onmouseleave = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "#333333";
+    document.getElementsByClassName("key-9")[0].style.backgroundColor = "#333333";
 }
+
+
 document.getElementsByClassName("key-0")[0].onmouseenter = function() {
     document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("key-0")[0].style.backgroundColor = "red";
 }
 document.getElementsByClassName("key-0")[0].onmouseleave = function() {
         document.getElementsByClassName("key-first-R")[0].style.backgroundColor = "#333333";
+        document.getElementsByClassName("key-0")[0].style.backgroundColor = "#333333";
     }
     //hàng 2:
-document.getElementsByClassName("key-q")[0].onmouseenter = function() {
-    document.getElementsByClassName("key-s-R")[0].style.backgroundColor = "red";
-}
-document.getElementsByClassName("key-q")[0].onmouseleave = function() {
-    document.getElementsByClassName("key-s-R")[0].style.backgroundColor = "#333333";
-}
+    // document.getElementsByClassName("key-q")[0].onmouseenter = function() {
+    //     document.getElementsByClassName("key-q")[0].style.backgroundColor = "#1CC789";
+    //     document.getElementsByClassName("key-s-R")[0].style.backgroundColor = "#1CC789";
+    // }
+    // document.getElementsByClassName("key-q")[0].onmouseleave = function() {
+    //     document.getElementsByClassName("key-s-R")[0].style.backgroundColor = "#1CC789";
+    //     document.getElementsByClassName("key-q")[0].style.backgroundColor = "#1CC789";
+
+// }
+
+document.getElementsByClassName("key-q")[0].style.backgroundColor = "#ffb700";
+
+
 
 document.getElementsByClassName("key-w")[0].onmouseenter = function() {
     document.getElementsByClassName("key-k-R")[0].style.backgroundColor = "red";
@@ -278,12 +350,7 @@ document.getElementsByClassName("key-first-R")[0].onmouseleave = function() {
         document.getElementsByClassName("key-0")[0].style.backgroundColor = "#333333";
     }
     // hang 2:
-document.getElementsByClassName("key-s-R")[0].onmouseenter = function() {
-    document.getElementsByClassName("key-q")[0].style.backgroundColor = "red";
-}
-document.getElementsByClassName("key-s-R")[0].onmouseleave = function() {
-    document.getElementsByClassName("key-q")[0].style.backgroundColor = "#333333";
-}
+document.getElementsByClassName("key-s-R")[0].style.backgroundColor = "#ffb700";
 
 document.getElementsByClassName("key-k-R")[0].onmouseenter = function() {
     document.getElementsByClassName("key-w")[0].style.backgroundColor = "red";
@@ -468,6 +535,7 @@ $("#fullpage").keyup(function(event) {
 
 
 });
+
 
 //Phim so 1:
 $("#fullpage").keydown(function(event) {
@@ -691,23 +759,301 @@ $("#fullpage").keyup(function(event) {
     }
 });
 
+
+
 //Phim Q
-$("#fullpage").keydown(function(event) {
-    if (event.keyCode === 81) {
-        $("#81").css("background-color", "red");
-        $("#81_").css("background-color", "red");
-    }
+var s = false;
+var t = false;
+
+if (s === false) {
+    $("#fullpage").keydown(function(event) {
+        if (event.keyCode === 81) {
+            $("#81").css("background-color", "#0031E2");
+            $("#81_").css("background-color", "#0031E2");
+        }
 
 
-});
-$("#fullpage").keyup(function(event) {
-    if (event.keyCode === 81) {
-        $("#81").css("background-color", "#333333");
-        $("#81_").css("background-color", "#333333");
-    }
+    });
+    $("#fullpage").keyup(function(event) {
+        if (event.keyCode === 81) {
+            $("#81").css("background-color", "#333333");
+            $("#81_").css("background-color", "#333333");
+            $("#request").text("Âm đầu: t");
+            document.getElementsByClassName("am-dau")[0].style.backgroundColor = "#1CC88A";
+            s = true;
+
+            document.getElementsByClassName("key-q")[0].onmouseenter = function() {
+                document.getElementsByClassName("key-q")[0].style.backgroundColor = "red";
+                document.getElementsByClassName("key-s-R")[0].style.backgroundColor = "red";
+            }
+            document.getElementsByClassName("key-q")[0].onmouseleave = function() {
+                document.getElementsByClassName("key-s-R")[0].style.backgroundColor = "#333333";
+                document.getElementsByClassName("key-q")[0].style.backgroundColor = "#333333";
+
+            }
 
 
-});
+
+            document.getElementsByClassName("key-s-R")[0].onmouseenter = function() {
+                document.getElementsByClassName("key-q")[0].style.backgroundColor = "red";
+                document.getElementsByClassName("key-s-R")[0].style.backgroundColor = "red";
+            }
+            document.getElementsByClassName("key-s-R")[0].onmouseleave = function() {
+                document.getElementsByClassName("key-s-R")[0].style.backgroundColor = "#333333";
+                document.getElementsByClassName("key-q")[0].style.backgroundColor = "#333333";
+
+            }
+
+            $("#fullpage").keydown(function(event) {
+                if (event.keyCode === 81) {
+                    $("#81").css("background-color", "red");
+                    $("#81_").css("background-color", "red");
+                }
+
+
+            });
+
+
+            $("#fullpage").keydown(function(event) {
+                if (event.keyCode === 65) {
+                    $("#65").css("background-color", "#0031E2");
+                    $("#65_").css("background-color", "#0031E2");
+                }
+
+
+            });
+
+
+            $("#65").removeClass("hover__");
+            $("#65_").removeClass("hover__");
+
+            $("#65").css("background-color", "#ffb700");
+            $("#65_").css("background-color", "#ffb700");
+
+            document.getElementsByClassName("key-a")[0].onmouseenter = function() {
+                document.getElementsByClassName("key-t-R")[1].style.backgroundColor = "#ffb700";
+            }
+            document.getElementsByClassName("key-a")[0].onmouseleave = function() {
+                document.getElementsByClassName("key-t-R")[1].style.backgroundColor = "##ffb700";
+            }
+
+            document.getElementsByClassName("key-t-R")[1].onmouseenter = function() {
+                document.getElementsByClassName("key-a")[0].style.backgroundColor = "#ffb700";
+            }
+            document.getElementsByClassName("key-t-R")[1].onmouseleave = function() {
+                document.getElementsByClassName("key-a")[0].style.backgroundColor = "##ffb700";
+            }
+
+
+
+
+            $("#fullpage").keyup(function(event) {
+                if (event.keyCode === 65) {
+                    //
+                    $("#request").text("Âm đầu: k");
+                    document.getElementsByClassName("am-dau")[1].style.backgroundColor = "#1CC88A";
+                    $("#87").css("background-color", "#ffb700");
+                    $("#87_").css("background-color", "#ffb700");
+
+
+
+                    document.getElementsByClassName("key-w")[0].onmouseenter = function() {
+                        document.getElementsByClassName("key-w")[0].style.backgroundColor = "#ffb700";
+                        document.getElementsByClassName("key-k-R")[0].style.backgroundColor = "#ffb700";
+                    }
+                    document.getElementsByClassName("key-w")[0].onmouseleave = function() {
+                        document.getElementsByClassName("key-k-R")[0].style.backgroundColor = "#ffb700";
+                        document.getElementsByClassName("key-w")[0].style.backgroundColor = "#ffb700";
+
+                    }
+
+
+
+                    document.getElementsByClassName("key-t-R")[1].onmouseenter = function() {
+                        document.getElementsByClassName("key-a")[0].style.backgroundColor = "red";
+                        document.getElementsByClassName("key-t-R")[1].style.backgroundColor = "red";
+                    }
+                    document.getElementsByClassName("key-t-R")[1].onmouseleave = function() {
+                        document.getElementsByClassName("key-t-R")[1].style.backgroundColor = "#333333";
+                        document.getElementsByClassName("key-a")[0].style.backgroundColor = "#333333";
+
+                    }
+
+                    $("#fullpage").keydown(function(event) {
+                        if (event.keyCode === 65) {
+                            $("#65").css("background-color", "red");
+                            $("#65_").css("background-color", "red");
+                        }
+
+
+                    });
+
+
+                    $("#fullpage").keydown(function(event) {
+                        if (event.keyCode === 87) {
+                            $("#87").css("background-color", "#0031E2");
+                            $("#87_").css("background-color", "#0031E2");
+                        }
+
+
+                    });
+                    //
+                    $("#fullpage").keyup(function(event) {
+                        if (event.keyCode === 87) {
+                            $("#request").text("Âm đầu: c");
+                            document.getElementsByClassName("am-dau")[2].style.backgroundColor = "#1CC88A";
+                            $("#87").css("background-color", "#ffb700");
+                            $("#87_").css("background-color", "#ffb700");
+
+
+
+
+
+                            document.getElementsByClassName("key-a")[0].onmouseenter = function() {
+                                document.getElementsByClassName("key-a")[0].style.backgroundColor = "red";
+                                document.getElementsByClassName("key-t-R")[1].style.backgroundColor = "red";
+                            }
+                            document.getElementsByClassName("key-a")[0].onmouseleave = function() {
+                                document.getElementsByClassName("key-t-R")[1].style.backgroundColor = "#333333";
+                                document.getElementsByClassName("key-a")[0].style.backgroundColor = "#333333";
+
+                            }
+
+
+
+                            document.getElementsByClassName("key-t-R")[1].onmouseenter = function() {
+                                document.getElementsByClassName("key-a")[0].style.backgroundColor = "red";
+                                document.getElementsByClassName("key-t-R")[1].style.backgroundColor = "red";
+                            }
+                            document.getElementsByClassName("key-t-R")[1].onmouseleave = function() {
+                                document.getElementsByClassName("key-t-R")[1].style.backgroundColor = "#333333";
+                                document.getElementsByClassName("key-a")[0].style.backgroundColor = "#333333";
+
+                            }
+
+                            $("#fullpage").keydown(function(event) {
+                                if (event.keyCode === 65) {
+                                    $("#65").css("background-color", "red");
+                                    $("#65_").css("background-color", "red");
+                                }
+
+
+                            });
+
+
+                            $("#fullpage").keydown(function(event) {
+                                if (event.keyCode === 87) {
+                                    $("#87").css("background-color", "#0031E2");
+                                    $("#87_").css("background-color", "#0031E2");
+                                }
+
+
+                            });
+
+
+                            $("#fullpage").keyup(function(event) {
+                                if (event.keyCode === 87) {
+                                    $("#87").css("background-color", "#333333");
+                                    $("#87_").css("background-color", "#333333");
+                                    $("#request").text("Âm đầu: h");
+                                    document.getElementsByClassName("am-dau")[3].style.backgroundColor = "#1CC88A";
+                                    $("#84").css("background-color", "#ffb700");
+                                    $("#84_").css("background-color", "#ffb700");
+
+                                    $("#fullpage").keydown(function(event) {
+                                        if (event.keyCode === 84) {
+                                            $("#84").css("background-color", "#0031E2");
+                                            $("#84_").css("background-color", "#0031E2");
+                                        }
+
+
+                                    });
+                                    $("#fullpage").keyup(function(event) {
+                                        if (event.keyCode === 84) {
+                                            $("#84").css("background-color", "#333333");
+                                            $("#84_").css("background-color", "#333333");
+                                            $("#request").text("Âm đầu: r");
+                                            document.getElementsByClassName("am-dau")[4].style.backgroundColor = "#1CC88A";
+                                            $("#69").css("background-color", "#ffb700");
+                                            $("#69_").css("background-color", "#ffb700");
+
+                                            $("#fullpage").keydown(function(event) {
+                                                if (event.keyCode === 69) {
+                                                    $("#69").css("background-color", "#0031E2");
+                                                    $("#69_").css("background-color", "#0031E2");
+                                                }
+
+
+                                            });
+                                            $("#fullpage").keyup(function(event) {
+                                                if (event.keyCode === 69) {
+
+                                                    $("#request").text("Âm đầu: b");
+                                                    document.getElementsByClassName("am-dau")[5].style.backgroundColor = "#1CC88A";
+                                                    $("#83").css("background-color", "#ffb700");
+                                                    $("#83_").css("background-color", "#ffb700");
+
+                                                    $("#fullpage").keydown(function(event) {
+                                                        if (event.keyCode === 83) {
+                                                            $("#83").css("background-color", "#0031E2");
+                                                            $("#83_").css("background-color", "#0031E2");
+                                                        }
+                                                    });
+                                                    $("#fullpage").keyup(function(event) {
+                                                        if (event.keyCode === 83) {
+                                                            document.getElementsByClassName("am-dau")[6].style.backgroundColor = "#1CC88A";
+                                                            $("#request").text("Bạn đã hoàn thành bài học!");
+                                                            $("#request").css("color", "#1CC88A");
+
+                                                            $("#baiHocTiep").click();
+
+
+
+
+                                                        }
+
+
+                                                    });
+                                                }
+
+
+                                            });
+                                        }
+
+
+                                    });
+
+                                }
+
+
+                            });
+
+                        }
+
+
+                    });
+
+
+
+
+
+                }
+
+
+            });
+
+
+
+
+        }
+
+
+    });
+}
+
+
+
+
 
 //Phim W
 $("#fullpage").keydown(function(event) {
@@ -1352,91 +1698,4 @@ $("#fullpage").keyup(function(event) {
     }
 });
 
-
-//LỊCH SỬ GÕ:
-// $("#fullpage").keydown(function(event) {
-//     if ((event.keyCode === 81) && (event.keyCode === 87)) {
-//         var a;
-//         a = "S K";
-
-//         var node = document.createElement("LI");
-//         var textnode = document.createTextNode(a);
-//         node.appendChild(textnode);
-//         document.getElementById("log-press").appendChild(node);
-//     }
-// });
-var checkCtrl = false
-$('#go').keydown(function(e) {
-    if (e.keyCode == '86') {
-        checkCtrl = true
-    }
-}).keyup(function(ev) {
-    if (ev.keyCode == '86') {
-        checkCtrl = false
-    }
-}).keydown(function(event) {
-    if (checkCtrl) {
-        if (event.keyCode == '73') {
-            //$("#go").append("ê ");
-            document.getElementById("go").value += " ê";
-            //ghi log
-            var today = new Date();
-            var date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
-            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
-            var a;
-            a = date + " " + time + " " + "OE";
-
-            var node = document.createElement("LI");
-            var textnode = document.createTextNode(a);
-            node.appendChild(textnode);
-
-
-            document.getElementById("log-press").appendChild(node);
-            checkCtrl = false
-        }
-    }
-});
-
-
-
-//Tổ hợp phím thường T M -> Tốc ký: H A -> Kết quả: ha
-
-$('#go').keydown(function(e) {
-    if (e.keyCode == '84') {
-        checkCtrl = true
-    }
-}).keyup(function(ev) {
-    if (ev.keyCode == '84') {
-        checkCtrl = false
-    }
-}).keydown(function(event) {
-    if (checkCtrl) {
-        if (event.keyCode == '77') {
-            // $("#go").append("ha ");
-            document.getElementById("go").value += " ha";
-
-
-            //ghi log
-            var today = new Date();
-            var date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
-            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
-            var a;
-            a = date + " " + time + " " + "HA";
-
-            var node = document.createElement("LI");
-            var textnode = document.createTextNode(a);
-            node.appendChild(textnode);
-
-
-            document.getElementById("log-press").appendChild(node);
-            checkCtrl = false
-        }
-    }
-});
-
-window.setInterval(function() {
-    var elem = document.getElementById('ma');
-    elem.scrollTop = elem.scrollHeight;
-}, 0);
+//Xu ly su kien keydown cho phim hoat dong:

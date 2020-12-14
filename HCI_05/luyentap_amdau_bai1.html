@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="fullpage" lang="en">
 
 <head>
 
@@ -19,6 +19,8 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyboard.css">
+
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="png" href="img/favi.png" />
@@ -458,11 +460,11 @@
                         <div class="card shadow mb-4">
                             <!-- Card Header - Dropdown -->
                             <div style="padding-top: 0.5rem !important;padding-bottom: 0.5rem !important;" class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary"> <a href="luyentap_amdau_bai1.html">Luyện gõ / Luyện gõ âm / Luyện gõ âm đầu / Bài 1: Nhóm âm đầu cùng dạng chữ, cùng phát âm</a> </h6>
+                                <h6 class="m-0 font-weight-bold text-primary"> <a href="luyentap_amdau_bai1.html">Bài 1: Nhóm âm đầu cùng dạng chữ, cùng phát âm</a> </h6>
                                 <div class=" no-arrow">
                                     <div class="container-fluid">
                                         <div style="justify-content: space-around;" class="row">
-                                            <button onclick="window.location.href='hocgo_amdau_bai1.html';" style="width: fit-content" type="button" class="btn btn-primary btn-go">Quay lại học</button>
+                                            <button id="btn-cach-go" style="width: fit-content" type="button" class="btn btn-primary btn-go">Xem cách gõ</button>
                                         </div>
 
                                     </div>
@@ -471,76 +473,170 @@
                             <!-- Card Body -->
                             <div class="container">
                                 <div style="margin-top: 10px; margin-bottom: 10px;">
-                                    <div class="card     shadow h-100 py-2">
-                                        <div class="card-body card-chi-tiet">
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Hãy gõ âm đầu: "k"
-                                                        <input id="fname" style="width: 600px; margin-left: 50px; outline: none; background-color: #F8F9FC; border: 1px solid rgb(168, 168, 168); border-radius: 4px;" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto font-weight-bold">
-                                                    <!-- <i class="fas fa-calendar fa-2x text-gray-300"></i> -->
-                                                    <span> <a style="background-color: #f6c23e; color: white; font-weight: 400; padding: 2px 9px; border-radius: 6px;"  id="xemCachGoText" onclick="xemCachGo()" >Xem cách gõ</a>
-                                                </div>
-                                            </div>
+                                    <!--  -->
+                                    <div style="display: flex;  background-color: #D1D3E2; width: 100; margin: auto; border-radius: 95px; font-size: 19px; color: black">
+                                        <div style="border-top-left-radius: 50px;border-bottom-left-radius: 50px;;   " class="am-dau done">s</div>
+                                        <div class="am-dau done">c</div>
+                                        <div class="am-dau done">b</div>
+                                        <div class="am-dau done">r</div>
+                                        <div class="am-dau done">h</div>
+                                        <div class="am-dau done">t</div>
+                                        <div class="am-dau done">k</div>
+                                        <div class="am-dau">t</div>
+                                        <div class="am-dau">s</div>
+                                        <div class="am-dau">r</div>
+                                        <div class="am-dau">k</div>
+                                        <div class="am-dau">h</div>
+                                        <div class="am-dau">b</div>
+                                        <div class="am-dau">c</div>
+                                        <div class="am-dau">h</div>
+                                        <div class="am-dau">t</div>
+                                        <div class="am-dau">k</div>
+                                        <div class="am-dau">h</div>
+                                        <div class="am-dau">s</div>
+                                        <div class="am-dau">c</div>
+                                        <div class="am-dau">r</div>
 
-
-
-
-                                        </div>
-
+                                        <div style="border-top-right-radius: 50px;border-bottom-right-radius: 50px;" class="am-dau">b</div>
                                     </div>
-                                    <div style="margin-top: 9px;" class="row">
-                                        <div class="col-xl-6 col-md-6 mb-4">
-                                            <div class="card  shadow h-100 py-2">
-                                                <div style="padding-top: 3px;" class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Ký tự bạn gõ</div>
-                                                            <div class="row justify-content-between col mr-2">
-                                                                <div class="h5 mb-0 font-weight-bold text-gray-800 ">
-                                                                    <input id="kytugo" value="" size="80%" disabled style="width: 105%; height: 60px; border-radius: 5px; border: 1px solid rgb(168, 168, 168);" type="text"> </div>
+                                    <script src="js/keyboard.js"></script>
+                                    <div id="request" style="margin-top: 15px; font-weight: 700; color: #ffb700; font-size: 20px; ">Âm đầu: t</div>
 
 
-                                                            </div>
-
-                                                        </div>
-
-
+                                    <!-- Bản phím tốc ký -->
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <div style="display: block;" class="keyboard-tocky">
+                                            <div class="row">
+                                                <div class="keyboard">
+                                                    <div style="background-color: rgb(155, 155, 155)" class="key-tilda hover__" id="192" data-key="Backquote">~<br>`</div>
+                                                    <div class="key-1 hover__" id="49" data-key="Digit1">!<br>1</div>
+                                                    <div class="key-2 hover__" id="50" data-key="Digit2">@<br>2</div>
+                                                    <div class="key-3 hover__" id="51" data-key="Digit3">#<br>3</div>
+                                                    <div class="key-4 hover__" id="52" data-key="Digit4">$<br>4</div>
+                                                    <div class="key-5 hover__" id="53" data-key="Digit5">%<br>5</div>
+                                                    <div class="key-6 hover__" id="54" data-key="Digit6">^<br>6</div>
+                                                    <div class="key-7 hover__" id="55" data-key="Digit7">&<br>7</div>
+                                                    <div class="key-8 hover__" id="56" data-key="Digit8">*<br>8</div>
+                                                    <div class="key-9 hover__" id="57" data-key="Digit9">(<br>9</div>
+                                                    <div class="key-0 hover__" id="48" data-key="Digit0">)<br>0</div>
+                                                    <div id="189" style="background-color: rgb(155, 155, 155)" class="key-minus hover__" data-key="Minus">-<br>_</div>
+                                                    <div id="187" style="background-color: rgb(155, 155, 155)" class="key-plus  hover__" data-key="Equal">+<br>=</div>
+                                                    <div id="8" style="background-color: rgb(155, 155, 155)" class="key-backspace  hover__" data-key="Backspace">
+                                                        <ion-icon name="ios-arrow-round-back"></ion-icon>
                                                     </div>
 
-                                                </div>
+                                                    <div id="9" style="background-color: rgb(155, 155, 155)" class="key-tab  hover__" data-key="Tab">
+                                                        <ion-icon name="ios-swap"></ion-icon>
+                                                    </div>
+                                                    <div id="81" class="key-q hover__" data-key="KeyQ">Q</div>
+                                                    <div id="87" class="key-w hover__" data-key="KeyW">W</div>
+                                                    <div id="69" class="key-e hover__" data-key="KeyE">E</div>
+                                                    <div id="82" class="key-r hover__" data-key="KeyR">R</div>
+                                                    <div id="84" class="key-t hover__" data-key="KeyT">T</div>
+                                                    <div id="89" style="background-color: rgb(155, 155, 155)" class="key-y  hover__" data-key="KeyY">Y</div>
+                                                    <div id="85" class="key-u hover__" data-key="KeyU">U</div>
+                                                    <div id="73" class="key-i hover__" data-key="KeyI">I</div>
+                                                    <div id="79" class="key-o hover__" data-key="KeyO">O</div>
+                                                    <div id="80" class="key-p hover__" data-key="KeyP">P</div>
+                                                    <div id="219" class="key-bracket-open  hover__" data-key="BracketLeft">{<br>[</div>
+                                                    <div id="221" style="background-color: rgb(155, 155, 155)" class="key-bracket-close  hover__" data-key="BracketRight">}<br>]</div>
+                                                    <div id="220" style="background-color: rgb(155, 155, 155)" class="key-left-slash hover__ " data-key="Backslash">|<br>\</div>
 
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-md-6 mb-4">
-                                            <div class="card   shadow h-100 py-2">
-                                                <div style="padding-top: 3px;" class="card-body">
-                                                    <div class="row no-gutters align-items-center">
-                                                        <div class="col mr-2">
-                                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Kết quả</div>
-                                                            <div class="row justify-content-between col mr-2">
-                                                                <div class="h5 mb-0 font-weight-bold text-gray-800 ">
-                                                                    <input id="ketquago" value="" size="80%" disabled style="width: 105%; height: 60px; border-radius: 5px; border: 1px solid rgb(168, 168, 168);" type="text"> </div>
-
-                                                            </div>
-
-                                                        </div>
-
-
+                                                    <div id="20" style="background-color: rgb(155, 155, 155)" class="key-caps-lock hover__ " data-key="CapsLock">Caps Lock</div>
+                                                    <div id="65" class="key-a hover__" data-key="KeyA">A</div>
+                                                    <div id="83" class="key-s hover__" data-key="KeyS">S</div>
+                                                    <div id="68" class="key-d hover__" data-key="KeyD">D</div>
+                                                    <div id="70" class="key-f hover__" data-key="KeyF">F</div>
+                                                    <div id="71" class="key-g hover__" data-key="KeyG">G</div>
+                                                    <div id="72" style="background-color: rgb(155, 155, 155)" class="key-h  hover__" data-key="KeyH">H</div>
+                                                    <div id="74" class="key-j hover__" data-key="KeyJ">J</div>
+                                                    <div id="75" class="key-k hover__" data-key="KeyK">K</div>
+                                                    <div id="76" class="key-l hover__" data-key="KeyL">L</div>
+                                                    <div id="186" class="key-punctuation hover__" data-key="Semicolon">:<br>;</div>
+                                                    <div id="222" class="key-quote" data-key="Quote">"<br>'</div>
+                                                    <div id="13" style="background-color: rgb(155, 155, 155)" class="key-enter hover__ " data-key="Enter">
+                                                        Enter
+                                                        <ion-icon name="ios-return-left"></ion-icon>
                                                     </div>
 
-                                                </div>
+                                                    <div id="16" style="background-color: rgb(155, 155, 155)" class="key-left-shift hover__ " data-key="ShiftLeft">Shift</div>
+                                                    <div id="90" style="background-color: rgb(155, 155, 155)" class="key-z hover__ " data-key="KeyZ">Z</div>
+                                                    <div id="88" style="background-color: rgb(155, 155, 155)" class="key-x hover__ " data-key="KeyX">X</div>
+                                                    <div id="67" class="key-c hover__" data-key="KeyC">C</div>
+                                                    <div id="86" class="key-v hover__" data-key="KeyV">V</div>
+                                                    <div id="66" style="background-color: rgb(155, 155, 155)" class="key-b hover__ " data-key="KeyB">B</div>
+                                                    <div id="78" class="key-n hover__" data-key="KeyN">N</div>
+                                                    <div id="77" class="key-m hover__" data-key="KeyM">M</div>
+                                                    <div id="188" style="background-color: rgb(155, 155, 155)" class="key-comma hover__ " data-key="Comma">
+                                                        <br>,</div>
+                                                    <div id="190" style="background-color: rgb(155, 155, 155)" class="key-dot hover__ " data-key="Period">><br>.</div>
+                                                    <div id="191" style="background-color: rgb(155, 155, 155)" class="key-right-slash  hover__" data-key="Slash">?<br>/</div>
+                                                    <div id="16_R" style="background-color: rgb(155, 155, 155)" class="key-right-shift hover__ " data-key="ShiftRight">Shift</div>
 
+                                                    <div id="17" style="background-color: rgb(155, 155, 155)" class="key-left-ctrl hover__ " data-key="ControlLeft">Ctrl</div>
+                                                    <div id="91" style="background-color: rgb(155, 155, 155)" class="key-left-windows  hover__" data-key="MetaLeft">
+                                                        <ion-icon name="logo-windows"></ion-icon>
+                                                    </div>
+                                                    <div id="18" style="background-color: rgb(155, 155, 155)" class="key-left-alt  hover__" data-key="AltLeft">Alt</div>
+                                                    <div id="32" style="background-color: rgb(155, 155, 155)" class="key-space  hover__" data-key="Space"></div>
+                                                    <div style="background-color: rgb(155, 155, 155)" class="key-right-alt hover__ " data-key="AltRight">Alt</div>
+                                                    <div id="92" style="background-color: rgb(155, 155, 155)" class="key-right-windows  hover__" data-key="MetaRight">
+                                                        <ion-icon name="logo-windows"></ion-icon>
+                                                    </div>
+                                                    <div id="93" style="background-color: rgb(155, 155, 155)" class="key-context-menu hover__ " data-key="ContextMenu">
+                                                        <ion-icon name="ios-paper"></ion-icon>
+                                                    </div>
+                                                    <div id="17_R" style="background-color: rgb(155, 155, 155)" class="key-right-ctrl  hover__" data-key="ControlRight">Ctrl</div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div style="display: block;" class="keyboad-right">
+                                            <div class="row1">
+                                                <div id="49_" class="key-first-R hover__"></div>
+
+                                            </div>
+                                            <div class="row2">
+                                                <div id="81_" class="key-s-R hover__">S</div>
+                                                <div id="87_" class="key-k-R hover__">K</div>
+                                                <div id="69_" class="key-r-R hover__">R</div>
+                                                <div id="82_" class="key-n-R hover__">N</div>
+                                                <div id="84_" class="key-h-R hover__">H</div>
+                                                <div id="85_" class="key-*-R hover__">*</div>
+                                                <div id="73_" class="key-w-R hover__">W</div>
+                                                <div id="79_" class="key-j-R hover__">J</div>
+                                                <div id="80_" class="key-n-R hover__">N</div>
+                                                <div id="219_" class="key-t-R hover__">T</div>
+
+                                            </div>
+                                            <div class="row3">
+                                                <div id="65_" class="key-t-R hover__">T</div>
+                                                <div id="83_" class="key-p-R hover__">P</div>
+                                                <div id="68_" class="key-h-R hover__">H</div>
+                                                <div id="70_" class="key-n-R hover__">N</div>
+                                                <div id="71_" class="key-s-R hover__">S</div>
+                                                <div id="74_" class="key-i-R hover__">I</div>
+                                                <div id="75_" class="key-y-R hover__">Y</div>
+                                                <div id="76_" class="key-j-R hover__">J</div>
+                                                <div id="186_" class="key-g-R hover__">G</div>
+                                                <div id="222_" class="key-k-R hover__">K</div>
+                                            </div>
+                                            <div class="row4">
+                                                <div id="67_" class="key-u-R hover__">U</div>
+                                                <div id="86_" class="key-o-R hover__">O</div>
+                                                <div id="78_" class="key-e-R hover__">E</div>
+                                                <div id="77_" class="key-a-R hover__">A</div>
                                             </div>
 
                                         </div>
-                                        <img id="imgLuyenGo" style="display: block; margin: auto; width: 80%" src="img/banphim-removebg-preview.png" alt="">
-
                                     </div>
 
 
+
+
+
+                                    <!--  -->
                                 </div>
 
                             </div>
@@ -600,91 +696,77 @@
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
                                                     </button>
-                                                </div>
-                                                <div class="modal-body">Bạn có chắc chắn muốn đăng xuất không?</div>
-                                                <div class="modal-footer">
-                                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
-                                                    <a class="btn btn-primary" href="index.html">Đăng xuất</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                </div>
+                <div class="modal-body">Bạn có chắc chắn muốn đăng xuất không?</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
+                    <a class="btn btn-primary" href="index.html">Đăng xuất</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                    <!-- Modal Hoàn thành bài luyện tập -->
-                                    <div class="modal fade" id="modalFinishLearn">
-                                        <div class="modal-dialog modal-dialog-centered modal-md">
-                                            <div class="modal-content">
+    <!-- Modal Hoàn thành bài luyện tập -->
+    <div class="modal fade" id="modalFinishLearn">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
 
-                                                <div style="margin-bottom: -0.5rem!important;" class="card shadow mb-4 border-top-primary">
-                                                    <div style="display: flex; justify-content:center" class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Bài 1: Nhóm âm đầu cùng dạng chữ, cùng phát âm</h6>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <h4 class="small font-weight-bold">Nhớ bài <span class="float-right">80%</span></h4>
-                                                        <div class="progress mb-4">
-                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                        <h4 class="small font-weight-bold">Thời gian suy nghĩ trung bình cho mỗi âm <span class="float-right">56 giây</span></h4>
-                                                        <div class="progress mb-4">
-                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                        <h4 class="small font-weight-bold">Gõ thành thạo các âm <span class="float-right">90%</span></h4>
-                                                        <div class="progress mb-4">
-                                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
+                <div style="margin-bottom: -0.5rem!important;" class="card shadow mb-4 border-top-primary">
+                    <div style="display: flex; justify-content:center" class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Bài 1: Nhóm âm đầu cùng dạng chữ, cùng phát âm</h6>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="small font-weight-bold">Nhớ bài <span class="float-right">80%</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h4 class="small font-weight-bold">Thời gian suy nghĩ trung bình cho mỗi âm <span class="float-right">56 giây</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h4 class="small font-weight-bold">Gõ thành thạo các âm <span class="float-right">90%</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
 
-                                                        <h4 style="color: #f6c23e" class="small font-weight-bold">Âm đầu bạn chưa nhớ: <span class="float-right">th, kh, ph, tr</span></h4>
+                        <h4 style="color: #f6c23e" class="small font-weight-bold">Âm đầu bạn chưa nhớ: <span class="float-right">th, kh, ph, tr</span></h4>
 
-                                                    </div>
+                    </div>
 
-                                                </div>
+                </div>
 
-                                                <!-- Modal footer -->
-                                                <div class="modal-footer">
-                                                    <button onclick="window.location.href='luyentap_amdau_bai1.html';" type="button" class="btn btn-primary">Luyện tập lại</button>
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button onclick="window.location.href='luyentap_amdau_bai1.html';" type="button" class="btn btn-primary">Luyện tập lại</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
 
-                                            </div>
-                                        </div>
-                                    </div>
+            </div>
+        </div>
+    </div>
 
-                                    <!-- Bootstrap core JavaScript-->
-                                    <script src="vendor/jquery/jquery.min.js"></script>
-                                    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                                    <!-- Core plugin JavaScript-->
-                                    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-                                    <!-- Custom scripts for all pages-->
-                                    <script src="js/sb-admin-2.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
 
-                                    <!-- Page level plugins -->
-                                    <script src="vendor/chart.js/Chart.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
-                                    <!-- Page level custom scripts -->
-                                    <script src="js/demo/chart-area-demo.js"></script>
-                                    <script src="js/demo/chart-pie-demo.js"></script>
-                                    <script src="js/common.js"></script>
-                                    <script>
-                                        $("#fname").keyup(function(event) {
-                                            if (event.keyCode === 87) {
-                                                $('#kytugo').get(0).value = "W";
-                                                $('#ketquago').get(0).value = "K";
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    <script src="resources/scripts/script.js"></script>
+    <script src="js/keyboard.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/demo/luyentap_amt.js"></script>
 
-
-                                            }
-                                            if (event.keyCode === 81) {
-                                                $('#kytugo').get(0).value = "Q";
-                                                $('#ketquago').get(0).value = "S - Chưa đúng âm đầu  k";
-
-                                            }
-                                        });
-
-                                        function setFocus() {
-                                            document.getElementById("fname").focus();
-                                        }
-                                    </script>
 
 </body>
 
