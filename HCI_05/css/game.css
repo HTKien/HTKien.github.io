@@ -1,0 +1,34 @@
+canvas {
+    background-image: url("/img/gamebg.jpg");
+    border-radius: 10px;
+}
+
+#game {
+    margin-left: 45px;
+}
+
+.game-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.game1,
+.game2,
+.game3 {
+    width: 33.33%;
+    height: auto;
+}
+
+.game1,
+.game3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: 800;
+    color: #0084F3;
+}
+
+.game3 {
+    color: #1CC88A;
+}

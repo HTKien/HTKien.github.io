@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="fullpage" lang="en">
 
 <head>
 
@@ -19,6 +19,7 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="png" href="img/favi.png" />
@@ -457,7 +458,7 @@
                         <div style="margin-bottom: 0rem !important;" class="card shadow mb-4">
                             <!-- Card Header - Dropdown -->
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary"> <a href="game_amdau_bai1.html">Học gõ / Học gõ âm / Học gõ âm đầu / Bài 1: Nhóm âm đầu cùng dạng chữ, cùng phát âm</a> </h6>
+                                <h6 class="m-0 font-weight-bold text-primary"> <a href="game_amdau_bai1.html">Bài 1: Nhóm âm đầu cùng dạng chữ, cùng phát âm</a> </h6>
                                 <div class=" no-arrow">
                                     <div class="container-fluid">
                                         <div style="justify-content: space-around;" class="row">
@@ -469,28 +470,63 @@
                             </div>
                             <!-- Card Body -->
                             <div class="container">
-                                <div style="margin-top: 10px; margin-bottom: 10px;">
+                                <div class="game-container" style="margin-top: 10px; margin-bottom: 10px; display: flex;">
+                                    <div class="game1">Âm đầu s</div>
+                                    <div class="game2">
 
-                                    <div class="row">
-                                        <div style="text-align: center;" class="col-2">
-                                            <p style="font-weight: 800; color: #0084f3">Thời gian còn lại <br>2 phút 26 giây</p>
-                                            <p style="border-top-left-radius: 10px;border-top-right-radius: 10px; background-color:  rgb(207, 207, 207); width: 15px; height: 100px;margin: auto; border: 1px  solid rgb(179, 179, 179); border-bottom: none;"></p>
-                                            <p style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #0084f3    ; width: 15px; height: 170px;margin: auto; border: 1px  solid rgb(179, 179, 179);border-top: none"></p>
-                                            <p style="font-weight: 800; color: #0084f3">Tổng: 4 phút</p>
+                                        <div style="text-align: center;margin-bottom: 0rem; font-weight: 800; color: red;; display: flex !important; justify-content: center;">
+                                            <p style="margin-bottom: 0rem; margin-left: 12px;" id="demo"> 60 giây</p>
 
+                                            </p>
 
+                                            <script>
+                                                // Set the date we're counting down to
+                                                function countDown() {
+                                                    document.getElementById("playGame").textContent = "Thoát";
+                                                    var countDownDate = new Date().getTime() + 60000;
+
+                                                    // Update the count down every 1 second
+                                                    var x = setInterval(function() {
+
+                                                        // Get today's date and time
+                                                        var now = new Date().getTime();
+
+                                                        // Find the distance between now and the count down date
+                                                        var distance = countDownDate - now;
+
+                                                        // Time calculations for days, hours, minutes and seconds
+                                                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                                        // Output the result in an element with id="demo"
+                                                        document.getElementById("demo").innerHTML =
+                                                            seconds + " giây";
+
+                                                        // If the count down is over, write some text 
+                                                        if (distance < 0) {
+                                                            clearInterval(x);
+                                                            document.getElementById("demo").innerHTML = "EXPIRED";
+                                                        }
+                                                    }, 1000);
+                                                }
+                                            </script>
+                                        </div>
+                                        <div id="game">
+                                            <div style="text-align:center;width:480px; height: 0px;">
+                                                <button id="btn-up" style=" display: none;" onmousedown="move('up')" onmouseup="clearmove()" ontouchstart="move('up')">UP</button><br><br>
+
+                                            </div>
                                         </div>
 
-                                        <div class="col-8"><img id="imgPlayGame" style="display: block; margin: auto; width: 100%; margin-top: -6px; border-radius: 5px;" src="img/game1.png" alt=""></div>
-                                        <div style="text-align: center;" class="col-2">
-                                            <p style="font-weight: 800; color: #1cc88a">Về đích</p>
-                                            <p style="border-top-left-radius: 10px;border-top-right-radius: 10px; background-color:  rgb(207, 207, 207); width: 15px; height: 100px;margin: auto; border: 1px  solid rgb(179, 179, 179); border-bottom: none;"></p>
-                                            <p style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #1cc88a; width: 15px; height: 200px;margin: auto; border: 1px  solid rgb(179, 179, 179);border-top: none"></p>
-                                            <p style="font-weight: 800; color: #1cc88a">Xuất phát</p>
-
-
-                                        </div>
                                     </div>
+                                    <div class="game3">
+                                        Phím gợi ý: Q
+                                    </div>
+
+
+
 
 
                                 </div>
@@ -502,10 +538,10 @@
                                     <button style="width: fit-content; padding: 7px" type="button" class="btn btn-primary btn-go ">Bài học trước</button>
                                 </div>
                                 <div>
-                                    <button onclick="playGame()" id="playGame" style="width: fit-content; background-color: #f6c23e;padding: 7px" type="button" class="btn btn-primary btn-go ">Bắt đầu chơi</button>
+                                    <button onclick="countDown()" id="playGame" style="width: fit-content; background-color: #f6c23e;padding: 7px" type="button" class="btn btn-primary btn-go ">Bắt đầu chơi</button>
                                 </div>
                                 <div>
-                                    <button style="width: fit-content;background-color: #1cc88a;padding: 7px" type="button" class="btn btn-primary btn-go " data-toggle="modal" data-target="#modalFinishLearn">Bài học tiếp</button>
+                                    <button id="btn-next-game" style="width: fit-content;background-color: #1cc88a;padding: 7px" type="button" class="btn btn-primary btn-go " data-toggle="modal" data-target="#modalFinishGame">Bài học tiếp</button>
 
                                 </div>
 
@@ -633,6 +669,50 @@
             </div>
         </div>
     </div>
+    <!-- Modal Hoàn thành Game -->
+    <div class="modal fade" id="modalFinishGame">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+
+                <div style="margin-bottom: -0.5rem!important;" class="card shadow mb-4 border-top-primary">
+                    <div style="display: flex; justify-content:center" class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Chúc mừng bạn nhận thêm 1 sao!</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="">
+                            <div>
+
+
+                                <div style="text-align: center; padding: 10px;">
+                                    <i style="font-size: 30px; color: #F8FF02;" class="fas fa-star"></i>
+                                    <i style="font-size: 40px; color: #F8FF02;" class="fas fa-star"></i>
+                                    <i style="font-size: 30px; color: #F8FF02;" class="fas fa-star"></i>
+
+                                </div>
+                                <h6 style="text-align: center;" class="m-0 font-weight-bold text-primary">Bạn nhận được 3/3 sao cho bài học này!</h6>
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button onclick="window.location.href='game_amdau_bai1.html';" type="button" class="btn btn-primary">Chơi lại</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -651,6 +731,7 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/game.js"></script>
 
 </body>
 

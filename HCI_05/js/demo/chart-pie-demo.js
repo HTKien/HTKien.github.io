@@ -9,9 +9,9 @@ var myPieChart = new Chart(ctx, {
     data: {
         labels: ["Tốt", "Khá", "Chưa học"],
         datasets: [{
-            data: [10, 10, 15],
-            backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-            hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+            data: [15, 10, 15],
+            backgroundColor: ['#4e73df', '#1cc88a', '#AFAFAF'],
+            hoverBackgroundColor: ['#2e59d9', '#17a673', '#AFAFAF'],
             hoverBorderColor: "rgba(234, 236, 244, 1)",
         }],
     },
