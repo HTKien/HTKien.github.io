@@ -17,8 +17,14 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tudien.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="png" href="img/favi.png" />
@@ -458,19 +464,211 @@
 
 
                 <!-- Begin Page Content -->
-                <div style="height: 520px;" class="container-fluid main-content">
+                <div class="container-fluid main-content">
+                    <button id="amdau" style="margin-bottom: 15px; background-color: #0084F3;color: #fff" type=" button " class="btn btn-outline-primary ">Âm đầu</button>
+                    <button id="amchinh" style="margin-bottom: 15px;" type=" button " class="btn btn-outline-primary ">Âm chính</button>
+                    <button id="amcuoi" style="margin-bottom: 15px;" type=" button " class="btn btn-outline-primary ">Âm cuối</button>
 
-                    <!-- Page Heading -->
 
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 style="display: block; margin: auto" class="h3 mb-0 text-gray-800">Nhập ký tự, âm, từ bạn cần tra cách gõ</h1>
 
+
+                    <!-- DataTales Example -->
+                    <div id="amdau-table" class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Âm đầu</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Âm đầu</th>
+                                            <th>Phím tốc ký</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Âm đầu</th>
+                                            <th>Phím tốc ký</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>s</td>
+                                            <td>S</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>t</td>
+                                            <td>T</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>k</td>
+                                            <td>K</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>c</td>
+                                            <td>K</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>h</td>
+                                            <td>H</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>r</td>
+                                            <td>R</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>b</td>
+
+                                            <td>P</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>ng</td>
+                                            <td>KR</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>ngh</td>
+                                            <td>KR</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>g</td>
+                                            <td>KP</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>gi</td>
+                                            <td>KP</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>d</td>
+                                            <td>SH</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>n</td>
+                                            <td>SP</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>l</td>
+                                            <td>PR</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>ch</td>
+                                            <td>SR</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>nh</td>
+                                            <td>SK</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>d</td>
+                                            <td>TK</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>đ</td>
+                                            <td>SP</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>n</td>
+                                            <td>TP</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td>m</td>
+                                            <td>RH</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>q</td>
+                                            <td>PR</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>p</td>
+                                            <td>SPH</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>v</td>
+                                            <td>SPK</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>24</td>
+                                            <td>c</td>
+                                            <td>STR</td>
+
+
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div style="width: fit-content; margin: auto; line-height: 100%;">
-                        <input style="width: 400px; outline: none; border: 1px solid rgb(194, 194, 194); border-radius: 3px; height: 37px;" type="text">
-                        <button onclick="cachGo()" id="btn-tracuu" class="btn btn-success">Tra cứu</button>
-                    </div>
-                    <img id="cachGo" style="display: block; margin: auto; width: 0%; margin-top: 20px" src="img/tocky-removebg-preview-removebg-preview.png" alt="">
 
 
 
@@ -549,8 +747,25 @@
         <script src="js/demo/chart-area-demo.js"></script>
         <script src="js/demo/chart-pie-demo.js"></script>
         <script src="js/common.js"></script>
+        <script src="js/tudien.js"></script>
         <script type="text/javascript" src="https://itexpress.vn/API/files/it.snow.js"></script>
 
+
+
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+        <!-- Page level plugins -->
+        <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="js/demo/datatables-demo.js"></script>
 </body>
 
 </html>
