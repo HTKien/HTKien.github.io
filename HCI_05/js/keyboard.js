@@ -798,22 +798,22 @@ $("#fullpage").keyup(function(event) {
 });
 
 //Phim I
-$("#fullpage").keydown(function(event) {
-    if (event.keyCode === 73) {
-        $("#73").css("background-color", "red");
-        $("#73_").css("background-color", "red");
-    }
+// $("#fullpage").keydown(function(event) {
+//     if (event.keyCode === 73) {
+//         $("#73").css("background-color", "red");
+//         $("#73_").css("background-color", "red");
+//     }
 
 
-});
-$("#fullpage").keyup(function(event) {
-    if (event.keyCode === 73) {
-        $("#73").css("background-color", "#333333");
-        $("#73_").css("background-color", "#333333");
-    }
+// });
+// $("#fullpage").keyup(function(event) {
+//     if (event.keyCode === 73) {
+//         $("#73").css("background-color", "#333333");
+//         $("#73_").css("background-color", "#333333");
+//     }
 
 
-});
+// });
 
 //Phim O
 $("#fullpage").keydown(function(event) {
@@ -915,22 +915,22 @@ $("#fullpage").keyup(function(event) {
 });
 
 //Phim A
-$("#fullpage").keydown(function(event) {
-    if (event.keyCode === 65) {
-        $("#65").css("background-color", "red");
-        $("#65_").css("background-color", "red");
-    }
+// $("#fullpage").keydown(function(event) {
+//     if (event.keyCode === 65) {
+//         $("#65").css("background-color", "red");
+//         $("#65_").css("background-color", "red");
+//     }
 
 
-});
-$("#fullpage").keyup(function(event) {
-    if (event.keyCode === 65) {
-        $("#65").css("background-color", "#333333");
-        $("#65_").css("background-color", "#333333");
-    }
+// });
+// $("#fullpage").keyup(function(event) {
+//     if (event.keyCode === 65) {
+//         $("#65").css("background-color", "#333333");
+//         $("#65_").css("background-color", "#333333");
+//     }
 
 
-});
+// });
 //phim S
 $("#fullpage").keydown(function(event) {
     if (event.keyCode === 83) {
@@ -1195,22 +1195,22 @@ $("#fullpage").keyup(function(event) {
     }
 });
 //Phim C
-$("#fullpage").keydown(function(event) {
-    if (event.keyCode === 67) {
-        $("#67").css("background-color", "red");
-        $("#67_").css("background-color", "red");
-    }
+// $("#fullpage").keydown(function(event) {
+//     if (event.keyCode === 67) {
+//         $("#67").css("background-color", "red");
+//         $("#67_").css("background-color", "red");
+//     }
 
 
-});
-$("#fullpage").keyup(function(event) {
-    if (event.keyCode === 67) {
-        $("#67").css("background-color", "#333333");
-        $("#67_").css("background-color", "#333333");
-    }
+// });
+// $("#fullpage").keyup(function(event) {
+//     if (event.keyCode === 67) {
+//         $("#67").css("background-color", "#333333");
+//         $("#67_").css("background-color", "#333333");
+//     }
 
 
-});
+// });
 //Phim V
 $("#fullpage").keydown(function(event) {
     if (event.keyCode === 86) {
@@ -1246,22 +1246,22 @@ $("#fullpage").keyup(function(event) {
 
 });
 //Phim M
-$("#fullpage").keydown(function(event) {
-    if (event.keyCode === 77) {
-        $("#77").css("background-color", "red");
-        $("#77_").css("background-color", "red");
-    }
+// $("#fullpage").keydown(function(event) {
+//     if (event.keyCode === 77) {
+//         $("#77").css("background-color", "red");
+//         $("#77_").css("background-color", "red");
+//     }
 
 
-});
-$("#fullpage").keyup(function(event) {
-    if (event.keyCode === 77) {
-        $("#77").css("background-color", "#333333");
-        $("#77_").css("background-color", "#333333");
-    }
+// });
+// $("#fullpage").keyup(function(event) {
+//     if (event.keyCode === 77) {
+//         $("#77").css("background-color", "#333333");
+//         $("#77_").css("background-color", "#333333");
+//     }
 
 
-});
+// });
 //Phim Shift right:
 $("#fullpage").keydown(function(e) {
 
@@ -1372,11 +1372,15 @@ $('#go').keydown(function(e) {
     }
 }).keyup(function(ev) {
     if (ev.keyCode == '86') {
-        checkCtrl = false
+        checkCtrl = false;
+        document.getElementById('73').style.backgroundColor = "#333333";
+        document.getElementById('73_').style.backgroundColor = "#333333";
     }
 }).keydown(function(event) {
     if (checkCtrl) {
         if (event.keyCode == '73') {
+            document.getElementById('73').style.backgroundColor = "#43E36F";
+            document.getElementById('73_').style.backgroundColor = "#43E36F";
             //$("#go").append("ê ");
             document.getElementById("go").value += " ê";
             //ghi log
@@ -1409,10 +1413,14 @@ $('#go').keydown(function(e) {
 }).keyup(function(ev) {
     if (ev.keyCode == '84') {
         checkCtrl = false
+        document.getElementById('77').style.backgroundColor = "#333333";
+        document.getElementById('77_').style.backgroundColor = "#333333";
     }
 }).keydown(function(event) {
     if (checkCtrl) {
         if (event.keyCode == '77') {
+            document.getElementById('77').style.backgroundColor = "#43E36F";
+            document.getElementById('77_').style.backgroundColor = "#43E36F";
             // $("#go").append("ha ");
             document.getElementById("go").value += " ha";
 
@@ -1424,6 +1432,63 @@ $('#go').keydown(function(e) {
 
             var a;
             a = date + " " + time + " " + "HA";
+
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode(a);
+            node.appendChild(textnode);
+
+
+            document.getElementById("log-press").appendChild(node);
+            checkCtrl = false
+        }
+    }
+});
+
+
+//Tổ hợp phím thường Q A  -> Kết quả: xoay
+
+$('#go').keydown(function(e) {
+    if (e.keyCode == '81') {
+        checkCtrl = true
+    }
+}).keyup(function(ev) {
+    if (ev.keyCode == '81') {
+        checkCtrl = false;
+        document.getElementById('65').style.backgroundColor = "#333333";
+        document.getElementById('65_').style.backgroundColor = "#333333";
+        document.getElementById('67').style.backgroundColor = "#333333";
+        document.getElementById('67_').style.backgroundColor = "#333333";
+        document.getElementById('79').style.backgroundColor = "#333333";
+        document.getElementById('79_').style.backgroundColor = "#333333";
+        document.getElementById('80').style.backgroundColor = "#333333";
+        document.getElementById('80_').style.backgroundColor = "#333333";
+        document.getElementById('76').style.backgroundColor = "#333333";
+        document.getElementById('76_').style.backgroundColor = "#333333";
+    }
+}).keydown(function(event) {
+    if (checkCtrl) {
+        if (event.keyCode == '65') {
+            document.getElementById('65').style.backgroundColor = "#0084F3";
+            document.getElementById('65_').style.backgroundColor = "#0084F3";
+            document.getElementById('67').style.backgroundColor = "#F6C23E";
+            document.getElementById('67_').style.backgroundColor = "#F6C23E";
+            document.getElementById('79').style.backgroundColor = "#F200DA";
+            document.getElementById('79_').style.backgroundColor = "#F200DA";
+            document.getElementById('80').style.backgroundColor = "#00FBFF";
+            document.getElementById('80_').style.backgroundColor = "#00FBFF";
+            document.getElementById('76').style.backgroundColor = "#43E36F";
+            document.getElementById('76_').style.backgroundColor = "#43E36F";
+            // $("#go").append("ha ");
+            document.getElementById("go").value += " xoay";
+
+
+            //ghi log
+            var today = new Date();
+            var date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+            var a;
+            a = date + " " + time + " " + "ST-U-JN";
 
             var node = document.createElement("LI");
             var textnode = document.createTextNode(a);
