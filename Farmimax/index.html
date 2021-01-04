@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo ">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class=" information col-xl-6  col-lg-6 col-md-12 col-sm-12">
+                        <p class="title">Thông tin giao hàng </p>
+                        <form action="">
+                            <input placeholder="Họ và tên" class="form-control" type="text">
+                            <div class="input-row">
+                                <input placeholder="Email" class="email form-control" type="text">
+                                <input placeholder="Điện thoại" class="phone form-control" type="text">
+                            </div>
+                            <input placeholder="Địa chỉ" class="form-control" type="text">
+                            <div class="input-row">
+                                <select class="form-control city">
+                                    <option selected>Tỉnh / Thành phố</option>
+                                    <option value="1">Hà Nội</option>
+                                    <option value="2">Hồ Chí Minh</option>
+                                    <option value="3">Nha Trang</option>
+                                  </select>
+                                <select class="form-control city">
+                                    <option selected>Quận / Huyện</option>
+                                    <option value="1">Hai Bà Trưng</option>
+                                    <option value="2">Hoàng Mai</option>
+                                    <option value="3">Thanh Xuân</option>
+                                  </select>
+                            </div>
+                            <select class="form-control city">
+                                <option selected>Phường / Xã</option>
+                                <option value="1">Minh Khai</option>
+                                <option value="2">Bách Khoa</option>
+                              </select>
+
+                        </form>
+                        <p class="title method-pay">Phương thức thanh toán </p>
+                        <input type="radio" class="" name="optradio" checked> <label class="checkbox-method-pay" for="">Thanh toán tại nhà</label>
+                        <br>
+                        <br>
+                        <a class="back-cart-link" href=""> <i class="fas fa-chevron-left back-cart-icon"></i>Giỏ hàng</a>
+                        <hr>
+
+
+
+                    </div>
+                    <div class="paytion  col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="paytion-container">
+                            <div class="list-product">
+                                <div class="item">
+                                    <div class="left">
+                                        <img src="images/potato.png" alt="">
+                                        <p class="amount">1</p>
+                                        <p class="name-product">Khoai lang Nhật - 1kg</p>
+                                    </div>
+                                    <div class="right">20.000đ</div>
+                                </div>
+                                <hr>
+
+                            </div>
+                            <form action="">
+                                <div class="input-row">
+                                    <input placeholder="Mã giảm giá" class="code-reduce form-control" type="text">
+                                    <button class="btn btn-primary btn-use-code">Sử dụng</button>
+                                </div>
+                                <input placeholder="Ghi chú" class="note code-reduce form-control" type="text">
+
+
+                            </form>
+                            <hr>
+                            <div class="money">
+                                <p>Tạm tính</p>
+                                <p>20.000đ</p>
+                            </div>
+                            <div class="money">
+                                <p>Phí vận chuyển</p>
+                                <p>0đ</p>
+                            </div>
+                            <hr>
+                            <div class="money totol">
+                                <p>Tổng cộng</p>
+                                <p>20.000đ</p>
+                            </div>
+                            <button class="btn btn-primary btn-pay">Thanh toán</button>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+body .logo {
+  text-align: center; }
+
+body .content .information .title {
+  font-size: 18px; }
+
+body .content .information .method-pay {
+  margin-top: 30px; }
+
+body .content .information .checkbox-method-pay {
+  font-size: 15px;
+  font-weight: 600; }
+
+body .content .information .back-cart-icon {
+  margin-right: 5px; }
+
+body .content .information form input,
+body .content .information form select {
+  font-size: 15px;
+  margin-bottom: 10px;
+  height: 45px; }
+
+body .content .information .input-row {
+  display: flex;
+  justify-content: space-between; }
+  body .content .information .input-row .email {
+    width: calc(70% - 10px); }
+  body .content .information .input-row .phone {
+    width: 30%; }
+  body .content .information .input-row .city,
+  body .content .information .input-row .district {
+    width: calc(50% - 5px); }
+
+body .content .paytion .paytion-container {
+  width: 80%;
+  float: right;
+  margin-top: 20px; }
+
+body .content .paytion .list-product .item {
+  display: flex;
+  justify-content: space-between; }
+
+body .content .paytion .list-product .left {
+  display: flex;
+  position: relative; }
+  body .content .paytion .list-product .left img {
+    border: 1px solid #d1d1d1;
+    width: 65px;
+    border-radius: 10px; }
+  body .content .paytion .list-product .left .amount {
+    position: absolute;
+    margin-left: 55px;
+    margin-top: -5px;
+    background-color: #a3a3a3;
+    padding: 1px 7px 1px 7px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 15px; }
+  body .content .paytion .list-product .left .name-product {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px; }
+
+body .content .paytion .list-product .right {
+  font-size: 15px;
+  margin-top: 20px; }
+
+body .content .paytion form input {
+  font-size: 15px;
+  margin-bottom: 10px;
+  height: 45px; }
+
+body .content .paytion form .input-row {
+  display: flex;
+  justify-content: space-between; }
+  body .content .paytion form .input-row .code-reduce {
+    width: 70%; }
+  body .content .paytion form .input-row .btn-use-code {
+    width: calc(30% - 10px);
+    height: 45px;
+    font-size: 15px; }
+
+body .content .paytion form .note {
+  height: 80px; }
+
+body .content .paytion .money {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px; }
+
+body .content .paytion .totol {
+  font-size: 20px; }
+
+body .content .paytion .btn-pay {
+  width: 100%;
+  height: 50px;
+  font-size: 15px; }
+
+@media only screen and (max-width: 991px) {
+  .paytion {
+    margin-bottom: 50px; }
+    .paytion .paytion-container {
+      width: 100% !important;
+      margin-top: 20px; } }
