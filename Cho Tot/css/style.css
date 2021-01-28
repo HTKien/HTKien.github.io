@@ -1,0 +1,232 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+
+.container {
+  padding-left: 110px;
+  padding-right: 110px; }
+
+header {
+  background-color: #FFBA00;
+  margin-bottom: 15px; }
+  header .logo {
+    cursor: pointer; }
+    header .logo img {
+      height: 35px;
+      width: auto; }
+  header .menu-item, header .add-new {
+    cursor: pointer; }
+    header .menu-item svg, header .add-new svg {
+      width: 22px;
+      height: 22px; }
+  header .user {
+    cursor: pointer; }
+    header .user svg {
+      width: 30px;
+      height: 30px; }
+  header .header-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    align-items: center; }
+    header .header-top .menu {
+      display: flex;
+      align-items: center; }
+    header .header-top .menu-item {
+      display: flex;
+      align-items: center;
+      padding-left: 40px; }
+      header .header-top .menu-item p {
+        padding-left: 10px; }
+  header .header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px; }
+    header .header-bottom .search, header .header-bottom .user, header .header-bottom .add-new {
+      display: flex;
+      align-items: center; }
+    header .header-bottom .add-new {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #FC9807;
+      padding: 5px 20px;
+      border-radius: 5px; }
+      header .header-bottom .add-new p {
+        padding-left: 5px; }
+    header .header-bottom .user {
+      font-weight: 700;
+      font-size: 14px; }
+      header .header-bottom .user p {
+        padding-left: 5px; }
+    header .header-bottom .search {
+      width: calc(100% - 300px); }
+      header .header-bottom .search input {
+        width: 100%;
+        border: none;
+        height: 36px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        font-size: 14px;
+        padding-left: 10px; }
+      header .header-bottom .search button {
+        height: 36px;
+        border: none;
+        background-color: #fff;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; }
+
+slider .carousel-inner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px; }
+
+slider .carousel-item {
+  position: relative;
+  transition: 1.5s; }
+
+.menu-carousel {
+  margin-top: 15px; }
+  .menu-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .menu-carousel .item img {
+      width: 33px !important;
+      height: 33px;
+      margin-right: 15px; }
+
+.title {
+  padding: 10px 10px;
+  font-weight: 700; }
+
+.category {
+  width: 100%;
+  background-color: #F4F4F4; }
+  .category .container .box-content {
+    background-color: #fff;
+    margin-top: 15px;
+    padding-bottom: 15px; }
+    .category .container .box-content .items {
+      padding: 10px 20px; }
+      .category .container .box-content .items .row {
+        justify-content: space-between; }
+      .category .container .box-content .items .space {
+        height: 30px; }
+    .category .container .box-content .item {
+      width: fit-content;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .category .container .box-content .item img {
+        width: 84px;
+        height: 84px; }
+      .category .container .box-content .item p {
+        font-size: 13px;
+        padding-top: 5px;
+        text-align: center; }
+
+.new-post {
+  width: 100%;
+  background-color: #F4F4F4; }
+  .new-post .content {
+    background-color: #fff;
+    margin-top: 15px;
+    width: 100%; }
+    .new-post .content .row {
+      margin-left: 0px !important; }
+    .new-post .content .card-box {
+      width: calc(20% - 3px);
+      padding: 12px;
+      border-top: 1px solid #F4F4F4;
+      border-right: 1px solid #F4F4F4; }
+      .new-post .content .card-box img {
+        width: 100%; }
+      .new-post .content .card-box .title-new {
+        font-size: 14px;
+        padding-top: 10px;
+        font-weight: 600; }
+      .new-post .content .card-box .cost {
+        color: red;
+        font-weight: 700;
+        padding-top: 20px; }
+      .new-post .content .card-box .descript {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-bottom: 15px; }
+    .new-post .content .card-box:hover {
+      box-shadow: 2px 2px 2px 2px #c7c7c7;
+      cursor: pointer; }
+
+.main-text {
+  background-color: #F4F4F4; }
+  .main-text #more {
+    display: none; }
+  .main-text .title {
+    padding: 20px 0 15px; }
+  .main-text .content {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify; }
+  .main-text button {
+    border: none;
+    outline: none;
+    padding: 0px;
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    color: #7b7bff;
+    font-weight: 700; }
+
+.keyword {
+  width: 100%;
+  background-color: #F4F4F4;
+  font-size: 14px;
+  padding-bottom: 30px; }
+  .keyword ul {
+    list-style-type: disc; }
+    .keyword ul li {
+      padding-top: 10px; }
+  .keyword .content {
+    padding: 15px; }
+  .keyword .title {
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin-left: -20px; }
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 30px; }
+  footer .title {
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-left: 0px; }
+  footer .img-qr {
+    width: 90px; }
+  footer .item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px; }
+    footer .item svg {
+      width: 100px;
+      margin-left: 10px;
+      margin-top: 5px;
+      cursor: pointer; }
+    footer .item li {
+      font-size: 14px;
+      padding-bottom: 20px; }
+  footer .youtube-svg, footer .google-svg {
+    margin-left: 15px;
+    cursor: pointer; }
+  footer .facebook-svg {
+    cursor: pointer; }
+  footer .address {
+    text-align: center;
+    font-size: 13px;
+    color: #969595;
+    line-height: 20px; }

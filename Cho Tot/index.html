@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chợ Tốt</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="css/reset200802.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+</head>
+<body>
+    <header class="sticky-top">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <div class="menu-item">
+                        <svg class="appWrapper-Header-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30"><defs><path d="M0 0h22.624v24.578H0z"></path></defs><g fill="none" fill-rule="evenodd"><g transform="translate(3.692 2.615)"><path class="svg-fill" fill="#000" d="M21.188 23.142h-5.42v-5.115c0-1.23-.45-2.386-1.27-3.255a4.34 4.34 0 0 0-3.186-1.384 4.34 4.34 0 0 0-3.186 1.384 4.719 4.719 0 0 0-1.27 3.255v5.115h-5.42V9.559L11.313 1.7l9.876 7.858v13.583zm1.235-14.437L11.608.101A.55.55 0 0 0 11.313 0a.575.575 0 0 0-.297.1L.202 8.706A.548.548 0 0 0 0 9.134v14.918c0 .275.236.526.496.526h7.3c.26 0 .497-.25.497-.526v-6.025c0-.863.312-1.669.878-2.27a2.92 2.92 0 0 1 2.141-.933 2.92 2.92 0 0 1 2.141.933c.567.601.879 1.407.879 2.27v6.025c0 .275.236.526.496.526h7.3c.26 0 .496-.25.496-.526V9.134a.552.552 0 0 0-.201-.429z"></path></g><path stroke="#FFF" stroke-width=".5" d="M1 1h28v28H1z" opacity=".01"></path></g></svg>
+                        <p>Trang chủ</p>
+                    </div>
+                    <div class="menu-item">
+                        <svg class="appWrapper-Header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><g fill="none" fill-rule="evenodd"><path stroke="#000" stroke-width=".5" d="M1 1h28v28H1z" opacity=".01"></path><g class="svg-fill" fill="#000"><path d="M10.007 13.528c1.42.346 2.998.528 4.581.528 2.287 0 4.535-.382 6.17-1.05a6.54 6.54 0 0 0 .157-.066l.033-.015-.115-.247.15.23.418-.21-.135-.238.169.218.112-.066-.141-.233.165.219.433-.294.528-.464c.369.736.992 1.27 1.508 1.712l.221.191a7.999 7.999 0 0 1 .975 3.8c0 4.424-3.738 8.162-8.162 8.162-4.424 0-8.162-3.738-8.162-8.162a7.99 7.99 0 0 1 1.095-4.015zm-5.465-4.9l.232-.141a8.086 8.086 0 0 1-.217-.403l-.017-.032a10.24 10.24 0 0 1-.448-1.03 6.989 6.989 0 0 0 2.028.831 1.23 1.23 0 0 0 1.382-.646l.984.237-.73-.382c1.734-.037 3.481-.766 5.172-1.471 1.276-.532 2.48-1.034 3.55-1.192.671-.1 1.308-.15 1.892-.15 1.631 0 2.86.386 3.552 1.114.464.489.68 1.129.64 1.9a1.23 1.23 0 0 0 .734 1.186c.438.19.972.097 1.32-.226.126.099.27.172.427.216.413.115.652.216.801.338.159.13.313.364.502.76.876 1.832.478 2.79-.181 4.376a5.915 5.915 0 0 0-.018.045c-.126-.435-.291-.77-.587-1.054a11.595 11.595 0 0 0-.546-.488c-.516-.442-1.049-.898-1.231-1.458a1.222 1.222 0 0 0-2.107-.401l-.385.399-.734.497.127.24-.15-.228-.223.106c-.04.018-.08.035-.12.05-1.46.597-3.503.94-5.603.94-1.589 0-3.253-.195-4.567-.534a1.236 1.236 0 0 0-.937.137c-.232.14-.34.38-.633 1.022l-.143.313c-.19-.714-.428-1.595-.605-2.055a1.228 1.228 0 0 0-.52-.614c-.8-.473-1.456-1.03-1.952-1.659a4.43 4.43 0 0 1-.077-.1l-.076-.106a4.514 4.514 0 0 1-.149-.222 6.617 6.617 0 0 1-.15-.25l-.191.11.187-.114-.233.14zm23.154.264c-.213-.448-.417-.783-.66-1.045l.62.31-.62-.883c-.345-.49-.967-.77-1.708-.77-.463 0-.914.107-1.274.295-.06-.958-.417-1.802-1.048-2.466-1.296-1.364-3.68-1.867-6.747-1.414-1.254.185-2.602.747-3.906 1.291-1.6.667-3.255 1.357-4.734 1.357-1.042 0-1.911-.342-2.67-1.06L4.91 4.47l-.05.052-.029.003.06-.074-.09-.09-.554-.577.086.795.009.065c.039.248.15.516.327.793.069.11.147.218.232.325-.886-.538-1.602-1.343-2.17-2.43l-.31-.595-.192.644c-.472 1.586.234 3.879.977 5.349l.02.046.005.005a12.667 12.667 0 0 0 .252.464l.084.14.014.023a6.735 6.735 0 0 0 .27.416l.016.022a6.066 6.066 0 0 0 .189.253c.593.75 1.36 1.413 2.283 1.97.895 2.367 1.099 4.39 1.145 5.17-.004.1-.005.202-.005.304 0 5.2 4.394 9.594 9.594 9.594 5.201 0 9.595-4.394 9.595-9.594 0-.133-.003-.265-.009-.396.21-1.031.554-1.859.887-2.66.704-1.696 1.312-3.16.15-5.595z"></path><path d="M13.917 17.674a1.052 1.052 0 0 0 0-2.1 1.052 1.052 0 0 0 0 2.1M20.463 17.674a1.052 1.052 0 0 0 0-2.1 1.052 1.052 0 0 0 0 2.1M17.135 23.586c1.97 0 3.767-.987 4.69-2.576a.718.718 0 0 0-1.24-.72c-.667 1.149-1.989 1.863-3.45 1.863-1.462 0-2.784-.714-3.451-1.863a.711.711 0 0 0-.436-.332.717.717 0 0 0-.803 1.052c.922 1.589 2.72 2.576 4.69 2.576"></path></g></g></svg>
+                        <p>Tôi bán</p>
+                    </div>
+                    <div class="menu-item">
+                        <svg class="appWrapper-Header-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="26" viewBox="0 0 31 26"><defs><path id="a1" d="M0 0h31.059v26H0z"></path></defs><g fill="none" fill-rule="evenodd" transform="translate(-.059)"><mask id="b2" fill="#fff"><use xlink:href="#a1"></use></mask><path class="svg-fill" fill="#000" d="M28.043 5.39c1.343 0 2.085.65 2.47 1.193.544.767.62 1.617.628 1.94v9.913c0 2.447-1.902 3.15-2.995 3.191l-.104.002h-5.798v2.965a.733.733 0 0 1-.436.673.699.699 0 0 1-.687-.083l-.086-.076-3.585-3.694a.733.733 0 0 1-.208-.515c0-.194.074-.377.208-.516a.695.695 0 0 1 .913-.076l.088.076 2.379 2.452v-1.934c0-.37.267-.676.611-.725l.096-.006h6.531c.25-.006 1.55-.106 1.653-1.547l.007-.187V8.584c-.004-.275-.098-1.62-1.503-1.726l-.182-.007H11.975c-.166 0-1.568.045-1.675 1.546l-.007.187v9.852c0 1.62 1.396 1.727 1.656 1.733h3.611a.72.72 0 0 1 .707.732.723.723 0 0 1-.611.721l-.096.007h-3.585c-1.038 0-2.973-.626-3.093-2.962l-.006-.231V8.584c0-2.447 1.903-3.15 2.996-3.191l.103-.002h16.068zM19.145.65c1.038 0 2.973.626 3.093 2.958l.006.231v.127a.719.719 0 0 1-.707.728.716.716 0 0 1-.7-.63l-.007-.098V3.84c0-1.561-1.296-1.718-1.65-1.732H3.1c-1.572 0-1.676 1.44-1.682 1.71v9.693c0 1.336.947 1.642 1.426 1.712.125.014.191.02.23.02l.026.001h.51c.357 0 .653.276.7.633l.006.099v1.934l2.377-2.45a.696.696 0 0 1 .388-.206l.112-.01.112.01a.698.698 0 0 1 .39.205.747.747 0 0 1 .074.94l-.075.09-3.585 3.694a.69.69 0 0 1-.767.162.736.736 0 0 1-.434-.568l-.008-.108v-2.973C1.831 16.62.12 15.934.006 13.742L0 13.51V3.84C0 2.772.607.784 2.867.656L3.099.65h16.046zm7.704 15.489a.72.72 0 0 1 .707.731.719.719 0 0 1-.707.728H13.171a.72.72 0 0 1-.71-.728c0-.403.319-.731.71-.731zm-13.678-3.357H26.85c.39 0 .707.327.707.728a.723.723 0 0 1-.61.722l-.097.006H13.171a.72.72 0 0 1-.71-.728c0-.368.268-.673.614-.721l.096-.007H26.85zm13.678-3.36a.72.72 0 0 1 .707.73.723.723 0 0 1-.61.723l-.097.007H13.171a.72.72 0 0 1-.71-.73c0-.368.268-.675.614-.723l.096-.007H26.85z" mask="url(#b1)"></path></g></svg>
+                        <p>Chat</p>
+                    </div>
+                    <div class="menu-item">
+                        <svg class="appWrapper-Header-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="26" viewBox="0 0 31 26"><defs><path id="a1" d="M0 0h31.059v26H0z"></path></defs><g fill="none" fill-rule="evenodd" transform="translate(-.059)"><mask id="b2" fill="#fff"><use xlink:href="#a1"></use></mask><path class="svg-fill" fill="#000" d="M28.043 5.39c1.343 0 2.085.65 2.47 1.193.544.767.62 1.617.628 1.94v9.913c0 2.447-1.902 3.15-2.995 3.191l-.104.002h-5.798v2.965a.733.733 0 0 1-.436.673.699.699 0 0 1-.687-.083l-.086-.076-3.585-3.694a.733.733 0 0 1-.208-.515c0-.194.074-.377.208-.516a.695.695 0 0 1 .913-.076l.088.076 2.379 2.452v-1.934c0-.37.267-.676.611-.725l.096-.006h6.531c.25-.006 1.55-.106 1.653-1.547l.007-.187V8.584c-.004-.275-.098-1.62-1.503-1.726l-.182-.007H11.975c-.166 0-1.568.045-1.675 1.546l-.007.187v9.852c0 1.62 1.396 1.727 1.656 1.733h3.611a.72.72 0 0 1 .707.732.723.723 0 0 1-.611.721l-.096.007h-3.585c-1.038 0-2.973-.626-3.093-2.962l-.006-.231V8.584c0-2.447 1.903-3.15 2.996-3.191l.103-.002h16.068zM19.145.65c1.038 0 2.973.626 3.093 2.958l.006.231v.127a.719.719 0 0 1-.707.728.716.716 0 0 1-.7-.63l-.007-.098V3.84c0-1.561-1.296-1.718-1.65-1.732H3.1c-1.572 0-1.676 1.44-1.682 1.71v9.693c0 1.336.947 1.642 1.426 1.712.125.014.191.02.23.02l.026.001h.51c.357 0 .653.276.7.633l.006.099v1.934l2.377-2.45a.696.696 0 0 1 .388-.206l.112-.01.112.01a.698.698 0 0 1 .39.205.747.747 0 0 1 .074.94l-.075.09-3.585 3.694a.69.69 0 0 1-.767.162.736.736 0 0 1-.434-.568l-.008-.108v-2.973C1.831 16.62.12 15.934.006 13.742L0 13.51V3.84C0 2.772.607.784 2.867.656L3.099.65h16.046zm7.704 15.489a.72.72 0 0 1 .707.731.719.719 0 0 1-.707.728H13.171a.72.72 0 0 1-.71-.728c0-.403.319-.731.71-.731zm-13.678-3.357H26.85c.39 0 .707.327.707.728a.723.723 0 0 1-.61.722l-.097.006H13.171a.72.72 0 0 1-.71-.728c0-.368.268-.673.614-.721l.096-.007H26.85zm13.678-3.36a.72.72 0 0 1 .707.73.723.723 0 0 1-.61.723l-.097.007H13.171a.72.72 0 0 1-.71-.73c0-.368.268-.675.614-.723l.096-.007H26.85z" mask="url(#b1)"></path></g></svg>
+                        <p>Thông báo</p>
+                    </div>
+                    <div class="menu-item">
+                        <svg class="appWrapper-Header-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g fill="none" fill-rule="evenodd"><path stroke="#FFF" stroke-width=".5" d="M1 1h28v28H1z" opacity=".01"></path><g class="svg-fill" fill="#000"><path d="M6.341 11.77a3.295 3.295 0 1 0 0 6.59 3.295 3.295 0 0 0 0-6.59m0 1.362c1.067 0 1.934.867 1.934 1.933a1.935 1.935 0 0 1-1.934 1.933 1.935 1.935 0 0 1-1.933-1.933c0-1.066.868-1.933 1.933-1.933M14.957 11.77a3.296 3.296 0 1 0 0 6.59 3.296 3.296 0 0 0 0-6.59m0 1.362c1.066 0 1.933.867 1.933 1.933a1.935 1.935 0 0 1-1.933 1.933 1.935 1.935 0 0 1-1.933-1.933c0-1.066.867-1.933 1.933-1.933M23.572 11.77a3.295 3.295 0 1 0 0 6.59 3.295 3.295 0 0 0 0-6.59m0 1.362c1.066 0 1.933.867 1.933 1.933a1.935 1.935 0 0 1-1.933 1.933 1.935 1.935 0 0 1-1.933-1.933c0-1.066.867-1.933 1.933-1.933"></path></g></g></svg>
+                        <p>Thêm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="search">
+                    <input placeholder="Tìm kiếm trên Chợ Tốt" type="text" class="sreach">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><g fill="none" fill-rule="evenodd"><path stroke="#FE9900" stroke-width="1.3" d="M13.59 13.56a6.334 6.334 0 0 1-4.494 1.858 6.33 6.33 0 0 1-4.494-1.858A6.319 6.319 0 0 1 2.74 9.077a6.317 6.317 0 0 1 1.862-4.483 6.335 6.335 0 0 1 4.494-1.856 6.331 6.331 0 0 1 4.494 1.857 6.317 6.317 0 0 1 1.862 4.482 6.317 6.317 0 0 1-1.862 4.483zm.797.25l.318-.41a6.999 6.999 0 0 0 1.486-4.322 7.053 7.053 0 0 0-2.078-5.005A7.073 7.073 0 0 0 9.096 2a7.067 7.067 0 0 0-5.018 2.073A7.053 7.053 0 0 0 2 9.077a7.054 7.054 0 0 0 2.078 5.005 7.072 7.072 0 0 0 5.017 2.073 7.034 7.034 0 0 0 4.327-1.478l.412-.317 5.54 5.526a.388.388 0 0 0 .551 0 .386.386 0 0 0 0-.55l-5.538-5.525z"></path><path stroke="#FFF" stroke-width=".1" d="M1 1h20v20H1z" opacity=".01"></path></g></svg>
+                    </button>
+                </div>
+                <div class="user">
+                    <svg class="appWrapper-Header-icon login-avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><g class="svg-stroke" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.2"><circle cx="15" cy="15" r="14.4"></circle><circle cx="15" cy="12" r="4.5"></circle><path d="M25.442 24.63c-1.453-4.536-5.579-7.807-10.442-7.807-4.932 0-9.106 3.365-10.502 8"></path></g></svg>
+                    <p>Đăng nhập</p>
+                </div>
+                <div class="add-new">
+                    <svg class="appWrapper-Header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><g fill="none" fill-rule="evenodd"><path stroke="#FFBA00" stroke-width=".5" d="M1 1h28v28H1z" opacity=".01"></path><path class="svg-fill" fill="#fff" d="M16.765 2.312a.759.759 0 1 1 0 1.518H6.873a1.88 1.88 0 0 0-1.877 1.877v16.438a1.88 1.88 0 0 0 1.877 1.877H23.31a1.88 1.88 0 0 0 1.877-1.877V11.8a.76.76 0 0 1 1.518 0v10.344a3.399 3.399 0 0 1-3.395 3.395H6.873a3.4 3.4 0 0 1-3.396-3.395V5.707a3.4 3.4 0 0 1 3.396-3.395h9.892zm6.022.21c.273-.1.564-.078.835-.038.276.042.57.205.83.461l.54.54 1.117 1.117c.24.24.394.497.46.766a1.68 1.68 0 0 1-.4 1.545l-.058.062c-.344.352-.7.707-1.048 1.05l-.631.63-6.33 6.328-.488.493-.038.04c-.307.31-.621.628-.939.932-.153.148-.339.219-.619.236l-3.014.184h-.03a.719.719 0 0 1-.484-.218c-.158-.156-.249-.358-.24-.543l.135-3.097c.016-.253.095-.443.248-.598l.157-.16.003-.002.082-.081 5.416-5.415c.576-.577 1.166-1.167 1.747-1.745l1.68-1.682c.144-.146.27-.275.397-.396.188-.181.388-.304.672-.408zm.493 1.428l-.221.219c-.153.151-.306.305-.457.456l-.536.537-8.151 8.152-.086 1.957 1.906-.115.312-.312.226-.224.05-.049.385-.38 8.401-8.403-1.211-1.209a8.233 8.233 0 0 1-.172-.175l-.027-.029c-.065-.068-.13-.137-.2-.206l-.22-.219z"></path></g></svg>
+                    <p>Đăng tin</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <slider>
+        <div class="container">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/slider4.png" alt="" width="1100" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slider2.jpg" alt="" width="1100" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slider3.jpg" alt="" width="1100" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slider5.png" alt="" width="1100" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slider7.jpg" alt="" width="1100" height="500">
+                  </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+
+        </div>
+        
+        
+    </slider>
+    <div class="menu-carousel">
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="images/menu-carousel1.png" alt="">
+                    <p>Định Giá Bán Xe</p>
+                </div>
+                <div class="item">
+                    <img src="images/menu-carousel2.png" alt="">
+                    <p>Chợ Tốt Ưu Đãi</p>
+                </div>
+                <div class="item">
+                    <img src="images/menu-carousel3.png" alt="">
+                    <p>Nạp Đồng Tốt</p>
+                </div>
+                <div class="item">
+                    <img src="images/menu-carousel4.png" alt="">
+                    <p>Tin Đăng Đã Lưu</p>
+                </div>
+                <div class="item">
+                    <img src="images/menu-carousel5.png" alt="">
+                    <p>Vòng Quay May Mắn</p>
+                </div>
+                <div class="item">
+                    <img src="images/menu-carousel6.png" alt="">
+                    <p>Tìm Kiếm Đã Lưu</p>
+                </div>
+               
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="category">
+        <div class="container">
+            <div class="box-content">
+                <p class="title">Khám phá danh mục</p>
+                <div class="items">
+                    <div class="row">
+                        <div class="item">
+                            <img src="images/category1.png" alt="">
+                            <p>Bất Động Sản</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category2.png" alt="">
+                            <p>Xe Cộ</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category3.png" alt="">
+                            <p>Đồ Điện Tử</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category4.png" alt="">
+                            <p>Thực Phẩm</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category1.png" alt="">
+                            <p>Bất Động Sản</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category2.png" alt="">
+                            <p>Xe Cộ</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category3.png" alt="">
+                            <p>Đồ Điện Tử</p>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="row">
+                        <div class="item">
+                            <img src="images/category4.png" alt="">
+                            <p>Thực Phẩm</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category1.png" alt="">
+                            <p>Bất Động Sản</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category2.png" alt="">
+                            <p>Xe Cộ</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category3.png" alt="">
+                            <p>Đồ Điện Tử</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category4.png" alt="">
+                            <p>Thực Phẩm</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category1.png" alt="">
+                            <p>Bất Động Sản</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/category2.png" alt="">
+                            <p>Xe Cộ</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="new-post">
+        <div class="container">
+            <div class="content">
+                <p class="title">Tin đăng mới</p>
+                <div class="row">
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-box">
+                        <img src="images/new1.jpg" alt="">
+                        <p class="title-new">Sonic 2018 bstp 62zz</p>
+                        <p class="cost">33.000.000 đ</p>
+                        <div class="descript">
+                            <p>4 phút trước</p>
+                            <p>Hà Nội</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="main-text">
+        <div class="container">
+            <p class="title">Chợ Tốt - Chợ Mua Bán, Rao Vặt Trực Tuyến Hàng Đầu Của Người Việt</p>
+            <p class="content">Chợ Tốt chính thức gia nhập thị trường Việt Nam vào đầu năm 2012, với mục đích tạo ra cho bạn một kênh rao vặt trung gian, kết nối người mua với người bán lại với nhau bằng những giao dịch cực kỳ đơn giản, tiện lợi, nhanh chóng, an toàn, mang đến hiệu quả bất ngờ.
+                <br>
+                Đến nay, Chợ Tốt tự hào là Website rao vặt được ưa chuộng hàng đầu Việt Nam. Hàng ngàn món hời từ Bất động sản, Nhà cửa, Xe cộ, Đồ điện tử, Thú cưng, Vật dụng cá nhân... đến tìm việc làm, thông tin tuyển dụng, các dịch vụ - du lịch được đăng tin, rao bán trên Chợ Tốt.
+                <br>
+                Với Chợ Tốt, bạn có thể dễ dàng mua bán, trao đổi bất cứ một loại mặt hàng nào, dù đó là đồ cũ hay đồ mới với nhiều lĩnh vực:
+                <br>
+                Bất động sản: Cho thuê, Mua bán nhà đất, căn hộ chung cư, văn phòng mặt bằng kinh doanh, phòng trọ đa dạng về diện tích, vị trí<span id="dots">...</span><span id="more">
+                <br>    
+                Phương tiện đi lại: xe ô tô, xe máy có độ bền cao, giá cả hợp lý.
+                <br>        
+                Đồ dùng cá nhân: quần áo, giày dép, túi xách, đồng hồ... đa phong cách, hợp thời trang.
+                <br>
+                Đồ điện tử: điện thoại di động, máy tính bảng, laptop, tivi, loa, amply...; đồ điện gia dụng: máy giặt, tủ lạnh, máy lạnh điều hòa... với rất nhiều nhãn hiệu, kích thước khác nhau.
+                <br>
+                Vật nuôi, thú cưng đa chủng loại: gà, chó (chó phốc sóc, chó pug, chó poodle...), chim, mèo (mèo anh lông ngắn, mèo munchkin...), cá, hamster giá cực tốt.
+                <br>
+                Tuyển dụng, việc làm với hàng triệu công việc hấp dẫn, phù hợp.
+                <br>
+                Dịch vụ, du lịch: khách sạn, vé máy bay, vé tàu, vé xe, tour du lịch và các voucher du lịch... uy tín, chất lượng.
+                <br>
+                Đồ ăn, thực phẩm: các món ăn được chế biến thơm ngon, hấp dẫn, thực phẩm tươi sống, an toàn & giá cả hợp lý.
+                <br>
+                Và còn rất nhiều mặt hàng khác nữa đã và đang được rao bán tại Chợ Tốt.
+                <br>
+                Mỗi người trong chúng ta đều có những sản phẩm đã qua sử dụng và không cần dùng tới nữa. Vậy còn chần chừ gì nữa mà không để nó trở nên giá trị hơn với người khác. Rất đơn giản, bạn chỉ cần chụp hình lại, mô tả cụ thể về sản phẩm và sử dụng ứng dụng Đăng tin miễn phí của Chợ Tốt là đã có thể đến gần hơn với người cần nó.
+                <br>
+                Không những thế, website chotot.com còn cung cấp cho bạn thông tin về giá cả các mặt hàng để bạn có thể tham khảo. Đồng thời, thông qua Blog kinh nghiệm, Chợ Tốt sẽ tư vấn, chia sẻ cho bạn những thông tin bổ ích, bí quyết, mẹo vặt giúp bạn có những giao dịch mua bán an toàn, đảm bảo. Chợ Tốt cũng sẵn sàng hỗ trợ bạn trong mọi trường hợp cần thiết.
+                <br>
+                Chúc các bạn có những trải nghiệm mua bán tuyệt vời trên Chợ Tốt.
+                </span></p>
+            <button onclick="readMore()" id="myBtn">Xem thêm</button>
+        </div>
+    </div>
+    <div class="keyword">
+        <div class="container">
+            <div class="content">
+                <p class="title">Từ khóa phổ biến</p>
+                <div class="row">
+                    <div class="col col-md-3">
+                        <ul>
+                            <li>Việc làm thêm tại nhà</li>
+                            <li>Việc làm An Giang</li>
+                            <li>Việc làm Cà Mau</li>
+                            <li>Việc làm Đồng Nai</li>
+                            <li>Việc làm Long An</li>
+                            <li>Việc làm Tiền Giang</li>
+                            <li>iPhone 7 lock cũ</li>
+                            <li>Việc làm Bắc Ninh</li>
+                            <li>Việc làm Cần Thơ</li>
+                            <li>Việc làm thêm tại nhà</li>
+                            <li>Việc làm An Giang</li>
+                            <li>Việc làm Cà Mau</li>
+                            <li>Việc làm Đồng Nai</li>
+                            <li>Việc làm Long An</li>
+                        </ul>
+                    </div>
+                    <div class="col col-md-3">
+                        <ul>
+                            <li>iPhone 7 lock cũ</li>
+                            <li>Việc làm Bắc Ninh</li>
+                            <li>Việc làm Cần Thơ</li>
+                            <li>Việc làm thêm tại nhà</li>
+                            <li>Việc làm An Giang</li>
+                            <li>Việc làm Cà Mau</li>
+                            <li>Việc làm Đồng Nai</li>
+                            <li>Việc làm Long An</li>
+                            <li>Việc làm Tiền Giang</li>
+                            <li>Việc làm thêm tại nhà</li>
+                            <li>Việc làm An Giang</li>
+                            <li>Việc làm Cà Mau</li>
+                            <li>Việc làm Đồng Nai</li>
+                            <li>Việc làm Long An</li>
+                            <li>Việc làm Tiền Giang</li>
+                        </ul>
+                    </div>
+                    <div class="col col-md-3">
+                        <ul>
+                            <li>Việc làm thêm tại nhà</li>
+                            <li>Việc làm An Giang</li>
+                            <li>Việc làm Cà Mau</li>
+                            <li>Việc làm Đồng Nai</li>
+                            <li>Việc làm Long An</li>
+                            <li>Việc làm Tiền Giang</li>
+                            <li>iPhone 7 lock cũ</li>
+                        </ul>
+                    </div>
+                    <div class="col col-md-3">
+                        <ul>
+                            <li>iPhone 7 lock cũ</li>
+                            <li>Việc làm Bắc Ninh</li>
+                            <li>Việc làm Cần Thơ</li>
+                            <li>Việc làm thêm tại nhà</li>
+                            <li>Việc làm An Giang</li>
+                            <li>Việc làm Cà Mau</li>
+                            <li>Việc làm Đồng Nai</li>
+                            <li>Việc làm Long An</li>
+                            <li>Việc làm Tiền Giang</li>
+                            <li>Việc làm thêm tại nhà</li>
+                            <li>Việc làm An Giang</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="col col-md-3">
+                        <p class="title">TẢI ỨNG DỤNG CHỢ TỐT</p>
+                        <div class="item">
+                           <div>
+                               <img class="img-qr" src="images/qr.jpeg" alt="">
+                           </div>
+                           <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="115" height="39" viewBox="0 0 115 39">
+                                <g fill="none" fill-rule="nonzero">
+                                    <path fill="#FFF" stroke="#D2D0D0" stroke-width=".625" d="M5.996 1h103.008C111.763 1 114 3.278 114 6.087v27.465a5.135 5.135 0 0 1-1.459 3.606 4.952 4.952 0 0 1-3.537 1.494H5.992c-1.327 0-2.6-.537-3.536-1.495A5.131 5.131 0 0 1 1 33.552V6.087C1 3.277 3.237 1 5.996 1z"/>
+                                    <path fill="#000" d="M30.39 25.998a19.105 19.105 0 0 1-1.648 3.176c-1.07 1.69-2.568 3.787-4.447 3.805-1.66 0-2.084-1.118-4.34-1.11-2.255.01-2.722 1.127-4.382 1.11-1.867 0-3.296-1.916-4.366-3.601C8.21 24.659 7.903 19.12 9.747 16.18c1.31-2.093 3.377-3.317 5.325-3.317 1.947 0 3.223 1.126 4.862 1.126 1.64 0 2.568-1.126 4.845-1.126 1.712 0 3.565.976 4.87 2.66-4.28 2.449-3.586 8.773.741 10.475z"/>
+                                    <path fill="#000" d="M23.089 10.852a5.845 5.845 0 0 0 1.19-4.178c-1.458.18-2.797.936-3.745 2.115-.827 1.038-1.484 2.58-1.24 4.074 1.49-.028 2.887-.768 3.795-2.01zM39.71 15.975l-4.253 12.877h1.946l1.274-3.937h4.117l1.304 3.937h2L41.83 15.958l-2.12.017zm1.01 2.122c.145.578.298 1.173.498 1.82l1.147 3.418h-3.263l1.13-3.44a29 29 0 0 0 .484-1.798h.005zM51.376 19.572c-1.17-.054-2.287.51-2.98 1.506l-.076-1.298h-1.715v.164c.05.81.072 1.7.072 2.976V32.98h1.875v-4.695a3.216 3.216 0 0 0 2.56 1.16 3.77 3.77 0 0 0 2.841-1.27 5.576 5.576 0 0 0 1.261-3.801 5.44 5.44 0 0 0-1.088-3.468c-.683-.853-1.69-1.341-2.75-1.333zm-.466 1.634c1.681 0 2.417 1.63 2.417 3.247 0 2.086-.954 3.38-2.489 3.38-1.049-.003-1.96-.76-2.206-1.834a2.65 2.65 0 0 1-.068-.638v-1.59c.007-.164.027-.327.06-.488 0-.053 0-.106.024-.159.252-1.105 1.18-1.893 2.258-1.918h.004zM61.511 19.572c-1.17-.053-2.287.511-2.98 1.506l-.076-1.298H56.74v.164c.05.81.071 1.7.071 2.976V32.98h1.875v-4.695a3.216 3.216 0 0 0 2.56 1.16 3.775 3.775 0 0 0 2.842-1.27 5.585 5.585 0 0 0 1.261-3.801 5.44 5.44 0 0 0-1.089-3.468c-.683-.853-1.69-1.341-2.749-1.333zm-.467 1.634c1.682 0 2.418 1.63 2.418 3.247 0 2.086-.955 3.38-2.489 3.38-1.049-.003-1.96-.76-2.207-1.835a2.65 2.65 0 0 1-.067-.637v-1.59c.006-.164.026-.327.059-.488l.025-.16c.251-1.108 1.183-1.897 2.266-1.917h-.005zM73.879 21.678c-1.743-.71-2.3-1.27-2.3-2.3 0-.882.657-1.763 2.124-1.763a4.08 4.08 0 0 1 2.191.577l.16.101.507-1.621-.105-.066a5.195 5.195 0 0 0-2.72-.644c-2.384 0-4.047 1.48-4.047 3.596 0 1.706 1.043 2.9 3.28 3.755 1.585.621 2.175 1.26 2.175 2.358 0 1.238-.909 2.01-2.375 2.01a4.926 4.926 0 0 1-2.695-.803l-.163-.11-.503 1.68.092.065a6.154 6.154 0 0 0 3.16.855c3.21 0 4.349-2.058 4.349-3.82 0-1.763-.893-2.94-3.13-3.87zM80.778 17.505l-1.885.617v1.63h-1.377v1.567h1.377v4.81c0 1.163.215 1.977.663 2.493a2.432 2.432 0 0 0 1.855.744 4.425 4.425 0 0 0 1.485-.233l.108-.04-.09-1.572-.186.057a2.83 2.83 0 0 1-.89.106c-.745 0-1.064-.48-1.064-1.612V21.31h2.316v-1.567h-2.316l.004-2.238zM87.725 19.57c-2.729 0-4.635 2.045-4.635 4.97 0 2.835 1.845 4.828 4.482 4.828 2.23 0 4.636-1.563 4.636-4.987a4.96 4.96 0 0 0-1.242-3.464 4.33 4.33 0 0 0-3.24-1.347zm-.057 1.545c1.75 0 2.554 1.716 2.554 3.314 0 1.963-1.089 3.385-2.589 3.385-1.478 0-2.554-1.4-2.554-3.328-.017-1.677.792-3.371 2.594-3.371h-.005zM97.785 19.663l-.111-.032a1.623 1.623 0 0 0-.456-.063c-.982.023-1.87.646-2.297 1.612l-.053-1.4h-1.644v.165c.05.795.07 1.684.07 2.883v6.54h1.808v-5.1c-.002-.26.015-.519.05-.776.205-1.226.96-2.016 1.926-2.016.165.001.33.012.493.032h.197l.017-1.845zM102.104 19.568c-2.545 0-4.32 2.083-4.32 5.066 0 2.874 1.766 4.732 4.504 4.732a7.168 7.168 0 0 0 3.025-.593l.115-.053-.368-1.458-.159.066a5.787 5.787 0 0 1-2.395.439c-.83 0-2.742-.281-2.862-2.838h6.166l.025-.123c.044-.27.063-.544.056-.818.004-2.034-.99-4.42-3.787-4.42zm-.129 1.49a1.86 1.86 0 0 1 1.401.549c.426.507.66 1.154.66 1.823h-4.357c.18-1.133.87-2.372 2.296-2.372zM35.457 7.316a14.129 14.129 0 0 1 1.868-.127c1.252 0 2.146.254 2.74.753a2.673 2.673 0 0 1 .963 2.188 3.095 3.095 0 0 1-.973 2.372c-.64.57-1.683.876-3 .876a13.48 13.48 0 0 1-1.598-.075V7.316zm.873 5.405c.29.032.581.044.872.035 1.868 0 2.88-.94 2.88-2.59 0-1.458-.873-2.355-2.74-2.355a5.527 5.527 0 0 0-1.025.083l.013 4.827zM43.77 13.361a2.028 2.028 0 0 1-1.593-.617 2.282 2.282 0 0 1-.638-1.663 2.357 2.357 0 0 1 .67-1.71 2.096 2.096 0 0 1 1.645-.628 2.027 2.027 0 0 1 1.599.608 2.28 2.28 0 0 1 .645 1.663c0 1.648-1.202 2.365-2.31 2.365l-.018-.018zm.03-.606c.808 0 1.415-.722 1.415-1.732 0-.753-.394-1.696-1.394-1.696-1 0-1.424.886-1.424 1.723 0 .97.578 1.705 1.394 1.705h.009zM47.49 8.737l.656 2.349c.132.519.264 1.005.352 1.487h.03c.11-.464.273-.968.44-1.478l.802-2.358h.748l.757 2.316c.18.547.325 1.047.44 1.515h.03c.096-.51.221-1.012.375-1.506l.7-2.316h.88l-1.58 4.633h-.81l-.748-2.215a15.834 15.834 0 0 1-.44-1.533 13.282 13.282 0 0 1-.44 1.543l-.788 2.205h-.81l-1.479-4.633.885-.01zM54.751 10.051c0-.479 0-.85-.038-1.225h.759l.047.742c.354-.554.954-.868 1.581-.828.653 0 1.667.375 1.667 1.926v2.713h-.848V10.77c0-.728-.284-1.356-1.094-1.356-.51-.002-.968.333-1.15.84a1.18 1.18 0 0 0-.059.385v2.713h-.848l-.017-3.3zM59.78 6.674h1.014v6.19H59.78zM64.041 13.374a2.032 2.032 0 0 1-1.595-.616 2.277 2.277 0 0 1-.638-1.662c0-1.482 1.031-2.353 2.313-2.353a2.03 2.03 0 0 1 1.6.608c.428.432.663 1.036.646 1.66 0 1.646-1.203 2.363-2.313 2.363h-.013zm.03-.606c.808 0 1.416-.721 1.416-1.73 0-.752-.394-1.694-1.395-1.694-1.002 0-1.425.885-1.425 1.72 0 .97.578 1.704 1.395 1.704h.009zM71.362 12.208c-.005.357.02.714.073 1.067h-.832l-.082-.56h-.032a1.98 1.98 0 0 1-1.554.663c-1.028 0-1.554-.636-1.554-1.282 0-1.076 1.092-1.668 3.058-1.655v-.093c0-.37-.115-1.041-1.157-1.032a2.708 2.708 0 0 0-1.334.33l-.21-.544a3.665 3.665 0 0 1 1.672-.364c1.568 0 1.943.93 1.943 1.824l.009 1.646zm-.914-1.206c-1.01 0-2.153.138-2.153 1.005a.742.742 0 0 0 .249.581c.166.149.39.22.615.194a1.288 1.288 0 0 0 1.252-.748.725.725 0 0 0 .041-.258l-.004-.774zM76.463 6.674V12.1c0 .398 0 .85.04 1.16h-.793l-.04-.78a1.798 1.798 0 0 1-1.64.896 2.054 2.054 0 0 1-1.522-.675 2.179 2.179 0 0 1-.56-1.605 2.28 2.28 0 0 1 .576-1.695 2.149 2.149 0 0 1 1.601-.716 1.648 1.648 0 0 1 1.463.677V6.674h.875zm-.87 3.92c.002-.12-.012-.238-.04-.354a1.275 1.275 0 0 0-1.271-.936c-.91 0-1.45.743-1.45 1.725 0 .98.474 1.689 1.397 1.689a1.31 1.31 0 0 0 1.307-.972c.029-.116.042-.235.039-.354l.017-.798zM82.284 13.374a2.032 2.032 0 0 1-1.595-.616 2.277 2.277 0 0 1-.639-1.662c-.019-.646.222-1.27.662-1.718a2.1 2.1 0 0 1 1.651-.635 2.03 2.03 0 0 1 1.6.608c.428.432.663 1.036.646 1.66 0 1.646-1.202 2.363-2.313 2.363h-.012zm.029-.606c.809 0 1.416-.721 1.416-1.73 0-.752-.394-1.694-1.395-1.694s-1.425.885-1.425 1.72c0 .97.579 1.704 1.396 1.704h.008zM85.662 10.064c0-.48 0-.85-.039-1.226h.763l.05.742c.35-.552.943-.87 1.568-.841.655 0 1.673.375 1.673 1.926v2.714h-.852v-2.61c0-.728-.285-1.356-1.098-1.356-.512-.002-.972.333-1.154.84a1.18 1.18 0 0 0-.06.385v2.714h-.851v-3.288zM94.404 7.705V8.78h1.354V9.4h-1.336v2.424c0 .555.18.872.7.872.181.007.363-.011.54-.053l.04.621a2.879 2.879 0 0 1-.824.112 1.436 1.436 0 0 1-1.009-.344 1.596 1.596 0 0 1-.36-1.177V9.414h-.792v-.622h.793v-.84l.894-.247zM96.273 6.674h.86v2.845c.15-.254.367-.456.623-.583.273-.157.58-.239.89-.237.64 0 1.672.378 1.672 1.949v2.73h-.86v-2.617c0-.746-.287-1.365-1.108-1.365-.512-.002-.974.326-1.165.828a.959.959 0 0 0-.06.396v2.732h-.86l.008-6.678zM102.65 11.196c0 1.095.73 1.55 1.564 1.55.432.011.863-.064 1.27-.223l.152.57a3.85 3.85 0 0 1-1.538.285c-1.402 0-2.255-.89-2.255-2.227a2.379 2.379 0 0 1 .587-1.722c.41-.459.982-.71 1.573-.691 1.497 0 1.889 1.282 1.889 2.102.003.13-.007.26-.029.387l-3.212-.031zm2.438-.579a1.26 1.26 0 0 0-.288-.953 1.07 1.07 0 0 0-.858-.383c-.686.011-1.246.596-1.279 1.336h2.425z"/>
+                                </g>
+                            </svg>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="115" height="39" viewBox="0 0 115 39">
+                                <defs>
+                                    <linearGradient id="a" x1="49.98%" x2="49.98%" y1="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#257DB0"/>
+                                        <stop offset="21%" stop-color="#3C90B3"/>
+                                        <stop offset="74%" stop-color="#73BDB9"/>
+                                        <stop offset="100%" stop-color="#89CEBC"/>
+                                    </linearGradient>
+                                    <linearGradient id="b" x1="0%" y1="50.02%" y2="50.02%">
+                                        <stop offset="0%" stop-color="#51BFAC"/>
+                                        <stop offset="100%" stop-color="#DEE899"/>
+                                    </linearGradient>
+                                    <linearGradient id="c" x1="50.016%" x2="50.016%" y1="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#EB403D"/>
+                                        <stop offset="19%" stop-color="#D64252"/>
+                                        <stop offset="74%" stop-color="#9F4887"/>
+                                        <stop offset="100%" stop-color="#894A9C"/>
+                                    </linearGradient>
+                                    <linearGradient id="d" x1="49.972%" x2="49.972%" y1="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#F48779"/>
+                                        <stop offset="61%" stop-color="#FAB076"/>
+                                        <stop offset="100%" stop-color="#FDC674"/>
+                                    </linearGradient>
+                                </defs>
+                                <g fill="none" fill-rule="nonzero">
+                                    <path fill="#FFF" stroke="#D2D0D0" stroke-width=".625" d="M5.996 1h102.977c2.76 0 4.997 2.277 4.997 5.086V33.53a5.132 5.132 0 0 1-1.464 3.596 4.952 4.952 0 0 1-3.533 1.49H5.991a4.947 4.947 0 0 1-3.53-1.49A5.127 5.127 0 0 1 1 33.53V6.086C1 3.276 3.237 1 5.996 1z"/>
+                                    <path fill="url(#a)" d="M.365.536v25.47l12.622-12.735z" transform="translate(9.108 7.705)"/>
+                                    <path fill="url(#b)" d="M16.372 9.852L11.28 6.86.365.444v.092l12.622 12.735z" transform="translate(9.108 7.705)"/>
+                                    <path fill="url(#c)" d="M.365 26.006v.093l10.915-6.411 5.092-2.997-3.385-3.42z" transform="translate(9.108 7.705)"/>
+                                    <path fill="url(#d)" d="M16.372 9.852l-3.385 3.42 3.385 3.419 5.823-3.42z" transform="translate(9.108 7.705)"/>
+                                    <path fill="#000" d="M88.917 25.959a3.1 3.1 0 0 1-1.297-.268 2.457 2.457 0 0 1-.988-.82h-.081c.052.407.079.817.08 1.227v3.043h-1.099V18.413h.897l.152 1.032h.05c.257-.378.606-.68 1.014-.877a2.96 2.96 0 0 1 1.292-.269 2.671 2.671 0 0 1 2.235 1.032 5.446 5.446 0 0 1 0 5.674 2.673 2.673 0 0 1-2.255.954zm-.157-6.705a1.933 1.933 0 0 0-1.611.629 3.284 3.284 0 0 0-.507 2.001v.248c-.067.78.11 1.562.507 2.233.41.479 1.02.728 1.641.67a1.7 1.7 0 0 0 1.48-.778 3.74 3.74 0 0 0 .532-2.14 3.598 3.598 0 0 0-.532-2.126 1.748 1.748 0 0 0-1.51-.758v.02zM94.491 25.825h-1.105V15.308h1.105zM100.83 25.825l-.218-1.032h-.05a3.056 3.056 0 0 1-1.085.944c-.429.178-.89.263-1.353.248a2.405 2.405 0 0 1-1.697-.568 2.083 2.083 0 0 1-.613-1.614c0-1.496 1.182-2.28 3.547-2.352l1.236-.041v-.46a1.901 1.901 0 0 0-.37-1.289 1.504 1.504 0 0 0-1.18-.418 4.734 4.734 0 0 0-2.058.568l-.375-.882a5.13 5.13 0 0 1 1.18-.464c.421-.113.854-.17 1.288-.17a2.738 2.738 0 0 1 1.93.587c.463.51.691 1.197.629 1.888v5.055h-.81zm-2.488-.81a2.216 2.216 0 0 0 1.617-.572c.41-.429.623-1.013.587-1.61v-.67l-1.104.046a3.95 3.95 0 0 0-1.895.418 1.26 1.26 0 0 0-.583 1.145c-.023.347.11.686.36.923.29.228.652.342 1.018.32zM102.284 18.413h1.181l1.596 4.224c.263.672.482 1.362.654 2.063h.05c.058-.23.178-.624.36-1.18.183-.558.784-2.277 1.804-5.159h1.181l-3.126 8.433a4.22 4.22 0 0 1-1.085 1.775c-.43.35-.969.534-1.52.516a4.374 4.374 0 0 1-1.013-.114v-.861c.268.057.541.084.815.082a1.689 1.689 0 0 0 1.622-1.3l.405-1.031-2.924-7.448zM68.501 19.104a2.624 2.624 0 0 1 1.08 2.094c0 1.145-.64 1.687-1.278 2.203-.24.18-.394.456-.425.758a.853.853 0 0 0 .395.665l.547.433c.67.573 1.277 1.1 1.277 2.172 0 1.454-1.383 2.93-4.003 2.93-2.21 0-3.273-1.068-3.273-2.218a2.232 2.232 0 0 1 1.17-1.888 6.494 6.494 0 0 1 2.909-.712 1.633 1.633 0 0 1-.456-1.031c.005-.21.057-.417.152-.604-.167 0-.335.031-.507.031a2.383 2.383 0 0 1-1.779-.665 2.47 2.47 0 0 1-.755-1.77c.02-.797.374-1.549.973-2.063a4.1 4.1 0 0 1 2.726-.85h3.137l-.973.556-.917-.04zm-1.08 6.88a2.31 2.31 0 0 0-.349 0c-.54.01-1.077.094-1.596.248a1.73 1.73 0 0 0-1.307 1.594c0 1.099 1.048 1.893 2.68 1.893 1.46 0 2.24-.712 2.24-1.676-.01-.805-.512-1.223-1.672-2.058h.005zm.442-2.944c.265-.308.4-.71.375-1.12 0-1.114-.654-2.852-1.916-2.852-.411.007-.8.195-1.064.516a1.813 1.813 0 0 0-.334 1.145c0 1.031.592 2.76 1.905 2.76a1.547 1.547 0 0 0 1.034-.45zM58.919 25.737a3.553 3.553 0 0 1-2.616-1.025 3.684 3.684 0 0 1-1.093-2.627 3.864 3.864 0 0 1 1.188-2.726 3.727 3.727 0 0 1 2.749-1.034 3.514 3.514 0 0 1 2.579 1.04 3.644 3.644 0 0 1 1.054 2.612 3.813 3.813 0 0 1-1.147 2.714 3.678 3.678 0 0 1-2.714 1.046zm1.9-1.253c.331-.507.492-1.11.456-1.718 0-1.361-.638-3.961-2.534-3.961a2.096 2.096 0 0 0-1.368.516 2.365 2.365 0 0 0-.699 1.888c0 1.547.745 4.048 2.584 4.048a1.928 1.928 0 0 0 1.556-.758l.005-.015zM50.68 25.737a3.553 3.553 0 0 1-2.616-1.025 3.684 3.684 0 0 1-1.094-2.627 3.864 3.864 0 0 1 1.183-2.736 3.727 3.727 0 0 1 2.754-1.04 3.514 3.514 0 0 1 2.58 1.041 3.644 3.644 0 0 1 1.054 2.612 3.814 3.814 0 0 1-1.141 2.724 3.678 3.678 0 0 1-2.72 1.051zm1.9-1.238c.331-.507.491-1.11.456-1.717 0-1.362-.639-3.962-2.534-3.962a2.096 2.096 0 0 0-1.368.516 2.365 2.365 0 0 0-.7 1.888c0 1.547.746 4.049 2.585 4.049.61.006 1.19-.28 1.56-.774zM45.81 25.495l-2.184.516a15.94 15.94 0 0 1-2.534.263c-4.216 0-5.822-3.157-5.822-5.633 0-3.017 2.275-5.818 6.172-5.818.79.001 1.575.11 2.336.325.73.188 1.417.516 2.027.965l-1.267 1.227-.532.124.38-.624a4.333 4.333 0 0 0-3.268-1.46c-2.412 0-4.232 1.867-4.232 4.59 0 2.925 2.078 5.674 5.407 5.674a4.491 4.491 0 0 0 1.94-.387v-2.501l-2.305.124 1.222-.67h3.237l-.395.386a.362.362 0 0 0-.152.248c0 .139-.03.593-.03.747v1.904z"/>
+                                    <path fill="#000" d="M73.305 25.046c-.507-.046-.608-.14-.608-.748V15.396c.06-.542.213-.64.689-.918h-2.184l-1.145.562h1.165v9.604c0 .31-.06.356-.41.825h2.706l.567-.34c-.238-.037-.496-.052-.78-.083zM79.548 25.19c-.168.093-.335.202-.507.279a3.493 3.493 0 0 1-1.475.294 3.202 3.202 0 0 1-2.027-.604 4.024 4.024 0 0 1-1.545-3.26 3.536 3.536 0 0 1 .996-2.532 3.41 3.41 0 0 1 2.48-1.037 2.91 2.91 0 0 1 1.566.434c.532.36.91.914 1.059 1.547l-3.547 1.47-1.17.093c.38 1.96 1.682 3.095 3.126 3.095a3.87 3.87 0 0 0 1.85-.516l-.806.737zm-1.424-4.6c.289-.109.44-.202.44-.418a1.529 1.529 0 0 0-1.52-1.33c-.608 0-1.743.479-1.743 2.145 0 .263.03.516.046.82l2.777-1.217zM81.012 18.434v1.031h-.106v-1.031h-.33v-.124h.786v.103zM82.375 19.455v-1.032l-.309 1.032h-.096l-.31-1.032v1.032h-.11V18.31h.187l.283.908.28-.908h.192v1.124zM38.34 11.795h-.76a5.192 5.192 0 0 0-.217-.902h-1.115a4.71 4.71 0 0 0-.223.902H35.3c0-.061.184-.577.553-1.547.22-.52.405-1.053.552-1.599h.922c.137.535.306 1.06.507 1.573.2.514.369 1.04.507 1.573zm-1.094-1.366c-.158-.442-.293-.891-.405-1.347h-.036c0 .062-.14.511-.42 1.347h.861zM41.381 11.795h-.588a5.909 5.909 0 0 0-.653-1.031 5.787 5.787 0 0 1-.786-1.377h-.035c.037.316.058.635.06.954 0 .399.012.884.036 1.454h-.568a34.939 34.939 0 0 0 0-3.146h.705c.15.369.348.716.588 1.032.289.398.529.831.714 1.29h.02a9.286 9.286 0 0 1-.055-.965c0-.437-.012-.884-.036-1.341h.598c-.024.398-.035.899-.035 1.5 0 .602.011 1.146.035 1.63zM44.817 10.114c.006.44-.147.866-.431 1.197-.306.35-.752.539-1.211.515-.233 0-.556-.01-.968-.03.02-.485.03-1.034.03-1.646 0-.612-.01-1.112-.03-1.5h.983c.456-.044.908.114 1.242.432.252.282.39.65.385 1.032zm-.649.103a1.179 1.179 0 0 0-.263-.779 1.004 1.004 0 0 0-.811-.32 2.45 2.45 0 0 0-.279 0v2.177c.102.02.205.031.31.031a.89.89 0 0 0 .754-.325c.183-.22.285-.496.289-.784zM47.968 11.795h-.704c-.1-.36-.24-.705-.42-1.031a.548.548 0 0 0-.477-.201h-.263v1.253h-.659c.02-.485.03-1.033.03-1.645 0-.612-.01-1.113-.03-1.501h1.125c.726 0 1.09.252 1.09.758a.849.849 0 0 1-.624.836v.036a.744.744 0 0 1 .42.381c.198.358.369.73.512 1.114zm-.891-2.223c0-.32-.203-.48-.608-.48-.133 0-.265.012-.396.037.017.25.026.576.026.975h.223c.516.003.775-.174.775-.532h-.02zM51.389 10.166c.015.452-.145.893-.446 1.227-.28.319-.684.498-1.105.49a1.382 1.382 0 0 1-1.049-.449 1.595 1.595 0 0 1-.42-1.14 1.751 1.751 0 0 1 .446-1.227c.28-.319.684-.498 1.104-.49.397-.009.778.155 1.05.449.284.307.435.718.42 1.14zm-.654.072a1.263 1.263 0 0 0-.253-.82.776.776 0 0 0-.629-.315.721.721 0 0 0-.587.315 1.28 1.28 0 0 0-.244.8c-.012.293.077.581.254.814a.776.776 0 0 0 .623.315.721.721 0 0 0 .588-.32 1.28 1.28 0 0 0 .243-.79h.005zM52.727 11.795h-.674a40.753 40.753 0 0 0 0-3.146h.674a41 41 0 0 0 0 3.146zM56.167 10.114c.007.44-.147.866-.43 1.197-.307.35-.752.539-1.211.515-.234 0-.556-.01-.968-.03.02-.485.03-1.034.03-1.646 0-.612-.015-1.112-.046-1.5h1.014c.456-.044.907.114 1.241.432.247.284.38.653.37 1.032zm-.648.103a1.179 1.179 0 0 0-.264-.779 1.004 1.004 0 0 0-.81-.32 2.45 2.45 0 0 0-.28 0v2.177c.103.02.206.031.31.031a.89.89 0 0 0 .755-.325c.182-.22.284-.496.289-.784zM60.728 11.795h-.76a5.182 5.182 0 0 0-.218-.902h-1.09a4.736 4.736 0 0 0-.223.902h-.714c0-.061.184-.577.552-1.547.22-.52.405-1.053.553-1.599h.897c.136.535.305 1.06.506 1.573.196.514.362 1.04.497 1.573zm-1.105-1.366a13.84 13.84 0 0 1-.405-1.347h-.036c0 .062-.14.511-.42 1.347h.861zM63.5 9.474a.944.944 0 0 1-.42.851 1.85 1.85 0 0 1-1.014.274h-.157c0 .302.008.701.025 1.196h-.69c.021-.464.031-1.012.031-1.645 0-.581-.01-1.081-.03-1.5h1.18c.268-.01.533.062.76.205.206.135.325.371.315.62zm-.613.134c0-.343-.225-.515-.674-.515-.12 0-.238.013-.355.036.017.302.025.646.025 1.031h.137c.578.004.867-.18.867-.552zM66.342 9.474a.95.95 0 0 1-.42.851 1.85 1.85 0 0 1-1.014.274h-.157c0 .302.009.701.026 1.196h-.67c.021-.464.031-1.012.031-1.645 0-.581-.01-1.081-.03-1.5h1.18c.268-.01.533.062.76.205.198.14.31.375.294.62zm-.613.134c0-.343-.224-.515-.674-.515-.119 0-.238.013-.354.036.016.302.025.646.025 1.031h.137c.577.004.866-.18.866-.552zM70.994 10.166c.015.452-.145.893-.446 1.227-.28.319-.684.498-1.104.49a1.382 1.382 0 0 1-1.05-.449 1.595 1.595 0 0 1-.42-1.14 1.751 1.751 0 0 1 .446-1.227c.28-.319.684-.498 1.105-.49.396-.01.778.154 1.049.449.284.307.435.718.42 1.14zm-.654.072a1.263 1.263 0 0 0-.253-.82.776.776 0 0 0-.628-.315.721.721 0 0 0-.588.315 1.28 1.28 0 0 0-.243.8c-.013.293.077.581.253.814a.776.776 0 0 0 .623.315.721.721 0 0 0 .588-.32c.168-.227.255-.505.248-.79zM74.212 11.795h-.588a5.898 5.898 0 0 0-.654-1.031 5.787 5.787 0 0 1-.78-1.367h-.035c.037.317.058.635.06.954 0 .4.012.884.036 1.455h-.583a34.939 34.939 0 0 0 0-3.147h.704c.151.37.349.716.588 1.032.29.398.53.831.715 1.29h.035a9.28 9.28 0 0 1-.056-.965c0-.437-.011-.884-.035-1.341h.593c-.024.399-.036.9-.036 1.5 0 .603.012 1.142.036 1.62z"/>
+                                </g>
+                            </svg>
+                            
+                           </div>
+
+                        </div>
+                    </div>
+                    <div class="col col-md-3">
+                        <p class="title">HỖ TRỢ KHÁCH HÀNG</p>
+                        <div class="item">
+                            <ul>
+                                <li>Trung tâm trợ giúp</li>
+                                <li>An toàn mua bán</li>
+                                <li>Quy định cần biết</li>
+                                <li>Quy chế quyền riêng tư</li>
+                                <li>Liên hệ hỗ trợ</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col col-md-3">
+                        <p class="title">VỀ CHỢ TỐT</p>
+                        <div class="item">
+                            <ul>
+                                <li>Giới thiệu</li>
+                                <li>Tuyển dụng</li>
+                                <li>Truyền thông</li>
+                                <li>Blog</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col col-md-3">
+                        <p class="title">LIÊN KẾT</p>
+                        <div>
+                            <svg class="facebook-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <g fill="none" fill-rule="evenodd">
+                                    <circle cx="16" cy="16" r="16" fill="#3B5998"/>
+                                    <path fill="#FFF" d="M13.668 24v-7.32H11v-2.795h2.668v-2.116C13.668 9.336 15.256 8 17.606 8c1.124 0 2.112.07 2.394.105v2.58h-1.668c-1.278 0-1.517.56-1.517 1.384v1.816h3.058l-.398 2.795h-2.66V24h-3.147z"/>
+                                </g>
+                            </svg>
+                            <svg class="youtube-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="#FF0A28" d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16z"/>
+                                    <path fill="#FFF" d="M23.72 17.337l-10.173 6.651A1 1 0 0 1 12 23.151V9.85a1 1 0 0 1 1.547-.837l10.173 6.651a1 1 0 0 1 0 1.674z"/>
+                                </g>
+                            </svg>
+                            <svg class="google-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <g fill="none" fill-rule="evenodd">
+                                    <circle cx="16" cy="16" r="16" fill="#DD4B39"/>
+                                    <path fill="#FFF" d="M24 15.838h-2.154v2.202h-1.23v-2.202h-2.103V14.55h2.102v-2.255h1.231v2.255H24v1.288zm-8.755-7.08c.125.081.267.201.423.358.151.164.299.366.443.605.138.226.26.492.367.8.088.307.132.666.132 1.076-.012.751-.17 1.353-.474 1.804a5.6 5.6 0 0 1-.473.605c-.185.184-.381.372-.59.563-.119.13-.229.277-.33.44-.12.172-.179.37-.179.596 0 .218.062.4.184.543.103.137.204.256.302.359l.678.584c.422.363.791.762 1.109 1.2.3.444.455 1.025.467 1.742 0 1.018-.427 1.92-1.283 2.706-.887.813-2.167 1.233-3.84 1.261-1.4-.015-2.444-.328-3.135-.941C8.349 22.485 8 21.8 8 21c0-.388.114-.82.34-1.298.22-.478.619-.897 1.195-1.259a6.002 6.002 0 0 1 2.04-.777c.706-.11 1.292-.171 1.758-.185a4.575 4.575 0 0 1-.385-.638 1.523 1.523 0 0 1-.198-.794c0-.186.026-.34.076-.464l.122-.36c-.227.027-.44.04-.642.04-1.064-.013-1.875-.365-2.433-1.056a3.231 3.231 0 0 1-.876-2.244c0-1.031.414-1.967 1.24-2.808.569-.491 1.16-.813 1.772-.963A8.201 8.201 0 0 1 13.714 8h3.998l-1.234.758h-1.233zm-2.598 9.338c-.414.062-.837.16-1.27.298-.102.04-.245.102-.43.184a2.604 2.604 0 0 0-.562.38 2.2 2.2 0 0 0-.468.636c-.147.266-.22.587-.22.963 0 .738.318 1.346.955 1.825.605.478 1.432.724 2.482.738.942-.014 1.661-.232 2.158-.656.483-.417.725-.953.725-1.61 0-.533-.165-.998-.496-1.394-.35-.376-.898-.837-1.643-1.384a4.172 4.172 0 0 0-.448-.02c-.102-.014-.363 0-.783.04zm1.663-8.033a2.76 2.76 0 0 0-.746-.987 1.854 1.854 0 0 0-1.087-.38c-.541.013-.992.243-1.351.688a2.692 2.692 0 0 0-.435 1.561c0 .76.212 1.551.636 2.373.204.383.468.71.792.976.324.267.695.4 1.11.4.527-.02.965-.219 1.317-.596.168-.267.278-.54.326-.82.029-.282.043-.518.043-.71 0-.828-.201-1.663-.605-2.505z"/>
+                                </g>
+                            </svg>
+                            
+                            
+                            
+                        </div>
+                        <p class="title">CHỨNG NHẬN</p>
+                        <div>
+                            <img src="images/cerfiticate.png" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="address">CÔNG TY TNHH CHỢ TỐT - Địa chỉ: Phòng 1808, Tầng 18, Mê Linh Point Tower, 02 Ngô Đức Kế, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh</p>
+        <p class="address">Giấy chứng nhận đăng ký doanh nghiệp số 0312120782 do Sở Kế Hoạch và Đầu Tư TPHCM cấp ngày 11/01/2013</p>
+        <p class="address">Email: trogiup@chotot.vn - Đường dây nóng: (028)38664041</p>
+    </footer>
+   
+    
+    <script src="js/common.js"></script>
+</body>
+</html>
